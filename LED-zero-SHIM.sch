@@ -28204,6 +28204,285 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="_my_jumpers">
+<description>Fancy jumpers</description>
+<packages>
+<package name="SJ_3">
+<description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
+<wire x1="2.286" y1="1.016" x2="2.413" y2="0.7112" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.4638" y1="0.7366" x2="-2.286" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.4638" y1="-0.7874" x2="-2.286" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.286" y1="-1.016" x2="2.413" y2="-0.8128" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.413" y1="-0.8128" x2="2.413" y2="0.7112" width="0.1524" layer="21"/>
+<wire x1="-2.4638" y1="-0.7874" x2="-2.4638" y2="0.7366" width="0.1524" layer="21"/>
+<wire x1="-2.286" y1="1.016" x2="2.286" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="0" x2="2.413" y2="0" width="0.1524" layer="51"/>
+<wire x1="-1.905" y1="0" x2="-2.413" y2="0" width="0.1524" layer="51"/>
+<wire x1="0" y1="0.762" x2="0" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="1.143" y1="0.127" x2="1.143" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<wire x1="-1.143" y1="-0.127" x2="-1.143" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<smd name="1" x="-1.651" y="0" dx="1.1684" dy="1.6002" layer="1" cream="no"/>
+<smd name="2" x="0" y="0" dx="1.6002" dy="1.6002" layer="1" cream="no"/>
+<smd name="3" x="1.651" y="0" dx="1.1684" dy="1.6002" layer="1" cream="no"/>
+<text x="-2.413" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<rectangle x1="-0.762" y1="-0.762" x2="0.254" y2="0.762" layer="51"/>
+<wire x1="1.016" y1="-2.286" x2="0.762" y2="-2.4638" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.016" y1="-2.286" x2="-0.762" y2="-2.4638" width="0.1524" layer="21" curve="90"/>
+<wire x1="-0.762" y1="-2.4638" x2="0.762" y2="-2.4638" width="0.1524" layer="21"/>
+<wire x1="0" y1="-1.905" x2="0" y2="-2.413" width="0.1524" layer="51"/>
+<wire x1="0.127" y1="-1.143" x2="-0.127" y2="-1.143" width="1.27" layer="51" curve="-180" cap="flat"/>
+<smd name="4" x="0" y="-1.651" dx="1.1684" dy="1.6002" layer="1" rot="R270" cream="no"/>
+<rectangle x1="-0.254" y1="-0.762" x2="0.762" y2="0.762" layer="51"/>
+<wire x1="-1.016" y1="-2.286" x2="-1.016" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="-1.016" x2="-2.286" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-2.286" x2="1.016" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-1.016" x2="2.286" y2="-1.016" width="0.1524" layer="21"/>
+<rectangle x1="-2.3368" y1="-0.889" x2="2.3368" y2="0.889" layer="29"/>
+<rectangle x1="-0.9144" y1="-2.3368" x2="0.889" y2="0.889" layer="29"/>
+</package>
+<package name="SJ_3W">
+<description>&lt;b&gt;Wide Solder jumper&lt;/b&gt;</description>
+<wire x1="3.81" y1="1.524" x2="4.064" y2="1.27" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-4.064" y1="1.27" x2="-3.81" y2="1.524" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-4.064" y1="-1.27" x2="-3.81" y2="-1.524" width="0.1524" layer="21" curve="90"/>
+<wire x1="3.81" y1="-1.524" x2="4.064" y2="-1.27" width="0.1524" layer="21" curve="90"/>
+<wire x1="4.064" y1="-1.27" x2="4.064" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-4.064" y1="-1.27" x2="-4.064" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="1.524" x2="3.81" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="3.429" y1="0" x2="3.937" y2="0" width="0.1524" layer="51"/>
+<wire x1="-3.429" y1="0" x2="-3.937" y2="0" width="0.1524" layer="51"/>
+<wire x1="0" y1="0.762" x2="0" y2="1.397" width="0.1524" layer="51"/>
+<wire x1="2.667" y1="0.127" x2="2.667" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<wire x1="-2.667" y1="-0.127" x2="-2.667" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<smd name="1" x="-3.175" y="0" dx="1.27" dy="2.54" layer="1"/>
+<smd name="2" x="0" y="0" dx="2.54" dy="2.54" layer="1"/>
+<smd name="3" x="3.175" y="0" dx="1.27" dy="2.54" layer="1"/>
+<text x="-3.429" y="1.778" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.762" y1="-0.762" x2="0.254" y2="0.762" layer="51"/>
+<wire x1="1.524" y1="-3.81" x2="1.27" y2="-4.064" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.524" y1="-3.81" x2="-1.27" y2="-4.064" width="0.1524" layer="21" curve="90"/>
+<wire x1="-1.27" y1="-4.064" x2="1.27" y2="-4.064" width="0.1524" layer="21"/>
+<wire x1="0" y1="-3.429" x2="0" y2="-3.937" width="0.1524" layer="51"/>
+<wire x1="0.127" y1="-2.667" x2="-0.127" y2="-2.667" width="1.27" layer="51" curve="-180" cap="flat"/>
+<smd name="4" x="0" y="-3.175" dx="1.27" dy="2.54" layer="1" rot="R270"/>
+<rectangle x1="-0.254" y1="-0.762" x2="0.762" y2="0.762" layer="51"/>
+<wire x1="-3.81" y1="-1.524" x2="-1.524" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="-3.81" x2="-1.524" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="1.524" y1="-3.81" x2="1.524" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="1.524" y1="-1.524" x2="3.81" y2="-1.524" width="0.1524" layer="21"/>
+</package>
+<package name="SJ_3FI">
+<description>&lt;b&gt;Fancy Solder jumper&lt;/b&gt;</description>
+<wire x1="2.1844" y1="1.016" x2="2.4384" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.4384" y1="0.762" x2="-2.1844" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.4384" y1="-0.762" x2="-2.1844" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.1844" y1="-1.016" x2="2.4384" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.4384" y1="-0.762" x2="2.4384" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-2.4384" y1="-0.762" x2="-2.4384" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-2.1844" y1="1.016" x2="2.1844" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="0" x2="2.413" y2="0" width="0.1524" layer="51"/>
+<wire x1="-1.905" y1="0" x2="-2.413" y2="0" width="0.1524" layer="51"/>
+<wire x1="0" y1="0.508" x2="0" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="1.143" y1="0.127" x2="1.143" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<wire x1="-1.143" y1="-0.127" x2="-1.143" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<smd name="1" x="-1.6002" y="0" dx="1.016" dy="1.5748" layer="1" cream="no"/>
+<smd name="2" x="0" y="0" dx="1.016" dy="1.016" layer="1" cream="no"/>
+<smd name="3" x="1.6002" y="0" dx="1.016" dy="1.5748" layer="1" cream="no"/>
+<text x="-2.413" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<wire x1="1.016" y1="-2.1844" x2="0.762" y2="-2.4384" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.016" y1="-2.1844" x2="-0.762" y2="-2.4384" width="0.1524" layer="21" curve="90"/>
+<wire x1="-0.762" y1="-2.4384" x2="0.762" y2="-2.4384" width="0.1524" layer="21"/>
+<wire x1="0" y1="-1.905" x2="0" y2="-2.413" width="0.1524" layer="51"/>
+<wire x1="0.127" y1="-1.143" x2="-0.127" y2="-1.143" width="1.27" layer="51" curve="-180" cap="flat"/>
+<smd name="4" x="0" y="-1.6002" dx="1.016" dy="1.5748" layer="1" rot="R270" cream="no"/>
+<rectangle x1="-0.508" y1="-0.508" x2="0.508" y2="0.508" layer="51"/>
+<wire x1="-1.016" y1="-2.1844" x2="-1.016" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="-1.016" x2="-2.1844" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-2.1844" x2="1.016" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-1.016" x2="2.1844" y2="-1.016" width="0.1524" layer="21"/>
+<rectangle x1="-2.286" y1="-0.889" x2="2.286" y2="0.889" layer="29"/>
+<rectangle x1="-0.9144" y1="-2.286" x2="0.889" y2="0.889" layer="29"/>
+<polygon width="0" layer="1">
+<vertex x="-0.8128" y="0"/>
+<vertex x="-1.0922" y="0.7874"/>
+<vertex x="-2.1082" y="0.7874"/>
+<vertex x="-2.1082" y="-0.7874"/>
+<vertex x="-1.0922" y="-0.7874"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="-0.7874" y="0.7874"/>
+<vertex x="0.7874" y="0.7874"/>
+<vertex x="0.508" y="0"/>
+<vertex x="0.7874" y="-0.7874"/>
+<vertex x="0" y="-0.508"/>
+<vertex x="-0.7874" y="-0.7874"/>
+<vertex x="-0.508" y="0"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="0.8128" y="0"/>
+<vertex x="1.0922" y="0.7874"/>
+<vertex x="2.1082" y="0.7874"/>
+<vertex x="2.1082" y="-0.7874"/>
+<vertex x="1.0922" y="-0.7874"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="0" y="-0.8128"/>
+<vertex x="0.7874" y="-1.0922"/>
+<vertex x="0.7874" y="-2.1082"/>
+<vertex x="-0.7874" y="-2.1082"/>
+<vertex x="-0.7874" y="-1.0922"/>
+</polygon>
+</package>
+<package name="SJ_3FO">
+<description>&lt;b&gt;Fancy Solder jumper&lt;/b&gt;</description>
+<wire x1="2.1844" y1="1.016" x2="2.4384" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.413" y1="0.762" x2="-2.159" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.413" y1="-0.762" x2="-2.159" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.1844" y1="-1.016" x2="2.4384" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.4384" y1="-0.762" x2="2.4384" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-2.413" y1="-0.762" x2="-2.413" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-2.159" y1="1.016" x2="2.1844" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="0" x2="2.413" y2="0" width="0.1524" layer="51"/>
+<wire x1="-1.905" y1="0" x2="-2.413" y2="0" width="0.1524" layer="51"/>
+<wire x1="0" y1="0.508" x2="0" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="1.143" y1="0.127" x2="1.143" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<wire x1="-1.143" y1="-0.127" x2="-1.143" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<smd name="1" x="-1.6002" y="0" dx="1.016" dy="1.5748" layer="1" cream="no"/>
+<smd name="2" x="0" y="0" dx="1.1684" dy="1.1684" layer="1" cream="no"/>
+<smd name="3" x="1.6002" y="0" dx="1.016" dy="1.5748" layer="1" cream="no"/>
+<text x="-2.413" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<rectangle x1="-0.508" y1="-0.508" x2="0.508" y2="0.508" layer="51"/>
+<wire x1="1.016" y1="-2.1844" x2="0.762" y2="-2.4384" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.016" y1="-2.1844" x2="-0.762" y2="-2.4384" width="0.1524" layer="21" curve="90"/>
+<wire x1="-0.762" y1="-2.4384" x2="0.762" y2="-2.4384" width="0.1524" layer="21"/>
+<wire x1="0" y1="-1.905" x2="0" y2="-2.413" width="0.1524" layer="51"/>
+<wire x1="0.127" y1="-1.143" x2="-0.127" y2="-1.143" width="1.27" layer="51" curve="-180" cap="flat"/>
+<smd name="4" x="0" y="-1.6002" dx="1.016" dy="1.5748" layer="1" rot="R270" cream="no"/>
+<wire x1="-1.016" y1="-2.1844" x2="-1.016" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="-1.016" x2="-2.159" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-2.1844" x2="1.016" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-1.016" x2="2.1844" y2="-1.016" width="0.1524" layer="21"/>
+<rectangle x1="-2.286" y1="-0.889" x2="2.286" y2="0.889" layer="29"/>
+<rectangle x1="-0.9144" y1="-2.286" x2="0.889" y2="0.889" layer="29"/>
+<polygon width="0" layer="1">
+<vertex x="-1.0922" y="0"/>
+<vertex x="-0.8128" y="0.7874"/>
+<vertex x="-2.1082" y="0.7874"/>
+<vertex x="-2.1082" y="-0.7874"/>
+<vertex x="-1.0922" y="-0.7874"/>
+<vertex x="-0.8382" y="-0.7112"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="-0.7874" y="0"/>
+<vertex x="-0.508" y="0.7874"/>
+<vertex x="0.508" y="0.7874"/>
+<vertex x="0.7874" y="0"/>
+<vertex x="0.5842" y="-0.5842"/>
+<vertex x="0" y="-0.7874"/>
+<vertex x="-0.5842" y="-0.5842"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="1.0922" y="0"/>
+<vertex x="0.8128" y="0.7874"/>
+<vertex x="2.1082" y="0.7874"/>
+<vertex x="2.1082" y="-0.7874"/>
+<vertex x="1.0922" y="-0.7874"/>
+<vertex x="0.8382" y="-0.7112"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="-0.7874" y="-2.1082"/>
+<vertex x="-0.7874" y="-1.0922"/>
+<vertex x="-0.7112" y="-0.8382"/>
+<vertex x="0" y="-1.0922"/>
+<vertex x="0.7112" y="-0.8382"/>
+<vertex x="0.7874" y="-1.0922"/>
+<vertex x="0.7874" y="-2.1082"/>
+<vertex x="-0.762" y="-2.1082"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="SJ_3">
+<wire x1="-0.635" y1="-1.905" x2="0.635" y2="-1.905" width="1.27" layer="94" curve="180" cap="flat"/>
+<wire x1="-0.635" y1="1.905" x2="0.635" y2="1.905" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="1.27" y1="-1.27" x2="-1.27" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="1.27" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<text x="2.54" y="2.921" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-4.445" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="3" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="1" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="2" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
+<wire x1="1.905" y1="0.635" x2="1.905" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
+<pin name="4" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<rectangle x1="-1.27" y1="-1.27" x2="1.27" y2="1.27" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SJ3" prefix="SJ" uservalue="yes">
+<description>SMD solder &lt;b&gt;JUMPER&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;SJ3 - simple jumper&lt;/li&gt;
+&lt;li&gt;SJ3FI - fancy inside jumper&lt;/li&gt;
+&lt;li&gt;SJ3FO - fancy outside jumper&lt;/li&gt;
+&lt;li&gt;SJ3W - wide jumper&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="SJ_3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SJ_3">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="W" package="SJ_3W">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="FI" package="SJ_3FI">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="FO" package="SJ_3FO">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -28674,6 +28953,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF"/>
 <part name="SUPPLY154" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND151" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="SJ1" library="_my_jumpers" deviceset="SJ3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -31023,6 +31303,10 @@ Source: AVX .. aphvc.pdf</description>
 <text x="198.12" y="7.62" size="2.54" layer="94">PI-LEDZS-0010</text>
 <text x="165.1" y="25.4" size="2.54" layer="94">Pi Zero sized LED-SHIM for Pi's 40-pin extension slot
 (c) Andriy Golovnya</text>
+<text x="10.16" y="71.12" size="1.778" layer="97">Following configurations are supported:
+- GPIO18 for PWM mode (connected by default)
+- GPIO21 for PCM mode
+- GPIO10 for SPI mode</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -31790,6 +32074,10 @@ Source: AVX .. aphvc.pdf</description>
 </instance>
 <instance part="GND151" gate="1" x="40.64" y="134.62" smashed="yes">
 <attribute name="VALUE" x="40.64" y="134.366" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="SJ1" gate="G$1" x="30.48" y="99.06" smashed="yes">
+<attribute name="NAME" x="33.02" y="101.981" size="1.778" layer="95"/>
+<attribute name="VALUE" x="33.02" y="94.615" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -33096,6 +33384,36 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="139.7" y1="17.78" x2="149.86" y2="17.78" width="0.1524" layer="91"/>
 <label x="142.24" y="17.78" size="1.778" layer="95"/>
 <pinref part="LED144" gate="LED" pin="DO"/>
+</segment>
+</net>
+<net name="GPIO21" class="0">
+<segment>
+<pinref part="SJ1" gate="G$1" pin="4"/>
+<wire x1="35.56" y1="99.06" x2="45.72" y2="99.06" width="0.1524" layer="91"/>
+<label x="38.1" y="99.06" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DATA" class="0">
+<segment>
+<pinref part="SJ1" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="99.06" x2="15.24" y2="99.06" width="0.1524" layer="91"/>
+<label x="15.24" y="99.06" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GPIO18" class="0">
+<segment>
+<pinref part="SJ1" gate="G$1" pin="1"/>
+<wire x1="30.48" y1="104.14" x2="30.48" y2="114.3" width="0.1524" layer="91"/>
+<label x="30.48" y="106.68" size="1.778" layer="95" rot="R90"/>
+<wire x1="30.48" y1="104.14" x2="30.48" y2="99.06" width="0.1524" layer="91"/>
+<junction x="30.48" y="104.14"/>
+</segment>
+</net>
+<net name="GPIO10" class="0">
+<segment>
+<pinref part="SJ1" gate="G$1" pin="3"/>
+<wire x1="30.48" y1="93.98" x2="30.48" y2="83.82" width="0.1524" layer="91"/>
+<label x="30.48" y="83.82" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
