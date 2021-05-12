@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mil" altunit="mil"/>
@@ -9728,6 +9728,93 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 </package>
 </packages>
 </library>
+<library name="WS281X">
+<packages>
+<package name="WS2812X-2020">
+<smd name="DI" x="-0.915" y="0.55" dx="0.7" dy="0.7" layer="1"/>
+<smd name="VDD" x="-0.915" y="-0.55" dx="0.7" dy="0.7" layer="1"/>
+<smd name="GND" x="0.915" y="0.55" dx="0.7" dy="0.7" layer="1"/>
+<smd name="DO" x="0.915" y="-0.55" dx="0.7" dy="0.7" layer="1"/>
+<wire x1="-1.1" y1="1" x2="-1.1" y2="-1" width="0.0762" layer="21"/>
+<wire x1="-1.1" y1="-1" x2="1.1" y2="-1" width="0.0762" layer="21"/>
+<wire x1="1.1" y1="-1" x2="1.1" y2="1" width="0.0762" layer="21"/>
+<wire x1="1.1" y1="1" x2="-1.1" y2="1" width="0.0762" layer="21"/>
+<rectangle x1="0" y1="-1" x2="0.5" y2="1" layer="51"/>
+<text x="-1.27" y="1.27" size="0.6096" layer="51">&gt;NAME</text>
+<text x="-1.27" y="-1.905" size="0.6096" layer="51">&gt;VALUE</text>
+</package>
+</packages>
+</library>
+<library name="SparkFun-Connectors" urn="urn:adsk.eagle:library:513">
+<description>&lt;h3&gt;SparkFun Connectors&lt;/h3&gt;
+This library contains electrically-functional connectors. 
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="1X03" urn="urn:adsk.eagle:footprint:37678/1" library_version="1">
+<description>&lt;h3&gt;Plated Through Hole - 3 Pin&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_03&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="3.81" y1="0.635" x2="4.445" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="-0.635" x2="5.715" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="-1.27" x2="4.445" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="0.635" x2="6.35" y2="-0.635" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="1X03" urn="urn:adsk.eagle:package:38063/1" type="box" library_version="1">
+<description>Plated Through Hole - 3 Pin
+Specifications:
+Pin count:3
+Pin pitch:0.1"
+
+Example device(s):
+CONN_03
+</description>
+<packageinstances>
+<packageinstance name="1X03"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9931,618 +10018,626 @@ design rules under a new name.</description>
 </element>
 <element name="LOGO1" library="_my_logos" package="MFDEC_L_30MM" value="MFDECLOGO_L_30MM" x="-4.191" y="-7.112" smashed="yes" rot="MR90"/>
 <element name="LOGO3" library="_my_logos" package="RSNURL_QR_10MM" value="RSNURL_QR_10MM" x="18.087" y="51.212" smashed="yes" rot="MR0"/>
-<element name="LED1" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="22.098" y="56.134" smashed="yes" rot="R270">
+<element name="LED1" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="22.098" y="56.134" smashed="yes" rot="R270">
 <attribute name="NAME" x="23.368" y="57.404" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="20.193" y="57.404" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED2" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="22.098" y="53.34" smashed="yes" rot="R270">
+<element name="LED2" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="22.098" y="53.34" smashed="yes" rot="R270">
 <attribute name="NAME" x="23.368" y="54.61" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="20.193" y="54.61" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED3" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="22.098" y="50.546" smashed="yes" rot="R270">
+<element name="LED3" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="22.098" y="50.546" smashed="yes" rot="R270">
 <attribute name="NAME" x="23.368" y="51.816" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="20.193" y="51.816" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED4" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="22.098" y="47.752" smashed="yes" rot="R270">
+<element name="LED4" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="22.098" y="47.752" smashed="yes" rot="R270">
 <attribute name="NAME" x="23.368" y="49.022" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="20.193" y="49.022" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED5" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="22.098" y="44.958" smashed="yes" rot="R270">
+<element name="LED5" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="22.098" y="44.958" smashed="yes" rot="R270">
 <attribute name="NAME" x="23.368" y="46.228" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="20.193" y="46.228" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED6" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="22.098" y="42.164" smashed="yes" rot="R270">
+<element name="LED6" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="22.098" y="42.164" smashed="yes" rot="R270">
 <attribute name="NAME" x="23.368" y="43.434" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="20.193" y="43.434" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED7" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="22.098" y="39.37" smashed="yes" rot="R270">
+<element name="LED7" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="22.098" y="39.37" smashed="yes" rot="R270">
 <attribute name="NAME" x="23.368" y="40.64" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="20.193" y="40.64" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED8" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="22.098" y="36.576" smashed="yes" rot="R270">
+<element name="LED8" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="22.098" y="36.576" smashed="yes" rot="R270">
 <attribute name="NAME" x="23.368" y="37.846" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="20.193" y="37.846" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED9" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="22.098" y="33.782" smashed="yes" rot="R270">
+<element name="LED9" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="22.098" y="33.782" smashed="yes" rot="R270">
 <attribute name="NAME" x="23.368" y="35.052" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="20.193" y="35.052" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED10" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="22.098" y="30.988" smashed="yes" rot="R270">
+<element name="LED10" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="22.098" y="30.988" smashed="yes" rot="R270">
 <attribute name="NAME" x="23.368" y="32.258" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="20.193" y="32.258" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED11" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="22.098" y="28.194" smashed="yes" rot="R270">
+<element name="LED11" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="22.098" y="28.194" smashed="yes" rot="R270">
 <attribute name="NAME" x="23.368" y="29.464" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="20.193" y="29.464" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED12" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="22.098" y="25.4" smashed="yes" rot="R270">
+<element name="LED12" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="22.098" y="25.4" smashed="yes" rot="R270">
 <attribute name="NAME" x="23.368" y="26.67" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="20.193" y="26.67" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED13" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="22.098" y="22.606" smashed="yes" rot="R270">
+<element name="LED13" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="22.098" y="22.606" smashed="yes" rot="R270">
 <attribute name="NAME" x="23.368" y="23.876" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="20.193" y="23.876" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED14" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="22.098" y="19.812" smashed="yes" rot="R270">
+<element name="LED14" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="22.098" y="19.812" smashed="yes" rot="R270">
 <attribute name="NAME" x="23.368" y="21.082" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="20.193" y="21.082" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED15" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="22.098" y="17.018" smashed="yes" rot="R270">
+<element name="LED15" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="22.098" y="17.018" smashed="yes" rot="R270">
 <attribute name="NAME" x="23.368" y="18.288" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="20.193" y="18.288" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED16" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="22.098" y="14.224" smashed="yes" rot="R270">
+<element name="LED16" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="22.098" y="14.224" smashed="yes" rot="R270">
 <attribute name="NAME" x="23.368" y="15.494" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="20.193" y="15.494" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED17" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="22.098" y="11.43" smashed="yes" rot="R270">
+<element name="LED17" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="22.098" y="11.43" smashed="yes" rot="R270">
 <attribute name="NAME" x="23.368" y="12.7" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="20.193" y="12.7" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED18" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="22.098" y="8.636" smashed="yes" rot="R270">
+<element name="LED18" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="22.098" y="8.636" smashed="yes" rot="R270">
 <attribute name="NAME" x="23.368" y="9.906" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="20.193" y="9.906" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED19" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="19.304" y="56.134" smashed="yes" rot="R270">
+<element name="LED19" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="19.304" y="56.134" smashed="yes" rot="R270">
 <attribute name="NAME" x="20.574" y="57.404" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="17.399" y="57.404" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED20" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="19.304" y="53.34" smashed="yes" rot="R270">
+<element name="LED20" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="19.304" y="53.34" smashed="yes" rot="R270">
 <attribute name="NAME" x="20.574" y="54.61" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="17.399" y="54.61" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED21" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="19.304" y="50.546" smashed="yes" rot="R270">
+<element name="LED21" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="19.304" y="50.546" smashed="yes" rot="R270">
 <attribute name="NAME" x="20.574" y="51.816" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="17.399" y="51.816" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED22" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="19.304" y="47.752" smashed="yes" rot="R270">
+<element name="LED22" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="19.304" y="47.752" smashed="yes" rot="R270">
 <attribute name="NAME" x="20.574" y="49.022" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="17.399" y="49.022" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED23" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="19.304" y="44.958" smashed="yes" rot="R270">
+<element name="LED23" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="19.304" y="44.958" smashed="yes" rot="R270">
 <attribute name="NAME" x="20.574" y="46.228" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="17.399" y="46.228" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED24" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="19.304" y="42.164" smashed="yes" rot="R270">
+<element name="LED24" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="19.304" y="42.164" smashed="yes" rot="R270">
 <attribute name="NAME" x="20.574" y="43.434" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="17.399" y="43.434" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED25" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="19.304" y="39.37" smashed="yes" rot="R270">
+<element name="LED25" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="19.304" y="39.37" smashed="yes" rot="R270">
 <attribute name="NAME" x="20.574" y="40.64" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="17.399" y="40.64" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED26" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="19.304" y="36.576" smashed="yes" rot="R270">
+<element name="LED26" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="19.304" y="36.576" smashed="yes" rot="R270">
 <attribute name="NAME" x="20.574" y="37.846" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="17.399" y="37.846" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED27" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="19.304" y="33.782" smashed="yes" rot="R270">
+<element name="LED27" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="19.304" y="33.782" smashed="yes" rot="R270">
 <attribute name="NAME" x="20.574" y="35.052" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="17.399" y="35.052" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED28" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="19.304" y="30.988" smashed="yes" rot="R270">
+<element name="LED28" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="19.304" y="30.988" smashed="yes" rot="R270">
 <attribute name="NAME" x="20.574" y="32.258" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="17.399" y="32.258" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED29" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="19.304" y="28.194" smashed="yes" rot="R270">
+<element name="LED29" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="19.304" y="28.194" smashed="yes" rot="R270">
 <attribute name="NAME" x="20.574" y="29.464" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="17.399" y="29.464" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED30" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="19.304" y="25.4" smashed="yes" rot="R270">
+<element name="LED30" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="19.304" y="25.4" smashed="yes" rot="R270">
 <attribute name="NAME" x="20.574" y="26.67" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="17.399" y="26.67" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED31" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="19.304" y="22.606" smashed="yes" rot="R270">
+<element name="LED31" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="19.304" y="22.606" smashed="yes" rot="R270">
 <attribute name="NAME" x="20.574" y="23.876" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="17.399" y="23.876" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED32" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="19.304" y="19.812" smashed="yes" rot="R270">
+<element name="LED32" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="19.304" y="19.812" smashed="yes" rot="R270">
 <attribute name="NAME" x="20.574" y="21.082" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="17.399" y="21.082" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED33" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="19.304" y="17.018" smashed="yes" rot="R270">
+<element name="LED33" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="19.304" y="17.018" smashed="yes" rot="R270">
 <attribute name="NAME" x="20.574" y="18.288" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="17.399" y="18.288" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED34" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="19.304" y="14.224" smashed="yes" rot="R270">
+<element name="LED34" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="19.304" y="14.224" smashed="yes" rot="R270">
 <attribute name="NAME" x="20.574" y="15.494" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="17.399" y="15.494" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED35" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="19.304" y="11.43" smashed="yes" rot="R270">
+<element name="LED35" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="19.304" y="11.43" smashed="yes" rot="R270">
 <attribute name="NAME" x="20.574" y="12.7" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="17.399" y="12.7" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED36" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="19.304" y="8.636" smashed="yes" rot="R270">
+<element name="LED36" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="19.304" y="8.636" smashed="yes" rot="R270">
 <attribute name="NAME" x="20.574" y="9.906" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="17.399" y="9.906" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED37" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="16.51" y="56.134" smashed="yes" rot="R270">
+<element name="LED37" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="16.51" y="56.134" smashed="yes" rot="R270">
 <attribute name="NAME" x="17.78" y="57.404" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="14.605" y="57.404" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED38" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="16.51" y="53.34" smashed="yes" rot="R270">
+<element name="LED38" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="16.51" y="53.34" smashed="yes" rot="R270">
 <attribute name="NAME" x="17.78" y="54.61" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="14.605" y="54.61" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED39" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="16.51" y="50.546" smashed="yes" rot="R270">
+<element name="LED39" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="16.51" y="50.546" smashed="yes" rot="R270">
 <attribute name="NAME" x="17.78" y="51.816" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="14.605" y="51.816" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED40" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="16.51" y="47.752" smashed="yes" rot="R270">
+<element name="LED40" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="16.51" y="47.752" smashed="yes" rot="R270">
 <attribute name="NAME" x="17.78" y="49.022" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="14.605" y="49.022" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED41" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="16.51" y="44.958" smashed="yes" rot="R270">
+<element name="LED41" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="16.51" y="44.958" smashed="yes" rot="R270">
 <attribute name="NAME" x="17.78" y="46.228" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="14.605" y="46.228" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED42" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="16.51" y="42.164" smashed="yes" rot="R270">
+<element name="LED42" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="16.51" y="42.164" smashed="yes" rot="R270">
 <attribute name="NAME" x="17.78" y="43.434" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="14.605" y="43.434" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED43" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="16.51" y="39.37" smashed="yes" rot="R270">
+<element name="LED43" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="16.51" y="39.37" smashed="yes" rot="R270">
 <attribute name="NAME" x="17.78" y="40.64" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="14.605" y="40.64" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED44" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="16.51" y="36.576" smashed="yes" rot="R270">
+<element name="LED44" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="16.51" y="36.576" smashed="yes" rot="R270">
 <attribute name="NAME" x="17.78" y="37.846" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="14.605" y="37.846" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED45" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="16.51" y="33.782" smashed="yes" rot="R270">
+<element name="LED45" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="16.51" y="33.782" smashed="yes" rot="R270">
 <attribute name="NAME" x="17.78" y="35.052" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="14.605" y="35.052" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED46" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="16.51" y="30.988" smashed="yes" rot="R270">
+<element name="LED46" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="16.51" y="30.988" smashed="yes" rot="R270">
 <attribute name="NAME" x="17.78" y="32.258" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="14.605" y="32.258" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED47" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="16.51" y="28.194" smashed="yes" rot="R270">
+<element name="LED47" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="16.51" y="28.194" smashed="yes" rot="R270">
 <attribute name="NAME" x="17.78" y="29.464" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="14.605" y="29.464" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED48" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="16.51" y="25.4" smashed="yes" rot="R270">
+<element name="LED48" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="16.51" y="25.4" smashed="yes" rot="R270">
 <attribute name="NAME" x="17.78" y="26.67" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="14.605" y="26.67" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED49" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="16.51" y="22.606" smashed="yes" rot="R270">
+<element name="LED49" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="16.51" y="22.606" smashed="yes" rot="R270">
 <attribute name="NAME" x="17.78" y="23.876" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="14.605" y="23.876" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED50" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="16.51" y="19.812" smashed="yes" rot="R270">
+<element name="LED50" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="16.51" y="19.812" smashed="yes" rot="R270">
 <attribute name="NAME" x="17.78" y="21.082" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="14.605" y="21.082" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED51" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="16.51" y="17.018" smashed="yes" rot="R270">
+<element name="LED51" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="16.51" y="17.018" smashed="yes" rot="R270">
 <attribute name="NAME" x="17.78" y="18.288" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="14.605" y="18.288" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED52" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="16.51" y="14.224" smashed="yes" rot="R270">
+<element name="LED52" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="16.51" y="14.224" smashed="yes" rot="R270">
 <attribute name="NAME" x="17.78" y="15.494" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="14.605" y="15.494" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED53" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="16.51" y="11.43" smashed="yes" rot="R270">
+<element name="LED53" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="16.51" y="11.43" smashed="yes" rot="R270">
 <attribute name="NAME" x="17.78" y="12.7" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="14.605" y="12.7" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED54" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="16.51" y="8.636" smashed="yes" rot="R270">
+<element name="LED54" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="16.51" y="8.636" smashed="yes" rot="R270">
 <attribute name="NAME" x="17.78" y="9.906" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="14.605" y="9.906" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED55" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="13.716" y="56.134" smashed="yes" rot="R270">
+<element name="LED55" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="13.716" y="56.134" smashed="yes" rot="R270">
 <attribute name="NAME" x="14.986" y="57.404" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="11.811" y="57.404" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED56" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="13.716" y="53.34" smashed="yes" rot="R270">
+<element name="LED56" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="13.716" y="53.34" smashed="yes" rot="R270">
 <attribute name="NAME" x="14.986" y="54.61" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="11.811" y="54.61" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED57" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="13.716" y="50.546" smashed="yes" rot="R270">
+<element name="LED57" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="13.716" y="50.546" smashed="yes" rot="R270">
 <attribute name="NAME" x="14.986" y="51.816" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="11.811" y="51.816" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED58" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="13.716" y="47.752" smashed="yes" rot="R270">
+<element name="LED58" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="13.716" y="47.752" smashed="yes" rot="R270">
 <attribute name="NAME" x="14.986" y="49.022" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="11.811" y="49.022" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED59" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="13.716" y="44.958" smashed="yes" rot="R270">
+<element name="LED59" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="13.716" y="44.958" smashed="yes" rot="R270">
 <attribute name="NAME" x="14.986" y="46.228" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="11.811" y="46.228" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED60" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="13.716" y="42.164" smashed="yes" rot="R270">
+<element name="LED60" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="13.716" y="42.164" smashed="yes" rot="R270">
 <attribute name="NAME" x="14.986" y="43.434" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="11.811" y="43.434" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED61" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="13.716" y="39.37" smashed="yes" rot="R270">
+<element name="LED61" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="13.716" y="39.37" smashed="yes" rot="R270">
 <attribute name="NAME" x="14.986" y="40.64" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="11.811" y="40.64" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED62" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="13.716" y="36.576" smashed="yes" rot="R270">
+<element name="LED62" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="13.716" y="36.576" smashed="yes" rot="R270">
 <attribute name="NAME" x="14.986" y="37.846" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="11.811" y="37.846" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED63" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="13.716" y="33.782" smashed="yes" rot="R270">
+<element name="LED63" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="13.716" y="33.782" smashed="yes" rot="R270">
 <attribute name="NAME" x="14.986" y="35.052" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="11.811" y="35.052" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED64" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="13.716" y="30.988" smashed="yes" rot="R270">
+<element name="LED64" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="13.716" y="30.988" smashed="yes" rot="R270">
 <attribute name="NAME" x="14.986" y="32.258" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="11.811" y="32.258" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED65" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="13.716" y="28.194" smashed="yes" rot="R270">
+<element name="LED65" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="13.716" y="28.194" smashed="yes" rot="R270">
 <attribute name="NAME" x="14.986" y="29.464" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="11.811" y="29.464" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED66" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="13.716" y="25.4" smashed="yes" rot="R270">
+<element name="LED66" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="13.716" y="25.4" smashed="yes" rot="R270">
 <attribute name="NAME" x="14.986" y="26.67" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="11.811" y="26.67" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED67" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="13.716" y="22.606" smashed="yes" rot="R270">
+<element name="LED67" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="13.716" y="22.606" smashed="yes" rot="R270">
 <attribute name="NAME" x="14.986" y="23.876" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="11.811" y="23.876" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED68" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="13.716" y="19.812" smashed="yes" rot="R270">
+<element name="LED68" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="13.716" y="19.812" smashed="yes" rot="R270">
 <attribute name="NAME" x="14.986" y="21.082" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="11.811" y="21.082" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED69" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="13.716" y="17.018" smashed="yes" rot="R270">
+<element name="LED69" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="13.716" y="17.018" smashed="yes" rot="R270">
 <attribute name="NAME" x="14.986" y="18.288" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="11.811" y="18.288" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED70" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="13.716" y="14.224" smashed="yes" rot="R270">
+<element name="LED70" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="13.716" y="14.224" smashed="yes" rot="R270">
 <attribute name="NAME" x="14.986" y="15.494" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="11.811" y="15.494" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED71" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="13.716" y="11.43" smashed="yes" rot="R270">
+<element name="LED71" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="13.716" y="11.43" smashed="yes" rot="R270">
 <attribute name="NAME" x="14.986" y="12.7" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="11.811" y="12.7" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED72" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="13.716" y="8.636" smashed="yes" rot="R270">
+<element name="LED72" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="13.716" y="8.636" smashed="yes" rot="R270">
 <attribute name="NAME" x="14.986" y="9.906" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="11.811" y="9.906" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED73" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="10.922" y="56.134" smashed="yes" rot="R270">
+<element name="LED73" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="10.922" y="56.134" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.192" y="57.404" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="9.017" y="57.404" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED74" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="10.922" y="53.34" smashed="yes" rot="R270">
+<element name="LED74" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="10.922" y="53.34" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.192" y="54.61" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="9.017" y="54.61" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED75" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="10.922" y="50.546" smashed="yes" rot="R270">
+<element name="LED75" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="10.922" y="50.546" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.192" y="51.816" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="9.017" y="51.816" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED76" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="10.922" y="47.752" smashed="yes" rot="R270">
+<element name="LED76" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="10.922" y="47.752" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.192" y="49.022" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="9.017" y="49.022" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED77" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="10.922" y="44.958" smashed="yes" rot="R270">
+<element name="LED77" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="10.922" y="44.958" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.192" y="46.228" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="9.017" y="46.228" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED78" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="10.922" y="42.164" smashed="yes" rot="R270">
+<element name="LED78" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="10.922" y="42.164" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.192" y="43.434" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="9.017" y="43.434" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED79" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="10.922" y="39.37" smashed="yes" rot="R270">
+<element name="LED79" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="10.922" y="39.37" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.192" y="40.64" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="9.017" y="40.64" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED80" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="10.922" y="36.576" smashed="yes" rot="R270">
+<element name="LED80" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="10.922" y="36.576" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.192" y="37.846" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="9.017" y="37.846" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED81" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="10.922" y="33.782" smashed="yes" rot="R270">
+<element name="LED81" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="10.922" y="33.782" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.192" y="35.052" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="9.017" y="35.052" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED82" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="10.922" y="30.988" smashed="yes" rot="R270">
+<element name="LED82" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="10.922" y="30.988" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.192" y="32.258" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="9.017" y="32.258" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED83" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="10.922" y="28.194" smashed="yes" rot="R270">
+<element name="LED83" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="10.922" y="28.194" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.192" y="29.464" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="9.017" y="29.464" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED84" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="10.922" y="25.4" smashed="yes" rot="R270">
+<element name="LED84" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="10.922" y="25.4" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.192" y="26.67" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="9.017" y="26.67" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED85" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="10.922" y="22.606" smashed="yes" rot="R270">
+<element name="LED85" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="10.922" y="22.606" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.192" y="23.876" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="9.017" y="23.876" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED86" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="10.922" y="19.812" smashed="yes" rot="R270">
+<element name="LED86" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="10.922" y="19.812" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.192" y="21.082" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="9.017" y="21.082" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED87" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="10.922" y="17.018" smashed="yes" rot="R270">
+<element name="LED87" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="10.922" y="17.018" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.192" y="18.288" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="9.017" y="18.288" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED88" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="10.922" y="14.224" smashed="yes" rot="R270">
+<element name="LED88" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="10.922" y="14.224" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.192" y="15.494" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="9.017" y="15.494" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED89" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="10.922" y="11.43" smashed="yes" rot="R270">
+<element name="LED89" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="10.922" y="11.43" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.192" y="12.7" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="9.017" y="12.7" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED90" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="10.922" y="8.636" smashed="yes" rot="R270">
+<element name="LED90" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="10.922" y="8.636" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.192" y="9.906" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="9.017" y="9.906" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED91" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="8.128" y="56.134" smashed="yes" rot="R270">
+<element name="LED91" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="8.128" y="56.134" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.398" y="57.404" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="6.223" y="57.404" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED92" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="8.128" y="53.34" smashed="yes" rot="R270">
+<element name="LED92" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="8.128" y="53.34" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.398" y="54.61" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="6.223" y="54.61" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED93" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="8.128" y="50.546" smashed="yes" rot="R270">
+<element name="LED93" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="8.128" y="50.546" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.398" y="51.816" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="6.223" y="51.816" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED94" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="8.128" y="47.752" smashed="yes" rot="R270">
+<element name="LED94" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="8.128" y="47.752" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.398" y="49.022" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="6.223" y="49.022" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED95" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="8.128" y="44.958" smashed="yes" rot="R270">
+<element name="LED95" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="8.128" y="44.958" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.398" y="46.228" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="6.223" y="46.228" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED96" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="8.128" y="42.164" smashed="yes" rot="R270">
+<element name="LED96" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="8.128" y="42.164" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.398" y="43.434" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="6.223" y="43.434" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED97" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="8.128" y="39.37" smashed="yes" rot="R270">
+<element name="LED97" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="8.128" y="39.37" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.398" y="40.64" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="6.223" y="40.64" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED98" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="8.128" y="36.576" smashed="yes" rot="R270">
+<element name="LED98" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="8.128" y="36.576" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.398" y="37.846" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="6.223" y="37.846" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED99" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="8.128" y="33.782" smashed="yes" rot="R270">
+<element name="LED99" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="8.128" y="33.782" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.398" y="35.052" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="6.223" y="35.052" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED100" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="8.128" y="30.988" smashed="yes" rot="R270">
+<element name="LED100" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="8.128" y="30.988" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.398" y="32.258" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="6.223" y="32.258" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED101" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="8.128" y="28.194" smashed="yes" rot="R270">
+<element name="LED101" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="8.128" y="28.194" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.398" y="29.464" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="6.223" y="29.464" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED102" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="8.128" y="25.4" smashed="yes" rot="R270">
+<element name="LED102" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="8.128" y="25.4" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.398" y="26.67" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="6.223" y="26.67" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED103" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="8.128" y="22.606" smashed="yes" rot="R270">
+<element name="LED103" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="8.128" y="22.606" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.398" y="23.876" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="6.223" y="23.876" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED104" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="8.128" y="19.812" smashed="yes" rot="R270">
+<element name="LED104" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="8.128" y="19.812" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.398" y="21.082" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="6.223" y="21.082" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED105" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="8.128" y="17.018" smashed="yes" rot="R270">
+<element name="LED105" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="8.128" y="17.018" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.398" y="18.288" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="6.223" y="18.288" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED106" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="8.128" y="14.224" smashed="yes" rot="R270">
+<element name="LED106" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="8.128" y="14.224" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.398" y="15.494" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="6.223" y="15.494" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED107" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="8.128" y="11.43" smashed="yes" rot="R270">
+<element name="LED107" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="8.128" y="11.43" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.398" y="12.7" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="6.223" y="12.7" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED108" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="8.128" y="8.636" smashed="yes" rot="R270">
+<element name="LED108" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="8.128" y="8.636" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.398" y="9.906" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="6.223" y="9.906" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED109" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="5.334" y="56.134" smashed="yes" rot="R270">
+<element name="LED109" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="5.334" y="56.134" smashed="yes" rot="R270">
 <attribute name="NAME" x="6.604" y="57.404" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="3.429" y="57.404" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED110" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="5.334" y="53.34" smashed="yes" rot="R270">
+<element name="LED110" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="5.334" y="53.34" smashed="yes" rot="R270">
 <attribute name="NAME" x="6.604" y="54.61" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="3.429" y="54.61" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED111" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="5.334" y="50.546" smashed="yes" rot="R270">
+<element name="LED111" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="5.334" y="50.546" smashed="yes" rot="R270">
 <attribute name="NAME" x="6.604" y="51.816" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="3.429" y="51.816" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED112" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="5.334" y="47.752" smashed="yes" rot="R270">
+<element name="LED112" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="5.334" y="47.752" smashed="yes" rot="R270">
 <attribute name="NAME" x="6.604" y="49.022" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="3.429" y="49.022" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED113" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="5.334" y="44.958" smashed="yes" rot="R270">
+<element name="LED113" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="5.334" y="44.958" smashed="yes" rot="R270">
 <attribute name="NAME" x="6.604" y="46.228" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="3.429" y="46.228" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED114" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="5.334" y="42.164" smashed="yes" rot="R270">
+<element name="LED114" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="5.334" y="42.164" smashed="yes" rot="R270">
 <attribute name="NAME" x="6.604" y="43.434" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="3.429" y="43.434" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED115" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="5.334" y="39.37" smashed="yes" rot="R270">
+<element name="LED115" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="5.334" y="39.37" smashed="yes" rot="R270">
 <attribute name="NAME" x="6.604" y="40.64" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="3.429" y="40.64" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED116" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="5.334" y="36.576" smashed="yes" rot="R270">
+<element name="LED116" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="5.334" y="36.576" smashed="yes" rot="R270">
 <attribute name="NAME" x="6.604" y="37.846" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="3.429" y="37.846" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED117" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="5.334" y="33.782" smashed="yes" rot="R270">
+<element name="LED117" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="5.334" y="33.782" smashed="yes" rot="R270">
 <attribute name="NAME" x="6.604" y="35.052" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="3.429" y="35.052" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED118" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="5.334" y="30.988" smashed="yes" rot="R270">
+<element name="LED118" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="5.334" y="30.988" smashed="yes" rot="R270">
 <attribute name="NAME" x="6.604" y="32.258" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="3.429" y="32.258" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED119" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="5.334" y="28.194" smashed="yes" rot="R270">
+<element name="LED119" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="5.334" y="28.194" smashed="yes" rot="R270">
 <attribute name="NAME" x="6.604" y="29.464" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="3.429" y="29.464" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED120" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="5.334" y="25.4" smashed="yes" rot="R270">
+<element name="LED120" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="5.334" y="25.4" smashed="yes" rot="R270">
 <attribute name="NAME" x="6.604" y="26.67" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="3.429" y="26.67" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED121" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="5.334" y="22.606" smashed="yes" rot="R270">
+<element name="LED121" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="5.334" y="22.606" smashed="yes" rot="R270">
 <attribute name="NAME" x="6.604" y="23.876" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="3.429" y="23.876" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED122" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="5.334" y="19.812" smashed="yes" rot="R270">
+<element name="LED122" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="5.334" y="19.812" smashed="yes" rot="R270">
 <attribute name="NAME" x="6.604" y="21.082" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="3.429" y="21.082" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED123" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="5.334" y="17.018" smashed="yes" rot="R270">
+<element name="LED123" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="5.334" y="17.018" smashed="yes" rot="R270">
 <attribute name="NAME" x="6.604" y="18.288" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="3.429" y="18.288" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED124" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="5.334" y="14.224" smashed="yes" rot="R270">
+<element name="LED124" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="5.334" y="14.224" smashed="yes" rot="R270">
 <attribute name="NAME" x="6.604" y="15.494" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="3.429" y="15.494" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED125" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="5.334" y="11.43" smashed="yes" rot="R270">
+<element name="LED125" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="5.334" y="11.43" smashed="yes" rot="R270">
 <attribute name="NAME" x="6.604" y="12.7" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="3.429" y="12.7" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED126" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="5.334" y="8.636" smashed="yes" rot="R270">
+<element name="LED126" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="5.334" y="8.636" smashed="yes" rot="R270">
 <attribute name="NAME" x="6.604" y="9.906" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="3.429" y="9.906" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED127" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="2.54" y="56.134" smashed="yes" rot="R270">
+<element name="LED127" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="2.54" y="56.134" smashed="yes" rot="R270">
 <attribute name="NAME" x="3.81" y="57.404" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="0.635" y="57.404" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED128" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="2.54" y="53.34" smashed="yes" rot="R270">
+<element name="LED128" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="2.54" y="53.34" smashed="yes" rot="R270">
 <attribute name="NAME" x="3.81" y="54.61" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="0.635" y="54.61" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED129" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="2.54" y="50.546" smashed="yes" rot="R270">
+<element name="LED129" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="2.54" y="50.546" smashed="yes" rot="R270">
 <attribute name="NAME" x="3.81" y="51.816" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="0.635" y="51.816" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED130" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="2.54" y="47.752" smashed="yes" rot="R270">
+<element name="LED130" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="2.54" y="47.752" smashed="yes" rot="R270">
 <attribute name="NAME" x="3.81" y="49.022" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="0.635" y="49.022" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED131" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="2.54" y="44.958" smashed="yes" rot="R270">
+<element name="LED131" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="2.54" y="44.958" smashed="yes" rot="R270">
 <attribute name="NAME" x="3.81" y="46.228" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="0.635" y="46.228" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED132" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="2.54" y="42.164" smashed="yes" rot="R270">
+<element name="LED132" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="2.54" y="42.164" smashed="yes" rot="R270">
 <attribute name="NAME" x="3.81" y="43.434" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="0.635" y="43.434" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED133" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="2.54" y="39.37" smashed="yes" rot="R270">
+<element name="LED133" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="2.54" y="39.37" smashed="yes" rot="R270">
 <attribute name="NAME" x="3.81" y="40.64" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="0.635" y="40.64" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED134" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="2.54" y="36.576" smashed="yes" rot="R270">
+<element name="LED134" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="2.54" y="36.576" smashed="yes" rot="R270">
 <attribute name="NAME" x="3.81" y="37.846" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="0.635" y="37.846" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED135" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="2.54" y="33.782" smashed="yes" rot="R270">
+<element name="LED135" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="2.54" y="33.782" smashed="yes" rot="R270">
 <attribute name="NAME" x="3.81" y="35.052" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="0.635" y="35.052" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED136" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="2.54" y="30.988" smashed="yes" rot="R270">
+<element name="LED136" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="2.54" y="30.988" smashed="yes" rot="R270">
 <attribute name="NAME" x="3.81" y="32.258" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="0.635" y="32.258" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED137" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="2.54" y="28.194" smashed="yes" rot="R270">
+<element name="LED137" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="2.54" y="28.194" smashed="yes" rot="R270">
 <attribute name="NAME" x="3.81" y="29.464" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="0.635" y="29.464" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED138" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="2.54" y="25.4" smashed="yes" rot="R270">
+<element name="LED138" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="2.54" y="25.4" smashed="yes" rot="R270">
 <attribute name="NAME" x="3.81" y="26.67" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="0.635" y="26.67" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED139" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="2.54" y="22.606" smashed="yes" rot="R270">
+<element name="LED139" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="2.54" y="22.606" smashed="yes" rot="R270">
 <attribute name="NAME" x="3.81" y="23.876" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="0.635" y="23.876" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED140" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="2.54" y="19.812" smashed="yes" rot="R270">
+<element name="LED140" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="2.54" y="19.812" smashed="yes" rot="R270">
 <attribute name="NAME" x="3.81" y="21.082" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="0.635" y="21.082" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED141" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="2.54" y="17.018" smashed="yes" rot="R270">
+<element name="LED141" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="2.54" y="17.018" smashed="yes" rot="R270">
 <attribute name="NAME" x="3.81" y="18.288" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="0.635" y="18.288" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED142" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="2.54" y="14.224" smashed="yes" rot="R270">
+<element name="LED142" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="2.54" y="14.224" smashed="yes" rot="R270">
 <attribute name="NAME" x="3.81" y="15.494" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="0.635" y="15.494" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED143" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="2.54" y="11.43" smashed="yes" rot="R270">
+<element name="LED143" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="2.54" y="11.43" smashed="yes" rot="R270">
 <attribute name="NAME" x="3.81" y="12.7" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="0.635" y="12.7" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="LED144" library="WS2812B-2020" package="WS2812B-2020" value="WS2812B-2020" x="2.54" y="8.636" smashed="yes" rot="R270">
+<element name="LED144" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="2.54" y="8.636" smashed="yes" rot="R270">
 <attribute name="NAME" x="3.81" y="9.906" size="0.6096" layer="51" font="vector" rot="R270"/>
 <attribute name="VALUE" x="0.635" y="9.906" size="0.6096" layer="51" font="vector" rot="R270"/>
 </element>
-<element name="IC1" library="TXB0101DCKR" package="SOT65P210X110-6N" value="TXB0101DCKR" x="21.082" y="60.071" smashed="yes">
-<attribute name="NAME" x="18.582" y="61.571" size="0.6096" layer="25" font="vector"/>
-<attribute name="VALUE" x="18.582" y="58.571" size="0.6096" layer="27" font="vector" align="top-left"/>
+<element name="IC1" library="TXB0101DCKR" package="SOT65P210X110-6N" value="TXB0101DCKR" x="21.082" y="59.563" smashed="yes">
+<attribute name="NAME" x="18.582" y="61.063" size="0.6096" layer="25" font="vector"/>
+<attribute name="VALUE" x="18.582" y="58.063" size="0.6096" layer="27" font="vector" align="top-left"/>
 </element>
-<element name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="" x="21.082" y="62.103" smashed="yes">
-<attribute name="NAME" x="20.447" y="62.738" size="0.6096" layer="25" font="vector"/>
-<attribute name="POPULARITY" value="0" x="21.082" y="62.103" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="21.082" y="62.103" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="20.447" y="60.198" size="1.27" layer="27"/>
+<element name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="" x="21.082" y="61.468" smashed="yes">
+<attribute name="NAME" x="20.447" y="62.103" size="0.6096" layer="25" font="vector"/>
+<attribute name="POPULARITY" value="0" x="21.082" y="61.468" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="21.082" y="61.468" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="20.447" y="59.563" size="1.27" layer="27"/>
 </element>
-<element name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF" x="16.51" y="60.706" smashed="yes" rot="R90">
-<attribute name="NAME" x="15.24" y="59.436" size="0.6096" layer="25" font="vector" rot="R90"/>
-<attribute name="POPULARITY" value="88" x="16.51" y="60.706" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="16.51" y="60.706" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="19.05" y="59.436" size="0.6096" layer="27" font="vector" rot="R90"/>
+<element name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF" x="16.51" y="59.436" smashed="yes" rot="R180">
+<attribute name="NAME" x="17.78" y="58.166" size="0.6096" layer="25" font="vector" rot="R180"/>
+<attribute name="POPULARITY" value="88" x="16.51" y="59.436" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="16.51" y="59.436" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="17.78" y="61.976" size="0.6096" layer="27" font="vector" rot="R180"/>
 </element>
-<element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF" x="10.922" y="60.706" smashed="yes" rot="R90">
-<attribute name="NAME" x="9.652" y="59.436" size="0.6096" layer="25" font="vector" rot="R90"/>
-<attribute name="POPULARITY" value="88" x="10.922" y="60.706" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="10.922" y="60.706" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="13.462" y="59.436" size="0.6096" layer="27" font="vector" rot="R90"/>
+<element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF" x="9.525" y="59.436" smashed="yes">
+<attribute name="NAME" x="8.255" y="60.706" size="0.6096" layer="25" font="vector"/>
+<attribute name="POPULARITY" value="88" x="9.525" y="59.436" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="9.525" y="59.436" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="8.255" y="56.896" size="0.6096" layer="27" font="vector"/>
 </element>
-<element name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF" x="19.304" y="4.064" smashed="yes" rot="R270">
-<attribute name="NAME" x="20.574" y="5.334" size="0.6096" layer="25" font="vector" rot="R270"/>
-<attribute name="POPULARITY" value="88" x="19.304" y="4.064" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="19.304" y="4.064" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="16.764" y="5.334" size="0.6096" layer="27" font="vector" rot="R270"/>
+<element name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF" x="19.685" y="5.461" smashed="yes" rot="R180">
+<attribute name="NAME" x="20.955" y="4.191" size="0.6096" layer="25" font="vector" rot="R180"/>
+<attribute name="POPULARITY" value="88" x="19.685" y="5.461" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="19.685" y="5.461" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="20.955" y="8.001" size="0.6096" layer="27" font="vector" rot="R180"/>
 </element>
-<element name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF" x="10.922" y="4.064" smashed="yes" rot="R270">
-<attribute name="NAME" x="12.192" y="5.334" size="0.6096" layer="25" font="vector" rot="R270"/>
-<attribute name="POPULARITY" value="88" x="10.922" y="4.064" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="10.922" y="4.064" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="8.382" y="5.334" size="0.6096" layer="27" font="vector" rot="R270"/>
+<element name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF" x="10.16" y="5.461" smashed="yes">
+<attribute name="NAME" x="8.89" y="6.731" size="0.6096" layer="25" font="vector"/>
+<attribute name="POPULARITY" value="88" x="10.16" y="5.461" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="10.16" y="5.461" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="8.89" y="2.921" size="0.6096" layer="27" font="vector"/>
 </element>
 <element name="SJ1" library="_my_jumpers" package="SJ_3" value="" x="20.066" y="60.706" smashed="yes" rot="MR270">
 <attribute name="NAME" x="18.796" y="63.119" size="0.6096" layer="26" font="vector" ratio="10" rot="MR270"/>
+</element>
+<element name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X03" package3d_urn="urn:adsk.eagle:package:38063/1" value="" x="17.653" y="62.484" smashed="yes" rot="R180">
+<attribute name="NAME" x="18.923" y="61.087" size="0.6096" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="18.923" y="64.516" size="0.6096" layer="27" font="vector" ratio="20" rot="R180"/>
+</element>
+<element name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X03" package3d_urn="urn:adsk.eagle:package:38063/1" value="" x="17.653" y="2.54" smashed="yes" rot="R180">
+<attribute name="NAME" x="18.923" y="1.143" size="0.6096" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="18.923" y="4.572" size="0.6096" layer="27" font="vector" ratio="20" rot="R180"/>
 </element>
 </elements>
 <signals>
@@ -10716,14 +10811,16 @@ design rules under a new name.</description>
 <contactref element="C2" pad="2"/>
 <contactref element="C3" pad="2"/>
 <contactref element="C4" pad="2"/>
+<contactref element="J1" pad="1"/>
+<contactref element="J2" pad="1"/>
 </signal>
 <signal name="3.3V">
 <contactref element="J3" pad="1"/>
 <contactref element="J3" pad="9"/>
 <contactref element="IC1" pad="1"/>
 <contactref element="R1" pad="1"/>
-<wire x1="20.122" y1="60.721" x2="25.4318" y2="56.615" width="0" layer="19" extent="1-1"/>
-<wire x1="20.582" y1="62.103" x2="20.122" y2="60.721" width="0" layer="19" extent="1-1"/>
+<wire x1="20.122" y1="60.213" x2="25.4318" y2="56.615" width="0" layer="19" extent="1-1"/>
+<wire x1="20.582" y1="61.468" x2="20.122" y2="60.213" width="0" layer="19" extent="1-1"/>
 <wire x1="25.4318" y1="36.295" x2="25.4318" y2="56.615" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO2">
@@ -10747,7 +10844,7 @@ design rules under a new name.</description>
 <signal name="GPIO10">
 <contactref element="J3" pad="10"/>
 <contactref element="SJ1" pad="3"/>
-<wire x1="20.066" y1="59.055" x2="25.0762" y2="33.755" width="0" layer="19" extent="1-1"/>
+<wire x1="25.0762" y1="33.755" x2="20.066" y2="59.055" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="GPIO9">
 <contactref element="J3" pad="11"/>
@@ -10782,7 +10879,7 @@ design rules under a new name.</description>
 <signal name="GPIO18">
 <contactref element="J4" pad="6"/>
 <contactref element="SJ1" pad="1"/>
-<wire x1="20.066" y1="62.357" x2="27.6162" y2="43.915" width="0" layer="19" extent="1-1"/>
+<wire x1="27.6162" y1="43.915" x2="20.066" y2="62.357" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="GPIO23">
 <contactref element="J4" pad="8"/>
@@ -10814,7 +10911,7 @@ design rules under a new name.</description>
 <signal name="GPIO21">
 <contactref element="J4" pad="20"/>
 <contactref element="SJ1" pad="4"/>
-<wire x1="21.717" y1="60.706" x2="27.6162" y2="8.355" width="0" layer="19" extent="1-1"/>
+<wire x1="27.6162" y1="8.355" x2="21.717" y2="60.706" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="5V">
 <contactref element="J4" pad="1"/>
@@ -10968,14 +11065,16 @@ design rules under a new name.</description>
 <contactref element="C2" pad="1"/>
 <contactref element="C3" pad="1"/>
 <contactref element="C4" pad="1"/>
+<contactref element="J1" pad="3"/>
+<contactref element="J2" pad="3"/>
 <wire x1="27.6162" y1="54.075" x2="27.9718" y2="56.615" width="0" layer="19" extent="1-1"/>
 <wire x1="21.548" y1="54.255" x2="27.6162" y2="54.075" width="0" layer="19" extent="1-1"/>
 <wire x1="21.548" y1="57.049" x2="21.548" y2="54.255" width="0" layer="19" extent="1-1"/>
 <wire x1="18.754" y1="57.049" x2="21.548" y2="57.049" width="0" layer="19" extent="1-1"/>
+<wire x1="17.46" y1="59.436" x2="18.754" y2="57.049" width="0" layer="19" extent="1-1"/>
 <wire x1="21.548" y1="51.461" x2="21.548" y2="54.255" width="0" layer="19" extent="1-1"/>
 <wire x1="18.754" y1="54.255" x2="21.548" y2="54.255" width="0" layer="19" extent="1-1"/>
 <wire x1="15.96" y1="57.049" x2="18.754" y2="57.049" width="0" layer="19" extent="1-1"/>
-<wire x1="16.51" y1="59.756" x2="15.96" y2="57.049" width="0" layer="19" extent="1-1"/>
 <wire x1="21.548" y1="48.667" x2="21.548" y2="51.461" width="0" layer="19" extent="1-1"/>
 <wire x1="18.754" y1="51.461" x2="21.548" y2="51.461" width="0" layer="19" extent="1-1"/>
 <wire x1="15.96" y1="54.255" x2="18.754" y2="54.255" width="0" layer="19" extent="1-1"/>
@@ -10985,7 +11084,6 @@ design rules under a new name.</description>
 <wire x1="15.96" y1="51.461" x2="18.754" y2="51.461" width="0" layer="19" extent="1-1"/>
 <wire x1="13.166" y1="54.255" x2="15.96" y2="54.255" width="0" layer="19" extent="1-1"/>
 <wire x1="10.372" y1="57.049" x2="13.166" y2="57.049" width="0" layer="19" extent="1-1"/>
-<wire x1="10.922" y1="59.756" x2="10.372" y2="57.049" width="0" layer="19" extent="1-1"/>
 <wire x1="18.754" y1="45.873" x2="21.548" y2="45.873" width="0" layer="19" extent="1-1"/>
 <wire x1="15.96" y1="48.667" x2="18.754" y2="48.667" width="0" layer="19" extent="1-1"/>
 <wire x1="13.166" y1="51.461" x2="15.96" y2="51.461" width="0" layer="19" extent="1-1"/>
@@ -10995,6 +11093,7 @@ design rules under a new name.</description>
 <wire x1="13.166" y1="48.667" x2="15.96" y2="48.667" width="0" layer="19" extent="1-1"/>
 <wire x1="10.372" y1="51.461" x2="13.166" y2="51.461" width="0" layer="19" extent="1-1"/>
 <wire x1="7.578" y1="57.049" x2="10.372" y2="57.049" width="0" layer="19" extent="1-1"/>
+<wire x1="8.575" y1="59.436" x2="7.578" y2="57.049" width="0" layer="19" extent="1-1"/>
 <wire x1="21.548" y1="40.285" x2="21.548" y2="43.079" width="0" layer="19" extent="1-1"/>
 <wire x1="18.754" y1="43.079" x2="18.754" y2="45.873" width="0" layer="19" extent="1-1"/>
 <wire x1="13.166" y1="45.873" x2="15.96" y2="45.873" width="0" layer="19" extent="1-1"/>
@@ -11115,9 +11214,11 @@ design rules under a new name.</description>
 <wire x1="4.784" y1="9.551" x2="7.578" y2="9.551" width="0" layer="19" extent="1-1"/>
 <wire x1="1.99" y1="12.345" x2="4.784" y2="12.345" width="0" layer="19" extent="1-1"/>
 <wire x1="1.99" y1="9.551" x2="4.784" y2="9.551" width="0" layer="19" extent="1-1"/>
-<wire x1="22.042" y1="60.721" x2="21.548" y2="57.049" width="0" layer="19" extent="1-1"/>
-<wire x1="19.304" y1="5.014" x2="18.754" y2="9.551" width="0" layer="19" extent="1-1"/>
-<wire x1="10.922" y1="5.014" x2="10.372" y2="9.551" width="0" layer="19" extent="1-1"/>
+<wire x1="22.042" y1="60.213" x2="21.548" y2="57.049" width="0" layer="19" extent="1-1"/>
+<wire x1="20.635" y1="5.461" x2="21.548" y2="9.551" width="0" layer="19" extent="1-1"/>
+<wire x1="9.21" y1="5.461" x2="10.372" y2="9.551" width="0" layer="19" extent="1-1"/>
+<wire x1="12.573" y1="2.54" x2="9.21" y2="5.461" width="0" layer="19" extent="1-1"/>
+<wire x1="12.573" y1="62.484" x2="8.575" y2="59.436" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND1" airwireshidden="yes">
 <polygon width="0" layer="1" pour="cutout">
@@ -11246,7 +11347,9 @@ design rules under a new name.</description>
 <signal name="DI_FIRST">
 <contactref element="LED1" pad="DI"/>
 <contactref element="IC1" pad="4"/>
-<wire x1="22.648" y1="57.049" x2="22.042" y2="59.421" width="0" layer="19" extent="1-1"/>
+<contactref element="J1" pad="2"/>
+<wire x1="22.648" y1="57.049" x2="22.042" y2="58.913" width="0" layer="19" extent="1-1"/>
+<wire x1="15.113" y1="62.484" x2="22.042" y2="58.913" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$11">
 <contactref element="LED11" pad="DO"/>
@@ -11915,16 +12018,18 @@ design rules under a new name.</description>
 </signal>
 <signal name="DO_LAST">
 <contactref element="LED144" pad="DO"/>
+<contactref element="J2" pad="2"/>
+<wire x1="1.99" y1="7.721" x2="15.113" y2="2.54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DATA">
 <contactref element="IC1" pad="3"/>
 <contactref element="SJ1" pad="2"/>
-<wire x1="20.066" y1="60.706" x2="20.122" y2="59.421" width="0" layer="19" extent="1-1"/>
+<wire x1="20.066" y1="60.706" x2="20.122" y2="58.913" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$143">
 <contactref element="R1" pad="2"/>
 <contactref element="IC1" pad="5"/>
-<wire x1="22.042" y1="60.071" x2="21.582" y2="62.103" width="0" layer="19" extent="1-1"/>
+<wire x1="22.042" y1="59.563" x2="21.582" y2="61.468" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

@@ -28483,6 +28483,1405 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="WS281X">
+<packages>
+<package name="WS2812X-2020">
+<smd name="DI" x="-0.915" y="0.55" dx="0.7" dy="0.7" layer="1"/>
+<smd name="VDD" x="-0.915" y="-0.55" dx="0.7" dy="0.7" layer="1"/>
+<smd name="GND" x="0.915" y="0.55" dx="0.7" dy="0.7" layer="1"/>
+<smd name="DO" x="0.915" y="-0.55" dx="0.7" dy="0.7" layer="1"/>
+<wire x1="-1.1" y1="1" x2="-1.1" y2="-1" width="0.0762" layer="21"/>
+<wire x1="-1.1" y1="-1" x2="1.1" y2="-1" width="0.0762" layer="21"/>
+<wire x1="1.1" y1="-1" x2="1.1" y2="1" width="0.0762" layer="21"/>
+<wire x1="1.1" y1="1" x2="-1.1" y2="1" width="0.0762" layer="21"/>
+<rectangle x1="0" y1="-1" x2="0.5" y2="1" layer="51"/>
+<text x="-1.27" y="1.27" size="0.6096" layer="51">&gt;NAME</text>
+<text x="-1.27" y="-1.905" size="0.6096" layer="51">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="WS2812">
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<pin name="DI" x="-7.62" y="0" length="short" direction="in"/>
+<pin name="GND" x="-7.62" y="-2.54" length="short" direction="pwr"/>
+<pin name="VDD" x="7.62" y="2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="DO" x="7.62" y="0" length="short" direction="out" rot="R180"/>
+<text x="-5.08" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.778" layer="95">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="WS2812" prefix="LED">
+<description>&lt;b&gt;WS2812&lt;/b&gt; RGB LED</description>
+<gates>
+<gate name="LED" symbol="WS2812" x="0" y="0"/>
+</gates>
+<devices>
+<device name="B-2020" package="WS2812X-2020">
+<connects>
+<connect gate="LED" pin="DI" pad="DI"/>
+<connect gate="LED" pin="DO" pad="DO"/>
+<connect gate="LED" pin="GND" pad="GND"/>
+<connect gate="LED" pin="VDD" pad="VDD"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="C-2020" package="WS2812X-2020">
+<connects>
+<connect gate="LED" pin="DI" pad="DI"/>
+<connect gate="LED" pin="DO" pad="DO"/>
+<connect gate="LED" pin="GND" pad="GND"/>
+<connect gate="LED" pin="VDD" pad="VDD"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="SparkFun-Connectors" urn="urn:adsk.eagle:library:513">
+<description>&lt;h3&gt;SparkFun Connectors&lt;/h3&gt;
+This library contains electrically-functional connectors. 
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="1X03" urn="urn:adsk.eagle:footprint:37678/1" library_version="1">
+<description>&lt;h3&gt;Plated Through Hole - 3 Pin&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_03&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="3.81" y1="0.635" x2="4.445" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="-0.635" x2="5.715" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="-1.27" x2="4.445" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="0.635" x2="6.35" y2="-0.635" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="MOLEX-1X3" urn="urn:adsk.eagle:footprint:37679/1" library_version="1">
+<description>&lt;h3&gt;PTH - 3 Pin Vertical Molex Polarized Header&lt;/h3&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt;&lt;a href="http://www.4uconnector.com/online/object/4udrawing/01932.pdf"&gt; 4UCONN part # 01932 &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_03&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-1.27" y1="3.048" x2="-1.27" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="6.35" y1="3.048" x2="6.35" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="6.35" y1="3.048" x2="-1.27" y2="3.048" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-2.54" x2="5.08" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-2.54" x2="0" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="0" y1="-1.27" x2="5.08" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-1.27" x2="5.08" y2="-2.54" width="0.127" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" shape="square"/>
+<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796"/>
+<text x="1.143" y="2.159" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="0.889" y="1.27" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="SCREWTERMINAL-3.5MM-3" urn="urn:adsk.eagle:footprint:37680/1" library_version="1">
+<description>&lt;h3&gt;Screw Terminal  3.5mm Pitch -3 Pin PTH&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 3&lt;/li&gt;
+&lt;li&gt;Pin pitch: 3.5mm/138mil&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://www.sparkfun.com/datasheets/Prototyping/Screw-Terminal-3.5mm.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_03&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-1.75" y1="3.4" x2="8.75" y2="3.4" width="0.2032" layer="21"/>
+<wire x1="8.75" y1="3.4" x2="8.75" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="8.75" y1="-2.8" x2="8.75" y2="-3.6" width="0.2032" layer="21"/>
+<wire x1="8.75" y1="-3.6" x2="-1.75" y2="-3.6" width="0.2032" layer="21"/>
+<wire x1="-1.75" y1="-3.6" x2="-1.75" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="-1.75" y1="-2.8" x2="-1.75" y2="3.4" width="0.2032" layer="21"/>
+<wire x1="8.75" y1="-2.8" x2="-1.75" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="-1.75" y1="-1.35" x2="-2.25" y2="-1.35" width="0.2032" layer="51"/>
+<wire x1="-2.25" y1="-1.35" x2="-2.25" y2="-2.35" width="0.2032" layer="51"/>
+<wire x1="-2.25" y1="-2.35" x2="-1.75" y2="-2.35" width="0.2032" layer="51"/>
+<wire x1="8.75" y1="3.15" x2="9.25" y2="3.15" width="0.2032" layer="51"/>
+<wire x1="9.25" y1="3.15" x2="9.25" y2="2.15" width="0.2032" layer="51"/>
+<wire x1="9.25" y1="2.15" x2="8.75" y2="2.15" width="0.2032" layer="51"/>
+<pad name="1" x="0" y="0" drill="1.2" diameter="2.413" shape="square"/>
+<pad name="2" x="3.5" y="0" drill="1.2" diameter="2.413"/>
+<pad name="3" x="7" y="0" drill="1.2" diameter="2.413"/>
+<text x="2.159" y="3.683" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="2.032" y="-4.572" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="1X03_LOCK" urn="urn:adsk.eagle:footprint:37681/1" library_version="1">
+<description>&lt;h3&gt;Plated Through Hole - 3 Pin Locking Footprint&lt;/h3&gt;
+Pins are staggered 0.005" off center to lock pins while soldering. 
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_03&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="3.81" y1="0.635" x2="4.445" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="-0.635" x2="5.715" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="-1.27" x2="4.445" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="0.635" x2="6.35" y2="-0.635" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="2.54" y="-0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="3" x="5.08" y="0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="1X03_LOCK_LONGPADS" urn="urn:adsk.eagle:footprint:37682/1" library_version="1">
+<description>&lt;h3&gt;Plated Through Hole - 3 Pin Long Pad w/ Locking Footprint&lt;/h3&gt;
+Holes are offset 0.005" from center to lock pins in place while soldering. 
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_03&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="1.524" y1="-0.127" x2="1.016" y2="-0.127" width="0.2032" layer="21"/>
+<wire x1="4.064" y1="-0.127" x2="3.556" y2="-0.127" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.127" x2="-1.016" y2="-0.127" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.127" x2="-1.27" y2="0.8636" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0.8636" x2="-0.9906" y2="1.143" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.127" x2="-1.27" y2="-1.1176" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-1.1176" x2="-0.9906" y2="-1.397" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="-0.127" x2="6.096" y2="-0.127" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="-0.127" x2="6.35" y2="-1.1176" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="-1.1176" x2="6.0706" y2="-1.397" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="-0.127" x2="6.35" y2="0.8636" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="0.8636" x2="6.0706" y2="1.143" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="2.54" y="-0.254" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="5.08" y="0" drill="1.016" shape="long" rot="R90"/>
+<rectangle x1="-0.2921" y1="-0.4191" x2="0.2921" y2="0.1651" layer="51"/>
+<rectangle x1="2.2479" y1="-0.4191" x2="2.8321" y2="0.1651" layer="51"/>
+<rectangle x1="4.7879" y1="-0.4191" x2="5.3721" y2="0.1651" layer="51"/>
+<text x="-1.27" y="1.778" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-2.413" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="MOLEX-1X3_LOCK" urn="urn:adsk.eagle:footprint:37683/1" library_version="1">
+<description>&lt;h3&gt;PTH - 3 Pin Vertical Molex Polarized Header&lt;/h3&gt;
+Pins are offset 0.005" from center to lock pins in place during soldering. 
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt;&lt;a href="http://www.4uconnector.com/online/object/4udrawing/01932.pdf"&gt; 4UCONN part # 01932 &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_03&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-1.27" y1="3.048" x2="-1.27" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="6.35" y1="3.048" x2="6.35" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="6.35" y1="3.048" x2="-1.27" y2="3.048" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-2.54" x2="5.08" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-2.54" x2="0" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="0" y1="-1.27" x2="5.08" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-1.27" x2="5.08" y2="-2.54" width="0.127" layer="21"/>
+<pad name="1" x="0" y="0.127" drill="1.016" diameter="1.8796" shape="square"/>
+<pad name="2" x="2.54" y="-0.127" drill="1.016" diameter="1.8796"/>
+<pad name="3" x="5.08" y="0.127" drill="1.016" diameter="1.8796"/>
+<rectangle x1="-0.2921" y1="-0.2921" x2="0.2921" y2="0.2921" layer="51"/>
+<rectangle x1="2.2479" y1="-0.2921" x2="2.8321" y2="0.2921" layer="51"/>
+<rectangle x1="4.7879" y1="-0.2921" x2="5.3721" y2="0.2921" layer="51"/>
+<text x="1.143" y="3.429" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="0.889" y="-2.794" size="0.6096" layer="27" font="vector" ratio="20" align="top-left">&gt;VALUE</text>
+</package>
+<package name="SCREWTERMINAL-3.5MM-3_LOCK.007S" urn="urn:adsk.eagle:footprint:37684/1" library_version="1">
+<description>&lt;h3&gt;Screw Terminal  3.5mm Pitch -3 Pin PTH Locking&lt;/h3&gt;
+Holes are offset 0.007" from center to hold pins in place during soldering. 
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 3&lt;/li&gt;
+&lt;li&gt;Pin pitch: 3.5mm/138mil&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://www.sparkfun.com/datasheets/Prototyping/Screw-Terminal-3.5mm.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_03&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-1.75" y1="3.4" x2="8.75" y2="3.4" width="0.2032" layer="21"/>
+<wire x1="8.75" y1="3.4" x2="8.75" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="8.75" y1="-2.8" x2="8.75" y2="-3.6" width="0.2032" layer="21"/>
+<wire x1="8.75" y1="-3.6" x2="-1.75" y2="-3.6" width="0.2032" layer="21"/>
+<wire x1="-1.75" y1="-3.6" x2="-1.75" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="-1.75" y1="-2.8" x2="-1.75" y2="3.4" width="0.2032" layer="21"/>
+<wire x1="8.75" y1="-2.8" x2="-1.75" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="-1.75" y1="-1.35" x2="-2.25" y2="-1.35" width="0.2032" layer="51"/>
+<wire x1="-2.25" y1="-1.35" x2="-2.25" y2="-2.35" width="0.2032" layer="51"/>
+<wire x1="-2.25" y1="-2.35" x2="-1.75" y2="-2.35" width="0.2032" layer="51"/>
+<wire x1="8.75" y1="3.15" x2="9.25" y2="3.15" width="0.2032" layer="51"/>
+<wire x1="9.25" y1="3.15" x2="9.25" y2="2.15" width="0.2032" layer="51"/>
+<wire x1="9.25" y1="2.15" x2="8.75" y2="2.15" width="0.2032" layer="51"/>
+<circle x="0" y="0" radius="0.425" width="0.001" layer="51"/>
+<circle x="3.5" y="0" radius="0.425" width="0.001" layer="51"/>
+<circle x="7" y="0" radius="0.425" width="0.001" layer="51"/>
+<pad name="1" x="-0.1778" y="0" drill="1.2" diameter="2.032" shape="square"/>
+<pad name="2" x="3.5" y="0" drill="1.2" diameter="2.032"/>
+<pad name="3" x="7.1778" y="0" drill="1.2" diameter="2.032"/>
+<text x="2.032" y="3.683" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="1.905" y="-4.699" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="1X03_NO_SILK" urn="urn:adsk.eagle:footprint:37685/1" library_version="1">
+<description>&lt;h3&gt;Plated Through Hole - 3 Pin No Silk Outline&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_03&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="1X03_LONGPADS" urn="urn:adsk.eagle:footprint:37686/1" library_version="1">
+<description>&lt;h3&gt;Plated Through Hole - 3 Pin Long Pads&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_03&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="0.635" x2="6.35" y2="-0.635" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
+<pad name="3" x="5.08" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<text x="-1.27" y="2.032" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-2.667" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="JST-3-PTH" urn="urn:adsk.eagle:footprint:37687/1" library_version="1">
+<description>&lt;h3&gt;JST 3 Pin Right Angle Plated Through Hole&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
+&lt;li&gt;Pin pitch:2mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://www.sparkfun.com/datasheets/Prototyping/ePH.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_03&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-3.95" y1="-1.6" x2="-3.95" y2="6" width="0.2032" layer="21"/>
+<wire x1="-3.95" y1="6" x2="3.95" y2="6" width="0.2032" layer="21"/>
+<wire x1="3.95" y1="6" x2="3.95" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="-3.95" y1="-1.6" x2="-3.3" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="3.95" y1="-1.6" x2="3.3" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="-1.6" x2="-3.3" y2="0" width="0.2032" layer="21"/>
+<wire x1="3.3" y1="-1.6" x2="3.3" y2="0" width="0.2032" layer="21"/>
+<pad name="1" x="-2" y="0" drill="0.7" diameter="1.6"/>
+<pad name="2" x="0" y="0" drill="0.7" diameter="1.6"/>
+<pad name="3" x="2" y="0" drill="0.7" diameter="1.6"/>
+<text x="-2.4" y="0.67" size="1.27" layer="51">+</text>
+<text x="-0.4" y="0.67" size="1.27" layer="51">-</text>
+<text x="1.7" y="0.87" size="0.8" layer="51">S</text>
+<text x="-1.397" y="3.429" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.651" y="2.54" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="1X03_PP_HOLES_ONLY" urn="urn:adsk.eagle:footprint:37688/1" library_version="1">
+<description>&lt;h3&gt;Pogo Pins - 3 Pin&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_03&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<circle x="0" y="0" radius="0.635" width="0.127" layer="51"/>
+<circle x="2.54" y="0" radius="0.635" width="0.127" layer="51"/>
+<circle x="5.08" y="0" radius="0.635" width="0.127" layer="51"/>
+<pad name="1" x="0" y="0" drill="0.9" diameter="0.8128" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="0.9" diameter="0.8128" rot="R90"/>
+<pad name="3" x="5.08" y="0" drill="0.9" diameter="0.8128" rot="R90"/>
+<hole x="0" y="0" drill="1.4732"/>
+<hole x="2.54" y="0" drill="1.4732"/>
+<hole x="5.08" y="0" drill="1.4732"/>
+<text x="-1.27" y="1.143" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-1.778" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="SCREWTERMINAL-5MM-3" urn="urn:adsk.eagle:footprint:37689/1" library_version="1">
+<description>&lt;h3&gt;Screw Terminal  5mm Pitch -3 Pin PTH&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 3&lt;/li&gt;
+&lt;li&gt;Pin pitch: 5mm/197mil&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://www.sparkfun.com/datasheets/Prototyping/Screw-Terminal-5mm.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_03&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-3.1" y1="4.2" x2="13.1" y2="4.2" width="0.2032" layer="21"/>
+<wire x1="13.1" y1="4.2" x2="13.1" y2="-2.3" width="0.2032" layer="21"/>
+<wire x1="13.1" y1="-2.3" x2="13.1" y2="-3.3" width="0.2032" layer="21"/>
+<wire x1="13.1" y1="-3.3" x2="-3.1" y2="-3.3" width="0.2032" layer="21"/>
+<wire x1="-3.1" y1="-3.3" x2="-3.1" y2="-2.3" width="0.2032" layer="21"/>
+<wire x1="-3.1" y1="-2.3" x2="-3.1" y2="4.2" width="0.2032" layer="21"/>
+<wire x1="13.1" y1="-2.3" x2="-3.1" y2="-2.3" width="0.2032" layer="21"/>
+<wire x1="-3.1" y1="-1.35" x2="-3.7" y2="-1.35" width="0.2032" layer="51"/>
+<wire x1="-3.7" y1="-1.35" x2="-3.7" y2="-2.35" width="0.2032" layer="51"/>
+<wire x1="-3.7" y1="-2.35" x2="-3.1" y2="-2.35" width="0.2032" layer="51"/>
+<wire x1="13.1" y1="4" x2="13.7" y2="4" width="0.2032" layer="51"/>
+<wire x1="13.7" y1="4" x2="13.7" y2="3" width="0.2032" layer="51"/>
+<wire x1="13.7" y1="3" x2="13.1" y2="3" width="0.2032" layer="51"/>
+<circle x="2.5" y="3.7" radius="0.2828" width="0.127" layer="51"/>
+<pad name="1" x="0" y="0" drill="1.3" diameter="2.413" shape="square"/>
+<pad name="2" x="5" y="0" drill="1.3" diameter="2.413"/>
+<pad name="3" x="10" y="0" drill="1.3" diameter="2.413"/>
+<text x="3.683" y="2.794" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="3.429" y="1.905" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="1X03_LOCK_NO_SILK" urn="urn:adsk.eagle:footprint:37690/1" library_version="1">
+<description>&lt;h3&gt;Plated Through Hole - 3 Pin Locking Footprint w/out Silk Outline&lt;/h3&gt;
+Holes are offset from center 0.005" to lock pins in place while soldering. 
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_03&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<pad name="1" x="0" y="0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="2.54" y="-0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="3" x="5.08" y="0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="JST-3-SMD" urn="urn:adsk.eagle:footprint:37691/1" library_version="1">
+<description>&lt;h3&gt;JST 3 Pin Right Angle SMT&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
+&lt;li&gt;Pin pitch:2mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_03&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-4.99" y1="-2.07" x2="-4.99" y2="-5.57" width="0.2032" layer="21"/>
+<wire x1="-4.99" y1="-5.57" x2="-4.19" y2="-5.57" width="0.2032" layer="21"/>
+<wire x1="-4.19" y1="-5.57" x2="-4.19" y2="-3.07" width="0.2032" layer="21"/>
+<wire x1="-4.19" y1="-3.07" x2="-2.99" y2="-3.07" width="0.2032" layer="21"/>
+<wire x1="3.01" y1="-3.07" x2="4.21" y2="-3.07" width="0.2032" layer="21"/>
+<wire x1="4.21" y1="-3.07" x2="4.21" y2="-5.57" width="0.2032" layer="21"/>
+<wire x1="4.21" y1="-5.57" x2="5.01" y2="-5.57" width="0.2032" layer="21"/>
+<wire x1="5.01" y1="-5.57" x2="5.01" y2="-2.07" width="0.2032" layer="21"/>
+<wire x1="3.01" y1="1.93" x2="-2.99" y2="1.93" width="0.2032" layer="21"/>
+<smd name="1" x="-1.99" y="-4.77" dx="1" dy="4.6" layer="1"/>
+<smd name="3" x="2.01" y="-4.77" dx="1" dy="4.6" layer="1"/>
+<smd name="NC1" x="-4.39" y="0.43" dx="3.4" dy="1.6" layer="1" rot="R90"/>
+<smd name="NC2" x="4.41" y="0.43" dx="3.4" dy="1.6" layer="1" rot="R90"/>
+<smd name="2" x="0.01" y="-4.77" dx="1" dy="4.6" layer="1"/>
+<text x="-1.397" y="0.635" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.651" y="-1.27" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="1X03-1MM-RA" urn="urn:adsk.eagle:footprint:37692/1" library_version="1">
+<description>&lt;h3&gt;Plated Through Hole - 3 Pin SMD&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_03&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-1" y1="-4.6" x2="1" y2="-4.6" width="0.254" layer="21"/>
+<wire x1="-2.5" y1="-2" x2="-2.5" y2="-0.35" width="0.254" layer="21"/>
+<wire x1="1.75" y1="-0.35" x2="2.4997" y2="-0.35" width="0.254" layer="21"/>
+<wire x1="2.4997" y1="-0.35" x2="2.4997" y2="-2" width="0.254" layer="21"/>
+<wire x1="-2.5" y1="-0.35" x2="-1.75" y2="-0.35" width="0.254" layer="21"/>
+<circle x="-2" y="0.3" radius="0.1414" width="0.4" layer="21"/>
+<smd name="NC2" x="-2.3" y="-3.675" dx="1.2" dy="2" layer="1"/>
+<smd name="NC1" x="2.3" y="-3.675" dx="1.2" dy="2" layer="1"/>
+<smd name="1" x="-1" y="0" dx="0.6" dy="1.35" layer="1"/>
+<smd name="2" x="0" y="0" dx="0.6" dy="1.35" layer="1"/>
+<smd name="3" x="1" y="0" dx="0.6" dy="1.35" layer="1"/>
+<text x="-1.397" y="-1.651" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.651" y="-2.54" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="1X03_SMD_RA_FEMALE" urn="urn:adsk.eagle:footprint:37693/1" library_version="1">
+<description>&lt;h3&gt;SMD - 3 Pin Right Angle Female Header&lt;/h3&gt;
+Silk outline of pin location
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_03&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-3.935" y1="4.25" x2="-3.935" y2="-4.25" width="0.1778" layer="21"/>
+<wire x1="3.935" y1="4.25" x2="-3.935" y2="4.25" width="0.1778" layer="21"/>
+<wire x1="3.935" y1="-4.25" x2="3.935" y2="4.25" width="0.1778" layer="21"/>
+<wire x1="-3.935" y1="-4.25" x2="3.935" y2="-4.25" width="0.1778" layer="21"/>
+<rectangle x1="-0.32" y1="6.8" x2="0.32" y2="7.65" layer="51"/>
+<rectangle x1="2.22" y1="6.8" x2="2.86" y2="7.65" layer="51"/>
+<rectangle x1="-2.86" y1="6.8" x2="-2.22" y2="7.65" layer="51"/>
+<smd name="3" x="2.54" y="7.225" dx="1.25" dy="3" layer="1" rot="R180"/>
+<smd name="2" x="0" y="7.225" dx="1.25" dy="3" layer="1" rot="R180"/>
+<smd name="1" x="-2.54" y="7.225" dx="1.25" dy="3" layer="1" rot="R180"/>
+<text x="-1.524" y="0.889" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.651" y="-1.27" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="1X03_SMD_RA_MALE" urn="urn:adsk.eagle:footprint:37694/1" library_version="1">
+<description>&lt;h3&gt;SMD- 3 Pin Right Angle Male Headers&lt;/h3&gt;
+No silk outline, but tDocu layer shows pin location. 
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_03&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="3.81" y1="1.25" x2="-3.81" y2="1.25" width="0.1778" layer="51"/>
+<wire x1="-3.81" y1="1.25" x2="-3.81" y2="-1.25" width="0.1778" layer="51"/>
+<wire x1="3.81" y1="-1.25" x2="2.53" y2="-1.25" width="0.1778" layer="51"/>
+<wire x1="2.53" y1="-1.25" x2="-0.01" y2="-1.25" width="0.1778" layer="51"/>
+<wire x1="-0.01" y1="-1.25" x2="-2.55" y2="-1.25" width="0.1778" layer="51"/>
+<wire x1="-2.55" y1="-1.25" x2="-3.81" y2="-1.25" width="0.1778" layer="51"/>
+<wire x1="3.81" y1="-1.25" x2="3.81" y2="1.25" width="0.1778" layer="51"/>
+<wire x1="2.53" y1="-1.25" x2="2.53" y2="-7.25" width="0.127" layer="51"/>
+<wire x1="-0.01" y1="-1.25" x2="-0.01" y2="-7.25" width="0.127" layer="51"/>
+<wire x1="-2.55" y1="-1.25" x2="-2.55" y2="-7.25" width="0.127" layer="51"/>
+<rectangle x1="-0.32" y1="4.15" x2="0.32" y2="5.95" layer="51"/>
+<rectangle x1="-2.86" y1="4.15" x2="-2.22" y2="5.95" layer="51"/>
+<rectangle x1="2.22" y1="4.15" x2="2.86" y2="5.95" layer="51"/>
+<smd name="1" x="-2.54" y="5" dx="3" dy="1" layer="1" rot="R90"/>
+<smd name="2" x="0" y="5" dx="3" dy="1" layer="1" rot="R90"/>
+<smd name="3" x="2.54" y="5" dx="3" dy="1" layer="1" rot="R90"/>
+<text x="-1.524" y="0.254" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.651" y="-0.889" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="1X03_SMD_RA_MALE_POST" urn="urn:adsk.eagle:footprint:37695/1" library_version="1">
+<description>&lt;h3&gt;SMD - 3 Pin Right Angle Male Header w/ Alignment Posts&lt;/h3&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt;&lt;a href="http://www.4uconnector.com/online/object/4udrawing/11026.pdf"&gt; 4UCONN part # 11026 &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_03&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="3.81" y1="1.25" x2="-3.81" y2="1.25" width="0.1778" layer="51"/>
+<wire x1="-3.81" y1="1.25" x2="-3.81" y2="-1.25" width="0.1778" layer="51"/>
+<wire x1="3.81" y1="-1.25" x2="2.53" y2="-1.25" width="0.1778" layer="51"/>
+<wire x1="2.53" y1="-1.25" x2="-0.01" y2="-1.25" width="0.1778" layer="51"/>
+<wire x1="-0.01" y1="-1.25" x2="-2.55" y2="-1.25" width="0.1778" layer="51"/>
+<wire x1="-2.55" y1="-1.25" x2="-3.81" y2="-1.25" width="0.1778" layer="51"/>
+<wire x1="3.81" y1="-1.25" x2="3.81" y2="1.25" width="0.1778" layer="51"/>
+<wire x1="2.53" y1="-1.25" x2="2.53" y2="-7.25" width="0.127" layer="51"/>
+<wire x1="-0.01" y1="-1.25" x2="-0.01" y2="-7.25" width="0.127" layer="51"/>
+<wire x1="-2.55" y1="-1.25" x2="-2.55" y2="-7.25" width="0.127" layer="51"/>
+<rectangle x1="-0.32" y1="4.15" x2="0.32" y2="5.95" layer="51"/>
+<rectangle x1="-2.86" y1="4.15" x2="-2.22" y2="5.95" layer="51"/>
+<rectangle x1="2.22" y1="4.15" x2="2.86" y2="5.95" layer="51"/>
+<smd name="1" x="-2.54" y="5.07" dx="2.5" dy="1.27" layer="1" rot="R90"/>
+<smd name="2" x="0" y="5.07" dx="2.5" dy="1.27" layer="1" rot="R90"/>
+<smd name="3" x="2.54" y="5.07" dx="2.5" dy="1.27" layer="1" rot="R90"/>
+<hole x="-1.27" y="0" drill="1.6"/>
+<hole x="1.27" y="0" drill="1.6"/>
+<text x="-1.397" y="1.524" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.651" y="-2.286" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="JST-3-PTH-VERT" urn="urn:adsk.eagle:footprint:37696/1" library_version="1">
+<description>&lt;h3&gt;JST 3 Pin Vertical Plated Through Hole&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
+&lt;li&gt;Pin pitch:2mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://www.sparkfun.com/datasheets/Prototyping/ePH.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_03&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-3.95" y1="-2.25" x2="-3.95" y2="2.25" width="0.2032" layer="21"/>
+<wire x1="-3.95" y1="2.25" x2="3.95" y2="2.25" width="0.2032" layer="21"/>
+<wire x1="3.95" y1="2.25" x2="3.95" y2="-2.25" width="0.2032" layer="21"/>
+<wire x1="3.95" y1="-2.25" x2="1" y2="-2.25" width="0.2032" layer="21"/>
+<wire x1="-1" y1="-2.25" x2="-3.95" y2="-2.25" width="0.2032" layer="21"/>
+<wire x1="-1" y1="-1.75" x2="1" y2="-1.75" width="0.2032" layer="21"/>
+<wire x1="1" y1="-1.75" x2="1" y2="-2.25" width="0.2032" layer="21"/>
+<wire x1="-1" y1="-1.75" x2="-1" y2="-2.25" width="0.2032" layer="21"/>
+<pad name="1" x="-2" y="-0.55" drill="0.7" diameter="1.6"/>
+<pad name="2" x="0" y="-0.55" drill="0.7" diameter="1.6"/>
+<pad name="3" x="2" y="-0.55" drill="0.7" diameter="1.6"/>
+<text x="-2.4" y="0.75" size="1.27" layer="51">+</text>
+<text x="-0.4" y="0.75" size="1.27" layer="51">-</text>
+<text x="1.7" y="0.95" size="0.8" layer="51">S</text>
+<text x="-1.397" y="2.54" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.651" y="-3.302" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="1X03_SMD_RA_MALE_POST_SMALLER" urn="urn:adsk.eagle:footprint:37697/1" library_version="1">
+<description>&lt;h3&gt;SMD - 3 Pin Right Angle Male Header w/ Alignment Posts&lt;/h3&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt;&lt;a href="http://www.4uconnector.com/online/object/4udrawing/11026.pdf"&gt; 4UCONN part # 11026 &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_03&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="3.81" y1="1.25" x2="-3.81" y2="1.25" width="0.1778" layer="51"/>
+<wire x1="-3.81" y1="1.25" x2="-3.81" y2="-1.25" width="0.1778" layer="51"/>
+<wire x1="3.81" y1="-1.25" x2="2.53" y2="-1.25" width="0.1778" layer="51"/>
+<wire x1="2.53" y1="-1.25" x2="-0.01" y2="-1.25" width="0.1778" layer="51"/>
+<wire x1="-0.01" y1="-1.25" x2="-2.55" y2="-1.25" width="0.1778" layer="51"/>
+<wire x1="-2.55" y1="-1.25" x2="-3.81" y2="-1.25" width="0.1778" layer="51"/>
+<wire x1="3.81" y1="-1.25" x2="3.81" y2="1.25" width="0.1778" layer="51"/>
+<wire x1="2.53" y1="-1.25" x2="2.53" y2="-7.25" width="0.127" layer="51"/>
+<wire x1="-0.01" y1="-1.25" x2="-0.01" y2="-7.25" width="0.127" layer="51"/>
+<wire x1="-2.55" y1="-1.25" x2="-2.55" y2="-7.25" width="0.127" layer="51"/>
+<rectangle x1="-0.32" y1="4.15" x2="0.32" y2="5.95" layer="51"/>
+<rectangle x1="-2.86" y1="4.15" x2="-2.22" y2="5.95" layer="51"/>
+<rectangle x1="2.22" y1="4.15" x2="2.86" y2="5.95" layer="51"/>
+<smd name="1" x="-2.54" y="5.07" dx="2.5" dy="1.27" layer="1" rot="R90"/>
+<smd name="2" x="0" y="5.07" dx="2.5" dy="1.27" layer="1" rot="R90"/>
+<smd name="3" x="2.54" y="5.07" dx="2.5" dy="1.27" layer="1" rot="R90"/>
+<hole x="-1.27" y="0" drill="1.3589"/>
+<hole x="1.27" y="0" drill="1.3589"/>
+</package>
+<package name="1X03_SMD_RA_MALE_POST_SMALLEST" urn="urn:adsk.eagle:footprint:37698/1" library_version="1">
+<wire x1="3.81" y1="1.25" x2="-3.81" y2="1.25" width="0.1778" layer="51"/>
+<wire x1="-3.81" y1="1.25" x2="-3.81" y2="-1.25" width="0.1778" layer="51"/>
+<wire x1="3.81" y1="-1.25" x2="2.53" y2="-1.25" width="0.1778" layer="51"/>
+<wire x1="2.53" y1="-1.25" x2="-0.01" y2="-1.25" width="0.1778" layer="51"/>
+<wire x1="-0.01" y1="-1.25" x2="-2.55" y2="-1.25" width="0.1778" layer="51"/>
+<wire x1="-2.55" y1="-1.25" x2="-3.81" y2="-1.25" width="0.1778" layer="51"/>
+<wire x1="3.81" y1="-1.25" x2="3.81" y2="1.25" width="0.1778" layer="51"/>
+<wire x1="2.53" y1="-1.25" x2="2.53" y2="-7.25" width="0.127" layer="51"/>
+<wire x1="-0.01" y1="-1.25" x2="-0.01" y2="-7.25" width="0.127" layer="51"/>
+<wire x1="-2.55" y1="-1.25" x2="-2.55" y2="-7.25" width="0.127" layer="51"/>
+<rectangle x1="-0.32" y1="4.15" x2="0.32" y2="5.95" layer="51"/>
+<rectangle x1="-2.86" y1="4.15" x2="-2.22" y2="5.95" layer="51"/>
+<rectangle x1="2.22" y1="4.15" x2="2.86" y2="5.95" layer="51"/>
+<smd name="1" x="-2.54" y="5.07" dx="2.5" dy="1.27" layer="1" rot="R90"/>
+<smd name="2" x="0" y="5.07" dx="2.5" dy="1.27" layer="1" rot="R90"/>
+<smd name="3" x="2.54" y="5.07" dx="2.5" dy="1.27" layer="1" rot="R90"/>
+<hole x="-1.27" y="0" drill="1.3462"/>
+<hole x="1.27" y="0" drill="1.3462"/>
+</package>
+<package name="JST-3-PTH-NS" urn="urn:adsk.eagle:footprint:37699/1" library_version="1">
+<description>&lt;h3&gt;JST 3 Pin Right Angle Plated Through Hole &amp;ndash; NO SILK&lt;/h3&gt;
+&lt;p&gt;No silkscreen outline. tDoc layer (51) indicates connector footprint.&lt;/p&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
+&lt;li&gt;Pin pitch:2mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://www.sparkfun.com/datasheets/Prototyping/ePH.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_03&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-3.95" y1="-1.6" x2="-3.95" y2="6" width="0.2032" layer="51"/>
+<wire x1="-3.95" y1="6" x2="3.95" y2="6" width="0.2032" layer="51"/>
+<wire x1="3.95" y1="6" x2="3.95" y2="-1.6" width="0.2032" layer="51"/>
+<wire x1="-3.95" y1="-1.6" x2="-3.3" y2="-1.6" width="0.2032" layer="51"/>
+<wire x1="3.95" y1="-1.6" x2="3.3" y2="-1.6" width="0.2032" layer="51"/>
+<wire x1="-3.3" y1="-1.6" x2="-3.3" y2="0" width="0.2032" layer="51"/>
+<wire x1="3.3" y1="-1.6" x2="3.3" y2="0" width="0.2032" layer="51"/>
+<pad name="1" x="-2" y="0" drill="0.7" diameter="1.6"/>
+<pad name="2" x="0" y="0" drill="0.7" diameter="1.6"/>
+<pad name="3" x="2" y="0" drill="0.7" diameter="1.6"/>
+<text x="-2.4" y="0.67" size="1.27" layer="51">+</text>
+<text x="-0.4" y="0.67" size="1.27" layer="51">-</text>
+<text x="1.7" y="0.87" size="0.8" layer="51">S</text>
+<text x="-1.397" y="3.429" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.651" y="2.54" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="SCREWTERMINAL-3.5MM-3-NS" urn="urn:adsk.eagle:footprint:37700/1" library_version="1">
+<description>&lt;h3&gt;Screw Terminal  3.5mm Pitch -3 Pin PTH &amp;ndash; NO SILK&lt;/h3&gt;
+&lt;p&gt;No silkscreen outline. tDoc layer (51) indicates connector footprint.&lt;/p&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 3&lt;/li&gt;
+&lt;li&gt;Pin pitch: 3.5mm/138mil&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://www.sparkfun.com/datasheets/Prototyping/Screw-Terminal-3.5mm.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_03&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-1.75" y1="3.4" x2="8.75" y2="3.4" width="0.2032" layer="51"/>
+<wire x1="8.75" y1="3.4" x2="8.75" y2="-2.8" width="0.2032" layer="51"/>
+<wire x1="8.75" y1="-2.8" x2="8.75" y2="-3.6" width="0.2032" layer="51"/>
+<wire x1="8.75" y1="-3.6" x2="-1.75" y2="-3.6" width="0.2032" layer="51"/>
+<wire x1="-1.75" y1="-3.6" x2="-1.75" y2="-2.8" width="0.2032" layer="51"/>
+<wire x1="-1.75" y1="-2.8" x2="-1.75" y2="3.4" width="0.2032" layer="51"/>
+<wire x1="8.75" y1="-2.8" x2="-1.75" y2="-2.8" width="0.2032" layer="51"/>
+<wire x1="-1.75" y1="-1.35" x2="-2.25" y2="-1.35" width="0.2032" layer="51"/>
+<wire x1="-2.25" y1="-1.35" x2="-2.25" y2="-2.35" width="0.2032" layer="51"/>
+<wire x1="-2.25" y1="-2.35" x2="-1.75" y2="-2.35" width="0.2032" layer="51"/>
+<wire x1="8.75" y1="3.15" x2="9.25" y2="3.15" width="0.2032" layer="51"/>
+<wire x1="9.25" y1="3.15" x2="9.25" y2="2.15" width="0.2032" layer="51"/>
+<wire x1="9.25" y1="2.15" x2="8.75" y2="2.15" width="0.2032" layer="51"/>
+<pad name="1" x="0" y="0" drill="1.2" diameter="2.413"/>
+<pad name="2" x="3.5" y="0" drill="1.2" diameter="2.413"/>
+<pad name="3" x="7" y="0" drill="1.2" diameter="2.413"/>
+<text x="2.159" y="3.683" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="2.032" y="-4.572" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="1X03" urn="urn:adsk.eagle:package:38063/1" type="box" library_version="1">
+<description>Plated Through Hole - 3 Pin
+Specifications:
+Pin count:3
+Pin pitch:0.1"
+
+Example device(s):
+CONN_03
+</description>
+<packageinstances>
+<packageinstance name="1X03"/>
+</packageinstances>
+</package3d>
+<package3d name="MOLEX-1X3" urn="urn:adsk.eagle:package:38064/1" type="box" library_version="1">
+<description>PTH - 3 Pin Vertical Molex Polarized Header
+Datasheet referenced for footprint: 4UCONN part # 01932 
+Specifications:
+Pin count:3
+Pin pitch:0.1"
+
+Example device(s):
+CONN_03
+</description>
+<packageinstances>
+<packageinstance name="MOLEX-1X3"/>
+</packageinstances>
+</package3d>
+<package3d name="SCREWTERMINAL-3.5MM-3" urn="urn:adsk.eagle:package:38072/1" type="box" library_version="1">
+<description>Screw Terminal  3.5mm Pitch -3 Pin PTH
+Specifications:
+Pin count: 3
+Pin pitch: 3.5mm/138mil
+
+Datasheet referenced for footprint
+Example device(s):
+CONN_03
+</description>
+<packageinstances>
+<packageinstance name="SCREWTERMINAL-3.5MM-3"/>
+</packageinstances>
+</package3d>
+<package3d name="1X03_LOCK" urn="urn:adsk.eagle:package:38071/1" type="box" library_version="1">
+<description>Plated Through Hole - 3 Pin Locking Footprint
+Pins are staggered 0.005" off center to lock pins while soldering. 
+Specifications:
+Pin count:3
+Pin pitch:0.1"
+
+Example device(s):
+CONN_03
+</description>
+<packageinstances>
+<packageinstance name="1X03_LOCK"/>
+</packageinstances>
+</package3d>
+<package3d name="1X03_LOCK_LONGPADS" urn="urn:adsk.eagle:package:38065/1" type="box" library_version="1">
+<description>Plated Through Hole - 3 Pin Long Pad w/ Locking Footprint
+Holes are offset 0.005" from center to lock pins in place while soldering. 
+Specifications:
+Pin count:3
+Pin pitch:0.1"
+
+Example device(s):
+CONN_03
+</description>
+<packageinstances>
+<packageinstance name="1X03_LOCK_LONGPADS"/>
+</packageinstances>
+</package3d>
+<package3d name="MOLEX-1X3_LOCK" urn="urn:adsk.eagle:package:38067/1" type="box" library_version="1">
+<description>PTH - 3 Pin Vertical Molex Polarized Header
+Pins are offset 0.005" from center to lock pins in place during soldering. 
+Datasheet referenced for footprint: 4UCONN part # 01932 
+Specifications:
+Pin count:3
+Pin pitch:0.1"
+
+Example device(s):
+CONN_03
+</description>
+<packageinstances>
+<packageinstance name="MOLEX-1X3_LOCK"/>
+</packageinstances>
+</package3d>
+<package3d name="SCREWTERMINAL-3.5MM-3_LOCK.007S" urn="urn:adsk.eagle:package:38066/1" type="box" library_version="1">
+<description>Screw Terminal  3.5mm Pitch -3 Pin PTH Locking
+Holes are offset 0.007" from center to hold pins in place during soldering. 
+Specifications:
+Pin count: 3
+Pin pitch: 3.5mm/138mil
+
+Datasheet referenced for footprint
+Example device(s):
+CONN_03
+</description>
+<packageinstances>
+<packageinstance name="SCREWTERMINAL-3.5MM-3_LOCK.007S"/>
+</packageinstances>
+</package3d>
+<package3d name="1X03_NO_SILK" urn="urn:adsk.eagle:package:38076/1" type="box" library_version="1">
+<description>Plated Through Hole - 3 Pin No Silk Outline
+Specifications:
+Pin count:3
+Pin pitch:0.1"
+
+Example device(s):
+CONN_03
+</description>
+<packageinstances>
+<packageinstance name="1X03_NO_SILK"/>
+</packageinstances>
+</package3d>
+<package3d name="1X03_LONGPADS" urn="urn:adsk.eagle:package:38068/1" type="box" library_version="1">
+<description>Plated Through Hole - 3 Pin Long Pads
+Specifications:
+Pin count:3
+Pin pitch:0.1"
+
+Example device(s):
+CONN_03
+</description>
+<packageinstances>
+<packageinstance name="1X03_LONGPADS"/>
+</packageinstances>
+</package3d>
+<package3d name="JST-3-PTH" urn="urn:adsk.eagle:package:38069/1" type="box" library_version="1">
+<description>JST 3 Pin Right Angle Plated Through Hole
+Specifications:
+Pin count:3
+Pin pitch:2mm
+
+Datasheet referenced for footprint
+Example device(s):
+CONN_03
+</description>
+<packageinstances>
+<packageinstance name="JST-3-PTH"/>
+</packageinstances>
+</package3d>
+<package3d name="1X03_PP_HOLES_ONLY" urn="urn:adsk.eagle:package:38073/1" type="box" library_version="1">
+<description>Pogo Pins - 3 Pin
+Specifications:
+Pin count:3
+
+Example device(s):
+CONN_03
+</description>
+<packageinstances>
+<packageinstance name="1X03_PP_HOLES_ONLY"/>
+</packageinstances>
+</package3d>
+<package3d name="SCREWTERMINAL-5MM-3" urn="urn:adsk.eagle:package:38070/1" type="box" library_version="1">
+<description>Screw Terminal  5mm Pitch -3 Pin PTH
+Specifications:
+Pin count: 3
+Pin pitch: 5mm/197mil
+
+Datasheet referenced for footprint
+Example device(s):
+CONN_03
+</description>
+<packageinstances>
+<packageinstance name="SCREWTERMINAL-5MM-3"/>
+</packageinstances>
+</package3d>
+<package3d name="1X03_LOCK_NO_SILK" urn="urn:adsk.eagle:package:38074/1" type="box" library_version="1">
+<description>Plated Through Hole - 3 Pin Locking Footprint w/out Silk Outline
+Holes are offset from center 0.005" to lock pins in place while soldering. 
+Specifications:
+Pin count:3
+Pin pitch:0.1"
+
+Example device(s):
+CONN_03
+</description>
+<packageinstances>
+<packageinstance name="1X03_LOCK_NO_SILK"/>
+</packageinstances>
+</package3d>
+<package3d name="JST-3-SMD" urn="urn:adsk.eagle:package:38075/1" type="box" library_version="1">
+<description>JST 3 Pin Right Angle SMT
+Specifications:
+Pin count:3
+Pin pitch:2mm
+
+Example device(s):
+CONN_03
+</description>
+<packageinstances>
+<packageinstance name="JST-3-SMD"/>
+</packageinstances>
+</package3d>
+<package3d name="1X03-1MM-RA" urn="urn:adsk.eagle:package:38077/1" type="box" library_version="1">
+<description>Plated Through Hole - 3 Pin SMD
+Specifications:
+Pin count:3
+
+Example device(s):
+CONN_03
+</description>
+<packageinstances>
+<packageinstance name="1X03-1MM-RA"/>
+</packageinstances>
+</package3d>
+<package3d name="1X03_SMD_RA_FEMALE" urn="urn:adsk.eagle:package:38081/1" type="box" library_version="1">
+<description>SMD - 3 Pin Right Angle Female Header
+Silk outline of pin location
+Specifications:
+Pin count:3
+Pin pitch:0.1"
+
+Example device(s):
+CONN_03
+</description>
+<packageinstances>
+<packageinstance name="1X03_SMD_RA_FEMALE"/>
+</packageinstances>
+</package3d>
+<package3d name="1X03_SMD_RA_MALE" urn="urn:adsk.eagle:package:38078/1" type="box" library_version="1">
+<description>SMD- 3 Pin Right Angle Male Headers
+No silk outline, but tDocu layer shows pin location. 
+Specifications:
+Pin count:3
+Pin pitch:0.1"
+
+Example device(s):
+CONN_03
+</description>
+<packageinstances>
+<packageinstance name="1X03_SMD_RA_MALE"/>
+</packageinstances>
+</package3d>
+<package3d name="1X03_SMD_RA_MALE_POST" urn="urn:adsk.eagle:package:38079/1" type="box" library_version="1">
+<description>SMD - 3 Pin Right Angle Male Header w/ Alignment Posts
+Datasheet referenced for footprint: 4UCONN part # 11026 
+Specifications:
+Pin count:3
+Pin pitch:0.1"
+
+Example device(s):
+CONN_03
+</description>
+<packageinstances>
+<packageinstance name="1X03_SMD_RA_MALE_POST"/>
+</packageinstances>
+</package3d>
+<package3d name="JST-3-PTH-VERT" urn="urn:adsk.eagle:package:38080/1" type="box" library_version="1">
+<description>JST 3 Pin Vertical Plated Through Hole
+Specifications:
+Pin count:3
+Pin pitch:2mm
+
+Datasheet referenced for footprint
+Example device(s):
+CONN_03
+</description>
+<packageinstances>
+<packageinstance name="JST-3-PTH-VERT"/>
+</packageinstances>
+</package3d>
+<package3d name="1X03_SMD_RA_MALE_POST_SMALLER" urn="urn:adsk.eagle:package:38082/1" type="box" library_version="1">
+<description>SMD - 3 Pin Right Angle Male Header w/ Alignment Posts
+Datasheet referenced for footprint: 4UCONN part # 11026 
+Specifications:
+Pin count:3
+Pin pitch:0.1"
+
+Example device(s):
+CONN_03
+</description>
+<packageinstances>
+<packageinstance name="1X03_SMD_RA_MALE_POST_SMALLER"/>
+</packageinstances>
+</package3d>
+<package3d name="1X03_SMD_RA_MALE_POST_SMALLEST" urn="urn:adsk.eagle:package:38083/1" type="box" library_version="1">
+<packageinstances>
+<packageinstance name="1X03_SMD_RA_MALE_POST_SMALLEST"/>
+</packageinstances>
+</package3d>
+<package3d name="JST-3-PTH-NS" urn="urn:adsk.eagle:package:38084/1" type="box" library_version="1">
+<description>JST 3 Pin Right Angle Plated Through Hole &amp;ndash; NO SILK
+No silkscreen outline. tDoc layer (51) indicates connector footprint.
+Specifications:
+Pin count:3
+Pin pitch:2mm
+
+Datasheet referenced for footprint
+Example device(s):
+CONN_03
+</description>
+<packageinstances>
+<packageinstance name="JST-3-PTH-NS"/>
+</packageinstances>
+</package3d>
+<package3d name="SCREWTERMINAL-3.5MM-3-NS" urn="urn:adsk.eagle:package:38088/1" type="box" library_version="1">
+<description>Screw Terminal  3.5mm Pitch -3 Pin PTH &amp;ndash; NO SILK
+No silkscreen outline. tDoc layer (51) indicates connector footprint.
+Specifications:
+Pin count: 3
+Pin pitch: 3.5mm/138mil
+
+Datasheet referenced for footprint
+Example device(s):
+CONN_03
+</description>
+<packageinstances>
+<packageinstance name="SCREWTERMINAL-3.5MM-3-NS"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="CONN_03" urn="urn:adsk.eagle:symbol:37677/1" library_version="1">
+<description>&lt;h3&gt;3 Pin Connection&lt;/h3&gt;</description>
+<wire x1="3.81" y1="-5.08" x2="-2.54" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.6096" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="3.81" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="3.81" y2="5.08" width="0.4064" layer="94"/>
+<text x="-2.54" y="-7.366" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<text x="-2.54" y="5.588" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<pin name="1" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="3" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CONN_03" urn="urn:adsk.eagle:component:38324/1" prefix="J" uservalue="yes" library_version="1">
+<description>&lt;h3&gt;Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections&lt;/h3&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;On any of the 0.1 inch spaced packages, you can populate with these:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/116"&gt; Break Away Headers - Straight&lt;/a&gt; (PRT-00116)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/553"&gt; Break Away Male Headers - Right Angle&lt;/a&gt; (PRT-00553)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/115"&gt; Female Headers&lt;/a&gt; (PRT-00115)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/117"&gt; Break Away Headers - Machine Pin&lt;/a&gt; (PRT-00117)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/743"&gt; Break Away Female Headers - Swiss Machine Pin&lt;/a&gt; (PRT-00743)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13875"&gt; Stackable Header - 3 Pin (Female, 0.1")&lt;/a&gt; (PRT-13875)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt; For SCREWTERMINALS and SPRING TERMINALS visit here:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/search/results?term=Screw+Terminals"&gt; Screw Terimnals on SparkFun.com&lt;/a&gt; (5mm/3.5mm/2.54mm spacing)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;This device is also useful as a general connection point to wire up your design to another part of your project. Our various solder wires solder well into these plated through hole pads.&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11375"&gt; Hook-Up Wire - Assortment (Stranded, 22 AWG)&lt;/a&gt; (PRT-11375)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11367"&gt; Hook-Up Wire - Assortment (Solid Core, 22 AWG)&lt;/a&gt; (PRT-11367)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/categories/141"&gt; View the entire wire category on our website here&lt;/a&gt;&lt;/li&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Special notes:&lt;/b&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt; Molex polarized connector foot print use with SKU : PRT-08232 with associated crimp pins and housings.</description>
+<gates>
+<gate name="J$1" symbol="CONN_03" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X03">
+<connects>
+<connect gate="J$1" pin="1" pad="1"/>
+<connect gate="J$1" pin="2" pad="2"/>
+<connect gate="J$1" pin="3" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38063/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="POLAR" package="MOLEX-1X3">
+<connects>
+<connect gate="J$1" pin="1" pad="1"/>
+<connect gate="J$1" pin="2" pad="2"/>
+<connect gate="J$1" pin="3" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38064/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-08625" constant="no"/>
+<attribute name="SF_ID" value="PRT-08096" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="SCREW" package="SCREWTERMINAL-3.5MM-3">
+<connects>
+<connect gate="J$1" pin="1" pad="1"/>
+<connect gate="J$1" pin="2" pad="2"/>
+<connect gate="J$1" pin="3" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38072/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-08288" constant="no"/>
+<attribute name="SF_ID" value="PRT-08235" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="LOCK" package="1X03_LOCK">
+<connects>
+<connect gate="J$1" pin="1" pad="1"/>
+<connect gate="J$1" pin="2" pad="2"/>
+<connect gate="J$1" pin="3" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38071/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="LOCK_LONGPADS" package="1X03_LOCK_LONGPADS">
+<connects>
+<connect gate="J$1" pin="1" pad="1"/>
+<connect gate="J$1" pin="2" pad="2"/>
+<connect gate="J$1" pin="3" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38065/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="POLAR_LOCK" package="MOLEX-1X3_LOCK">
+<connects>
+<connect gate="J$1" pin="1" pad="1"/>
+<connect gate="J$1" pin="2" pad="2"/>
+<connect gate="J$1" pin="3" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38067/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-08625" constant="no"/>
+<attribute name="SF_ID" value="PRT-08096" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="SCREW_LOCK" package="SCREWTERMINAL-3.5MM-3_LOCK.007S">
+<connects>
+<connect gate="J$1" pin="1" pad="1"/>
+<connect gate="J$1" pin="2" pad="2"/>
+<connect gate="J$1" pin="3" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38066/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-08288" constant="no"/>
+<attribute name="SF_ID" value="PRT-08235" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="1X03_NO_SILK" package="1X03_NO_SILK">
+<connects>
+<connect gate="J$1" pin="1" pad="1"/>
+<connect gate="J$1" pin="2" pad="2"/>
+<connect gate="J$1" pin="3" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38076/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="LONGPADS" package="1X03_LONGPADS">
+<connects>
+<connect gate="J$1" pin="1" pad="1"/>
+<connect gate="J$1" pin="2" pad="2"/>
+<connect gate="J$1" pin="3" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38068/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="JST-PTH" package="JST-3-PTH">
+<connects>
+<connect gate="J$1" pin="1" pad="1"/>
+<connect gate="J$1" pin="2" pad="2"/>
+<connect gate="J$1" pin="3" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38069/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="WIRE-10037" constant="no"/>
+<attribute name="SF_ID" value="PRT-09915" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="POGO_PIN_HOLES_ONLY" package="1X03_PP_HOLES_ONLY">
+<connects>
+<connect gate="J$1" pin="1" pad="1"/>
+<connect gate="J$1" pin="2" pad="2"/>
+<connect gate="J$1" pin="3" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38073/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SCREW-5MM" package="SCREWTERMINAL-5MM-3">
+<connects>
+<connect gate="J$1" pin="1" pad="1"/>
+<connect gate="J$1" pin="2" pad="2"/>
+<connect gate="J$1" pin="3" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38070/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-10134" constant="no"/>
+<attribute name="SF_SKU" value="PRT-08433" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="LOCK_NO_SILK" package="1X03_LOCK_NO_SILK">
+<connects>
+<connect gate="J$1" pin="1" pad="1"/>
+<connect gate="J$1" pin="2" pad="2"/>
+<connect gate="J$1" pin="3" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38074/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="JST-SMD" package="JST-3-SMD">
+<connects>
+<connect gate="J$1" pin="1" pad="1"/>
+<connect gate="J$1" pin="2" pad="2"/>
+<connect gate="J$1" pin="3" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38075/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-12591" constant="no"/>
+<attribute name="VALUE" value="3-PIN SMD" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD" package="1X03-1MM-RA">
+<connects>
+<connect gate="J$1" pin="1" pad="1"/>
+<connect gate="J$1" pin="2" pad="2"/>
+<connect gate="J$1" pin="3" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38077/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD_RA_FEMALE" package="1X03_SMD_RA_FEMALE">
+<connects>
+<connect gate="J$1" pin="1" pad="1"/>
+<connect gate="J$1" pin="2" pad="2"/>
+<connect gate="J$1" pin="3" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38081/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-10926"/>
+<attribute name="VALUE" value="1x3 RA Female .1&quot;"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD_RA_MALE" package="1X03_SMD_RA_MALE">
+<connects>
+<connect gate="J$1" pin="1" pad="1"/>
+<connect gate="J$1" pin="2" pad="2"/>
+<connect gate="J$1" pin="3" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38078/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-10925"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD_RA_MALE_POST" package="1X03_SMD_RA_MALE_POST">
+<connects>
+<connect gate="J$1" pin="1" pad="1"/>
+<connect gate="J$1" pin="2" pad="2"/>
+<connect gate="J$1" pin="3" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38079/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="JST-PTH-VERT" package="JST-3-PTH-VERT">
+<connects>
+<connect gate="J$1" pin="1" pad="1"/>
+<connect gate="J$1" pin="2" pad="2"/>
+<connect gate="J$1" pin="3" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38080/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-13230" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="1X03_SMD_RA_MALE_POST_SMALLER" package="1X03_SMD_RA_MALE_POST_SMALLER">
+<connects>
+<connect gate="J$1" pin="1" pad="1"/>
+<connect gate="J$1" pin="2" pad="2"/>
+<connect gate="J$1" pin="3" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38082/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-11912" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="1X03_SMD_RA_MALE_POST_SMALLEST" package="1X03_SMD_RA_MALE_POST_SMALLEST">
+<connects>
+<connect gate="J$1" pin="1" pad="1"/>
+<connect gate="J$1" pin="2" pad="2"/>
+<connect gate="J$1" pin="3" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38083/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="JST-PTH-NS" package="JST-3-PTH-NS">
+<connects>
+<connect gate="J$1" pin="1" pad="1"/>
+<connect gate="J$1" pin="2" pad="2"/>
+<connect gate="J$1" pin="3" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38084/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SCREW-NS" package="SCREWTERMINAL-3.5MM-3-NS">
+<connects>
+<connect gate="J$1" pin="1" pad="1"/>
+<connect gate="J$1" pin="2" pad="2"/>
+<connect gate="J$1" pin="3" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38088/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -28502,437 +29901,437 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND8" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="LOGO1" library="_my_logos" deviceset="MFDECLOGO" device="_L_30MM"/>
-<part name="LED1" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED1" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED2" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED2" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND2" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED3" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED3" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND3" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED4" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED4" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND4" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED5" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED5" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND5" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED6" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED6" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY7" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND6" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED7" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED7" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY10" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND9" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED8" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED8" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY11" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND10" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED9" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED9" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY12" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND11" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED10" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED10" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY13" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND12" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED11" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED11" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY14" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND13" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED12" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED12" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY15" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND14" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED13" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED13" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY16" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND15" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED14" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED14" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY17" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND16" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED15" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED15" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY18" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND17" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED16" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED16" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY19" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND18" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED17" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED17" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY20" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND19" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED18" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED18" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY21" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND20" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED19" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED19" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY22" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND21" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED20" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED20" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY23" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND22" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED21" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED21" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY24" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND23" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED22" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED22" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY25" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND24" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED23" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED23" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY26" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND25" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED24" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED24" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY27" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND26" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED25" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED25" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY28" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND27" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED26" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED26" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY29" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND28" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED27" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED27" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY30" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND29" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED28" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED28" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY31" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND30" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED29" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED29" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY32" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND31" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED30" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED30" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY33" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND32" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED31" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED31" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY34" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND33" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED32" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED32" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY35" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND34" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED33" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED33" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY36" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND35" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED34" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED34" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY37" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND36" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED35" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED35" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY38" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND37" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED36" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED36" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY39" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND38" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED37" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED37" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY40" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND39" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED38" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED38" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY41" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND40" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED39" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED39" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY42" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND41" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED40" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED40" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY43" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND42" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED41" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED41" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY44" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND43" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED42" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED42" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY45" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND44" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED43" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED43" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY46" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND45" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED44" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED44" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY47" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND46" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED45" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED45" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY48" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND47" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED46" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED46" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY49" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND48" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED47" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED47" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY50" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND49" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED48" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED48" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY51" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND50" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED49" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED49" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY52" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND51" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED50" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED50" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY53" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND52" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED51" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED51" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY54" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND53" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED52" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED52" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY55" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND54" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED53" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED53" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY56" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND55" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED54" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED54" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY57" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND56" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED55" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED55" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY58" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND57" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED56" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED56" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY59" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND58" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED57" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED57" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY60" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND59" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED58" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED58" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY61" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND60" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED59" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED59" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY62" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND61" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED60" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED60" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY63" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND62" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED61" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED61" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY64" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND63" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED62" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED62" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY65" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND64" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED63" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED63" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY66" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND65" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED64" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED64" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY67" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND66" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED65" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED65" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY68" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND67" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED66" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED66" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY69" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND68" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED67" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED67" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY70" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND69" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED68" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED68" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY71" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND70" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED69" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED69" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY72" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND71" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED70" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED70" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY73" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND72" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED71" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED71" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY74" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND73" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED72" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED72" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY75" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND74" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="DINA4_L" device=""/>
-<part name="LED73" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED73" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY76" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND75" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED74" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED74" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY77" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND76" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED75" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED75" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY78" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND77" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED76" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED76" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY79" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND78" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED77" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED77" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY80" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND79" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED78" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED78" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY81" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND80" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED79" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED79" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY82" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND81" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED80" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED80" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY83" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND82" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED81" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED81" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY84" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND83" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED82" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED82" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY85" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND84" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED83" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED83" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY86" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND85" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED84" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED84" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY87" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND86" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED85" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED85" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY88" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND87" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED86" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED86" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY89" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND88" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED87" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED87" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY90" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND89" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED88" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED88" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY91" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND90" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED89" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED89" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY92" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND91" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED90" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED90" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY93" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND92" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED91" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED91" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY94" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND93" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED92" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED92" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY95" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND94" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED93" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED93" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY96" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND95" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED94" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED94" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY97" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND96" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED95" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED95" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY98" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND97" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED96" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED96" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY99" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND98" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED97" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED97" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY100" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND99" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED98" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED98" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY101" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND100" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED99" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED99" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY102" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND101" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED100" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED100" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY103" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND102" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED101" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED101" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY104" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND103" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED102" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED102" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY105" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND104" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED103" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED103" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY106" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND105" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED104" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED104" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY107" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND106" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED105" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED105" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY108" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND107" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED106" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED106" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY109" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND108" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED107" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED107" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY110" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND109" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED108" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED108" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY111" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND110" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED109" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED109" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY112" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND111" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED110" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED110" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY113" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND112" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED111" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED111" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY114" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND113" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED112" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED112" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY115" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND114" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED113" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED113" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY116" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND115" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED114" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED114" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY117" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND116" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED115" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED115" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY118" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND117" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED116" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED116" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY119" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND118" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED117" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED117" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY120" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND119" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED118" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED118" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY121" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND120" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED119" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED119" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY122" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND121" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED120" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED120" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY123" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND122" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED121" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED121" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY124" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND123" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED122" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED122" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY125" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND124" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED123" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED123" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY126" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND125" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED124" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED124" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY127" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND126" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED125" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED125" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY128" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND127" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED126" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED126" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY129" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND128" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED127" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED127" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY130" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND129" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED128" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED128" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY131" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND130" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED129" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED129" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY132" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND131" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED130" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED130" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY133" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND132" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED131" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED131" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY134" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND133" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED132" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED132" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY135" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND134" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED133" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED133" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY136" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND135" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED134" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED134" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY137" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND136" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED135" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED135" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY138" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND137" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED136" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED136" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY139" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND138" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED137" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED137" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY140" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND139" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED138" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED138" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY141" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND140" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED139" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED139" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY142" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND141" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED140" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED140" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY143" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND142" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED141" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED141" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY144" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND143" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED142" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED142" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY145" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND144" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED143" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED143" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY146" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND145" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="LED144" library="WS2812B-2020" deviceset="WS2812B-2020" device=""/>
+<part name="LED144" library="WS281X" deviceset="WS2812" device="C-2020"/>
 <part name="SUPPLY147" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND146" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="IC1" library="TXB0101DCKR" deviceset="TXB0101DCKR" device=""/>
@@ -28954,6 +30353,12 @@ Source: AVX .. aphvc.pdf</description>
 <part name="SUPPLY154" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND151" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="SJ1" library="_my_jumpers" deviceset="SJ3" device=""/>
+<part name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="" package3d_urn="urn:adsk.eagle:package:38063/1"/>
+<part name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="" package3d_urn="urn:adsk.eagle:package:38063/1"/>
+<part name="SUPPLY155" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
+<part name="SUPPLY156" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
+<part name="GND152" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND153" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -28962,7 +30367,7 @@ Source: AVX .. aphvc.pdf</description>
 <text x="198.12" y="7.62" size="2.54" layer="94">PI-LEDZS-0010</text>
 <text x="165.1" y="25.4" size="2.54" layer="94">Pi Zero sized LED-SHIM for Pi's 40-pin extension slot
 (c) Andriy Golovnya</text>
-<text x="27.94" y="121.92" size="2.54" layer="94">Right connector
+<text x="25.4" y="121.92" size="2.54" layer="94">Right connector
 (inside mount)</text>
 </plain>
 <instances>
@@ -28972,28 +30377,28 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="SHEET" x="248.92" y="1.27" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="180.34" y="19.05" size="2.54" layer="94"/>
 </instance>
-<instance part="J3" gate="G$1" x="35.56" y="88.9" smashed="yes" rot="R180">
-<attribute name="VALUE" x="35.56" y="88.646" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="35.56" y="62.992" size="1.778" layer="95" rot="R180"/>
+<instance part="J3" gate="G$1" x="33.02" y="88.9" smashed="yes" rot="R180">
+<attribute name="VALUE" x="33.02" y="88.646" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="33.02" y="62.992" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="J4" gate="G$1" x="43.18" y="88.9" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="43.18" y="88.646" size="1.778" layer="96" font="vector" rot="MR180"/>
-<attribute name="NAME" x="43.18" y="62.992" size="1.778" layer="95" rot="MR180"/>
+<instance part="J4" gate="G$1" x="40.64" y="88.9" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="40.64" y="88.646" size="1.778" layer="96" font="vector" rot="MR180"/>
+<attribute name="NAME" x="40.64" y="62.992" size="1.778" layer="95" rot="MR180"/>
 </instance>
-<instance part="SUPPLY8" gate="G$1" x="25.4" y="114.3" smashed="yes">
-<attribute name="VALUE" x="25.4" y="117.094" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY8" gate="G$1" x="22.86" y="114.3" smashed="yes">
+<attribute name="VALUE" x="22.86" y="117.094" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY9" gate="G$1" x="12.7" y="93.98" smashed="yes">
-<attribute name="VALUE" x="12.7" y="96.774" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY9" gate="G$1" x="10.16" y="93.98" smashed="yes">
+<attribute name="VALUE" x="10.16" y="96.774" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND7" gate="1" x="25.4" y="60.96" smashed="yes">
-<attribute name="VALUE" x="25.4" y="60.706" size="1.778" layer="96" align="top-center"/>
+<instance part="GND7" gate="1" x="22.86" y="60.96" smashed="yes">
+<attribute name="VALUE" x="22.86" y="60.706" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="GND8" gate="1" x="53.34" y="60.96" smashed="yes">
-<attribute name="VALUE" x="53.34" y="60.706" size="1.778" layer="96" align="top-center"/>
+<instance part="GND8" gate="1" x="50.8" y="60.96" smashed="yes">
+<attribute name="VALUE" x="50.8" y="60.706" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="SUPPLY2" gate="G$1" x="53.34" y="114.3" smashed="yes">
-<attribute name="VALUE" x="53.34" y="117.094" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY2" gate="G$1" x="50.8" y="114.3" smashed="yes">
+<attribute name="VALUE" x="50.8" y="117.094" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="LOGO1" gate="G$1" x="236.22" y="38.1" smashed="yes"/>
 <instance part="LED1" gate="LED" x="78.74" y="160.02" smashed="yes">
@@ -29743,12 +31148,12 @@ Source: AVX .. aphvc.pdf</description>
 <net name="3.3V" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="1"/>
-<wire x1="27.94" y1="114.3" x2="25.4" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="114.3" x2="22.86" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="SUPPLY8" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="9"/>
-<wire x1="27.94" y1="93.98" x2="12.7" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="93.98" x2="10.16" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="SUPPLY9" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
@@ -29765,39 +31170,39 @@ Source: AVX .. aphvc.pdf</description>
 <net name="GND" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="5"/>
-<wire x1="27.94" y1="104.14" x2="25.4" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="104.14" x2="25.4" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="104.14" x2="22.86" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="104.14" x2="22.86" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="13"/>
-<wire x1="25.4" y1="83.82" x2="25.4" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="66.04" x2="25.4" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="83.82" x2="25.4" y2="83.82" width="0.1524" layer="91"/>
-<junction x="25.4" y="83.82"/>
+<wire x1="22.86" y1="83.82" x2="22.86" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="66.04" x2="22.86" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="83.82" x2="22.86" y2="83.82" width="0.1524" layer="91"/>
+<junction x="22.86" y="83.82"/>
 <pinref part="J3" gate="G$1" pin="20"/>
-<wire x1="27.94" y1="66.04" x2="25.4" y2="66.04" width="0.1524" layer="91"/>
-<junction x="25.4" y="66.04"/>
+<wire x1="25.4" y1="66.04" x2="22.86" y2="66.04" width="0.1524" layer="91"/>
+<junction x="22.86" y="66.04"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="3"/>
-<wire x1="50.8" y1="109.22" x2="53.34" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="109.22" x2="53.34" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="109.22" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="109.22" x2="50.8" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="J4" gate="G$1" pin="7"/>
-<wire x1="53.34" y1="99.06" x2="53.34" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="91.44" x2="53.34" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="78.74" x2="53.34" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="73.66" x2="53.34" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="99.06" x2="53.34" y2="99.06" width="0.1524" layer="91"/>
-<junction x="53.34" y="99.06"/>
+<wire x1="50.8" y1="99.06" x2="50.8" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="91.44" x2="50.8" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="78.74" x2="50.8" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="73.66" x2="50.8" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="99.06" x2="50.8" y2="99.06" width="0.1524" layer="91"/>
+<junction x="50.8" y="99.06"/>
 <pinref part="J4" gate="G$1" pin="10"/>
-<wire x1="50.8" y1="91.44" x2="53.34" y2="91.44" width="0.1524" layer="91"/>
-<junction x="53.34" y="91.44"/>
+<wire x1="48.26" y1="91.44" x2="50.8" y2="91.44" width="0.1524" layer="91"/>
+<junction x="50.8" y="91.44"/>
 <pinref part="J4" gate="G$1" pin="15"/>
-<wire x1="50.8" y1="78.74" x2="53.34" y2="78.74" width="0.1524" layer="91"/>
-<junction x="53.34" y="78.74"/>
+<wire x1="48.26" y1="78.74" x2="50.8" y2="78.74" width="0.1524" layer="91"/>
+<junction x="50.8" y="78.74"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <pinref part="J4" gate="G$1" pin="17"/>
-<wire x1="50.8" y1="73.66" x2="53.34" y2="73.66" width="0.1524" layer="91"/>
-<junction x="53.34" y="73.66"/>
+<wire x1="48.26" y1="73.66" x2="50.8" y2="73.66" width="0.1524" layer="91"/>
+<junction x="50.8" y="73.66"/>
 </segment>
 <segment>
 <pinref part="LED1" gate="LED" pin="GND"/>
@@ -30168,208 +31573,208 @@ Source: AVX .. aphvc.pdf</description>
 <net name="GPIO2" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="111.76" x2="20.32" y2="111.76" width="0.1524" layer="91"/>
-<label x="17.78" y="111.76" size="1.778" layer="95"/>
+<wire x1="25.4" y1="111.76" x2="17.78" y2="111.76" width="0.1524" layer="91"/>
+<label x="15.24" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO3" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="3"/>
-<wire x1="27.94" y1="109.22" x2="20.32" y2="109.22" width="0.1524" layer="91"/>
-<label x="17.78" y="109.22" size="1.778" layer="95"/>
+<wire x1="25.4" y1="109.22" x2="17.78" y2="109.22" width="0.1524" layer="91"/>
+<label x="15.24" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO4" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="4"/>
-<wire x1="27.94" y1="106.68" x2="20.32" y2="106.68" width="0.1524" layer="91"/>
-<label x="17.78" y="106.68" size="1.778" layer="95"/>
+<wire x1="25.4" y1="106.68" x2="17.78" y2="106.68" width="0.1524" layer="91"/>
+<label x="15.24" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO17" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="6"/>
-<wire x1="27.94" y1="101.6" x2="20.32" y2="101.6" width="0.1524" layer="91"/>
-<label x="17.78" y="101.6" size="1.778" layer="95"/>
+<wire x1="25.4" y1="101.6" x2="17.78" y2="101.6" width="0.1524" layer="91"/>
+<label x="15.24" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO27" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="7"/>
-<wire x1="27.94" y1="99.06" x2="20.32" y2="99.06" width="0.1524" layer="91"/>
-<label x="17.78" y="99.06" size="1.778" layer="95"/>
+<wire x1="25.4" y1="99.06" x2="17.78" y2="99.06" width="0.1524" layer="91"/>
+<label x="15.24" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO22" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="8"/>
-<wire x1="27.94" y1="96.52" x2="20.32" y2="96.52" width="0.1524" layer="91"/>
-<label x="17.78" y="96.52" size="1.778" layer="95"/>
+<wire x1="25.4" y1="96.52" x2="17.78" y2="96.52" width="0.1524" layer="91"/>
+<label x="15.24" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO10" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="10"/>
-<wire x1="27.94" y1="91.44" x2="20.32" y2="91.44" width="0.1524" layer="91"/>
-<label x="17.78" y="91.44" size="1.778" layer="95"/>
+<wire x1="25.4" y1="91.44" x2="17.78" y2="91.44" width="0.1524" layer="91"/>
+<label x="15.24" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO9" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="11"/>
-<wire x1="27.94" y1="88.9" x2="20.32" y2="88.9" width="0.1524" layer="91"/>
-<label x="17.78" y="88.9" size="1.778" layer="95"/>
+<wire x1="25.4" y1="88.9" x2="17.78" y2="88.9" width="0.1524" layer="91"/>
+<label x="15.24" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO11" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="12"/>
-<wire x1="27.94" y1="86.36" x2="20.32" y2="86.36" width="0.1524" layer="91"/>
-<label x="17.78" y="86.36" size="1.778" layer="95"/>
+<wire x1="25.4" y1="86.36" x2="17.78" y2="86.36" width="0.1524" layer="91"/>
+<label x="15.24" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO0" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="14"/>
-<wire x1="27.94" y1="81.28" x2="20.32" y2="81.28" width="0.1524" layer="91"/>
-<label x="17.78" y="81.28" size="1.778" layer="95"/>
+<wire x1="25.4" y1="81.28" x2="17.78" y2="81.28" width="0.1524" layer="91"/>
+<label x="15.24" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO5" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="15"/>
-<wire x1="27.94" y1="78.74" x2="20.32" y2="78.74" width="0.1524" layer="91"/>
-<label x="17.78" y="78.74" size="1.778" layer="95"/>
+<wire x1="25.4" y1="78.74" x2="17.78" y2="78.74" width="0.1524" layer="91"/>
+<label x="15.24" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO6" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="16"/>
-<wire x1="27.94" y1="76.2" x2="20.32" y2="76.2" width="0.1524" layer="91"/>
-<label x="17.78" y="76.2" size="1.778" layer="95"/>
+<wire x1="25.4" y1="76.2" x2="17.78" y2="76.2" width="0.1524" layer="91"/>
+<label x="15.24" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO13" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="17"/>
-<wire x1="27.94" y1="73.66" x2="20.32" y2="73.66" width="0.1524" layer="91"/>
-<label x="17.78" y="73.66" size="1.778" layer="95"/>
+<wire x1="25.4" y1="73.66" x2="17.78" y2="73.66" width="0.1524" layer="91"/>
+<label x="15.24" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO19" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="18"/>
-<wire x1="27.94" y1="71.12" x2="20.32" y2="71.12" width="0.1524" layer="91"/>
-<label x="17.78" y="71.12" size="1.778" layer="95"/>
+<wire x1="25.4" y1="71.12" x2="17.78" y2="71.12" width="0.1524" layer="91"/>
+<label x="15.24" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO26" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="19"/>
-<wire x1="27.94" y1="68.58" x2="20.32" y2="68.58" width="0.1524" layer="91"/>
-<label x="17.78" y="68.58" size="1.778" layer="95"/>
+<wire x1="25.4" y1="68.58" x2="17.78" y2="68.58" width="0.1524" layer="91"/>
+<label x="15.24" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO14" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="4"/>
-<wire x1="50.8" y1="106.68" x2="58.42" y2="106.68" width="0.1524" layer="91"/>
-<label x="53.34" y="106.68" size="1.778" layer="95"/>
+<wire x1="48.26" y1="106.68" x2="55.88" y2="106.68" width="0.1524" layer="91"/>
+<label x="50.8" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO15" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="5"/>
-<wire x1="50.8" y1="104.14" x2="58.42" y2="104.14" width="0.1524" layer="91"/>
-<label x="53.34" y="104.14" size="1.778" layer="95"/>
+<wire x1="48.26" y1="104.14" x2="55.88" y2="104.14" width="0.1524" layer="91"/>
+<label x="50.8" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO18" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="6"/>
-<wire x1="50.8" y1="101.6" x2="58.42" y2="101.6" width="0.1524" layer="91"/>
-<label x="53.34" y="101.6" size="1.778" layer="95"/>
+<wire x1="48.26" y1="101.6" x2="55.88" y2="101.6" width="0.1524" layer="91"/>
+<label x="50.8" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO23" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="8"/>
-<wire x1="50.8" y1="96.52" x2="58.42" y2="96.52" width="0.1524" layer="91"/>
-<label x="53.34" y="96.52" size="1.778" layer="95"/>
+<wire x1="48.26" y1="96.52" x2="55.88" y2="96.52" width="0.1524" layer="91"/>
+<label x="50.8" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO24" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="9"/>
-<wire x1="50.8" y1="93.98" x2="58.42" y2="93.98" width="0.1524" layer="91"/>
-<label x="53.34" y="93.98" size="1.778" layer="95"/>
+<wire x1="48.26" y1="93.98" x2="55.88" y2="93.98" width="0.1524" layer="91"/>
+<label x="50.8" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO25" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="11"/>
-<wire x1="50.8" y1="88.9" x2="58.42" y2="88.9" width="0.1524" layer="91"/>
-<label x="53.34" y="88.9" size="1.778" layer="95"/>
+<wire x1="48.26" y1="88.9" x2="55.88" y2="88.9" width="0.1524" layer="91"/>
+<label x="50.8" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO8" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="12"/>
-<wire x1="50.8" y1="86.36" x2="58.42" y2="86.36" width="0.1524" layer="91"/>
-<label x="53.34" y="86.36" size="1.778" layer="95"/>
+<wire x1="48.26" y1="86.36" x2="55.88" y2="86.36" width="0.1524" layer="91"/>
+<label x="50.8" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO7" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="13"/>
-<wire x1="50.8" y1="83.82" x2="58.42" y2="83.82" width="0.1524" layer="91"/>
-<label x="53.34" y="83.82" size="1.778" layer="95"/>
+<wire x1="48.26" y1="83.82" x2="55.88" y2="83.82" width="0.1524" layer="91"/>
+<label x="50.8" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO1" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="14"/>
-<wire x1="50.8" y1="81.28" x2="58.42" y2="81.28" width="0.1524" layer="91"/>
-<label x="53.34" y="81.28" size="1.778" layer="95"/>
+<wire x1="48.26" y1="81.28" x2="55.88" y2="81.28" width="0.1524" layer="91"/>
+<label x="50.8" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO12" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="16"/>
-<wire x1="50.8" y1="76.2" x2="58.42" y2="76.2" width="0.1524" layer="91"/>
-<label x="53.34" y="76.2" size="1.778" layer="95"/>
+<wire x1="48.26" y1="76.2" x2="55.88" y2="76.2" width="0.1524" layer="91"/>
+<label x="50.8" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO16" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="18"/>
-<wire x1="50.8" y1="71.12" x2="58.42" y2="71.12" width="0.1524" layer="91"/>
-<label x="53.34" y="71.12" size="1.778" layer="95"/>
+<wire x1="48.26" y1="71.12" x2="55.88" y2="71.12" width="0.1524" layer="91"/>
+<label x="50.8" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO20" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="19"/>
-<wire x1="50.8" y1="68.58" x2="58.42" y2="68.58" width="0.1524" layer="91"/>
-<label x="53.34" y="68.58" size="1.778" layer="95"/>
+<wire x1="48.26" y1="68.58" x2="55.88" y2="68.58" width="0.1524" layer="91"/>
+<label x="50.8" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO21" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="20"/>
-<wire x1="50.8" y1="66.04" x2="58.42" y2="66.04" width="0.1524" layer="91"/>
-<label x="53.34" y="66.04" size="1.778" layer="95"/>
+<wire x1="48.26" y1="66.04" x2="55.88" y2="66.04" width="0.1524" layer="91"/>
+<label x="50.8" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5V" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="114.3" x2="53.34" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="114.3" x2="53.34" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="114.3" x2="50.8" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="114.3" x2="50.8" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="J4" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="111.76" x2="50.8" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="111.76" x2="48.26" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="G$1" pin="5V"/>
-<junction x="53.34" y="114.3"/>
+<junction x="50.8" y="114.3"/>
 </segment>
 <segment>
 <pinref part="LED1" gate="LED" pin="VDD"/>
@@ -31303,7 +32708,7 @@ Source: AVX .. aphvc.pdf</description>
 <text x="198.12" y="7.62" size="2.54" layer="94">PI-LEDZS-0010</text>
 <text x="165.1" y="25.4" size="2.54" layer="94">Pi Zero sized LED-SHIM for Pi's 40-pin extension slot
 (c) Andriy Golovnya</text>
-<text x="10.16" y="71.12" size="1.778" layer="97">Following configurations are supported:
+<text x="10.16" y="86.36" size="1.778" layer="97">Following configurations are supported:
 - GPIO18 for PWM mode (connected by default)
 - GPIO21 for PCM mode
 - GPIO10 for SPI mode</text>
@@ -32035,49 +33440,69 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="GND146" gate="1" x="124.46" y="10.16" smashed="yes">
 <attribute name="VALUE" x="124.46" y="9.906" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="C1" gate="G$1" x="17.78" y="144.78" smashed="yes">
-<attribute name="NAME" x="19.304" y="145.161" size="1.778" layer="95"/>
-<attribute name="VALUE" x="19.304" y="140.081" size="1.778" layer="96"/>
+<instance part="C1" gate="G$1" x="17.78" y="149.86" smashed="yes">
+<attribute name="NAME" x="19.304" y="150.241" size="1.778" layer="95"/>
+<attribute name="VALUE" x="19.304" y="145.161" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY151" gate="G$1" x="17.78" y="149.86" smashed="yes">
-<attribute name="VALUE" x="17.78" y="152.654" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY151" gate="G$1" x="17.78" y="154.94" smashed="yes">
+<attribute name="VALUE" x="17.78" y="157.734" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND148" gate="1" x="17.78" y="134.62" smashed="yes">
-<attribute name="VALUE" x="17.78" y="134.366" size="1.778" layer="96" align="top-center"/>
+<instance part="GND148" gate="1" x="17.78" y="139.7" smashed="yes">
+<attribute name="VALUE" x="17.78" y="139.446" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="C2" gate="G$1" x="25.4" y="144.78" smashed="yes">
-<attribute name="NAME" x="26.924" y="145.161" size="1.778" layer="95"/>
-<attribute name="VALUE" x="26.924" y="140.081" size="1.778" layer="96"/>
+<instance part="C2" gate="G$1" x="25.4" y="149.86" smashed="yes">
+<attribute name="NAME" x="26.924" y="150.241" size="1.778" layer="95"/>
+<attribute name="VALUE" x="26.924" y="145.161" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY152" gate="G$1" x="25.4" y="149.86" smashed="yes">
-<attribute name="VALUE" x="25.4" y="152.654" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY152" gate="G$1" x="25.4" y="154.94" smashed="yes">
+<attribute name="VALUE" x="25.4" y="157.734" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND149" gate="1" x="25.4" y="134.62" smashed="yes">
-<attribute name="VALUE" x="25.4" y="134.366" size="1.778" layer="96" align="top-center"/>
+<instance part="GND149" gate="1" x="25.4" y="139.7" smashed="yes">
+<attribute name="VALUE" x="25.4" y="139.446" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="C3" gate="G$1" x="33.02" y="144.78" smashed="yes">
-<attribute name="NAME" x="34.544" y="145.161" size="1.778" layer="95"/>
-<attribute name="VALUE" x="34.544" y="140.081" size="1.778" layer="96"/>
+<instance part="C3" gate="G$1" x="33.02" y="149.86" smashed="yes">
+<attribute name="NAME" x="34.544" y="150.241" size="1.778" layer="95"/>
+<attribute name="VALUE" x="34.544" y="145.161" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY153" gate="G$1" x="33.02" y="149.86" smashed="yes">
-<attribute name="VALUE" x="33.02" y="152.654" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY153" gate="G$1" x="33.02" y="154.94" smashed="yes">
+<attribute name="VALUE" x="33.02" y="157.734" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND150" gate="1" x="33.02" y="134.62" smashed="yes">
-<attribute name="VALUE" x="33.02" y="134.366" size="1.778" layer="96" align="top-center"/>
+<instance part="GND150" gate="1" x="33.02" y="139.7" smashed="yes">
+<attribute name="VALUE" x="33.02" y="139.446" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="C4" gate="G$1" x="40.64" y="144.78" smashed="yes">
-<attribute name="NAME" x="42.164" y="145.161" size="1.778" layer="95"/>
-<attribute name="VALUE" x="42.164" y="140.081" size="1.778" layer="96"/>
+<instance part="C4" gate="G$1" x="40.64" y="149.86" smashed="yes">
+<attribute name="NAME" x="42.164" y="150.241" size="1.778" layer="95"/>
+<attribute name="VALUE" x="42.164" y="145.161" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY154" gate="G$1" x="40.64" y="149.86" smashed="yes">
-<attribute name="VALUE" x="40.64" y="152.654" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY154" gate="G$1" x="40.64" y="154.94" smashed="yes">
+<attribute name="VALUE" x="40.64" y="157.734" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND151" gate="1" x="40.64" y="134.62" smashed="yes">
-<attribute name="VALUE" x="40.64" y="134.366" size="1.778" layer="96" align="top-center"/>
+<instance part="GND151" gate="1" x="40.64" y="139.7" smashed="yes">
+<attribute name="VALUE" x="40.64" y="139.446" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="SJ1" gate="G$1" x="30.48" y="99.06" smashed="yes">
-<attribute name="NAME" x="33.02" y="101.981" size="1.778" layer="95"/>
-<attribute name="VALUE" x="33.02" y="94.615" size="1.778" layer="96"/>
+<instance part="SJ1" gate="G$1" x="30.48" y="114.3" smashed="yes">
+<attribute name="NAME" x="33.02" y="117.221" size="1.778" layer="95"/>
+<attribute name="VALUE" x="33.02" y="109.855" size="1.778" layer="96"/>
+</instance>
+<instance part="J1" gate="J$1" x="15.24" y="71.12" smashed="yes">
+<attribute name="VALUE" x="12.7" y="66.294" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="12.7" y="76.708" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="J2" gate="J$1" x="40.64" y="71.12" smashed="yes">
+<attribute name="VALUE" x="38.1" y="66.294" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="38.1" y="76.708" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="SUPPLY155" gate="G$1" x="25.4" y="73.66" smashed="yes">
+<attribute name="VALUE" x="25.4" y="76.454" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY156" gate="G$1" x="50.8" y="73.66" smashed="yes">
+<attribute name="VALUE" x="50.8" y="76.454" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="GND152" gate="1" x="25.4" y="66.04" smashed="yes">
+<attribute name="VALUE" x="25.4" y="65.786" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="GND153" gate="1" x="50.8" y="66.04" smashed="yes">
+<attribute name="VALUE" x="50.8" y="65.786" size="1.778" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -32978,23 +34403,33 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="147.32" x2="17.78" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="152.4" x2="17.78" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="SUPPLY151" gate="G$1" pin="5V"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="25.4" y1="147.32" x2="25.4" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="152.4" x2="25.4" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="SUPPLY152" gate="G$1" pin="5V"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="33.02" y1="147.32" x2="33.02" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="152.4" x2="33.02" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="SUPPLY153" gate="G$1" pin="5V"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="147.32" x2="40.64" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="152.4" x2="40.64" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="SUPPLY154" gate="G$1" pin="5V"/>
+</segment>
+<segment>
+<pinref part="J1" gate="J$1" pin="3"/>
+<pinref part="SUPPLY155" gate="G$1" pin="5V"/>
+<wire x1="22.86" y1="73.66" x2="25.4" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J2" gate="J$1" pin="3"/>
+<wire x1="48.26" y1="73.66" x2="50.8" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="SUPPLY156" gate="G$1" pin="5V"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -33360,23 +34795,33 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="139.7" x2="17.78" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="144.78" x2="17.78" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="GND148" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="25.4" y1="139.7" x2="25.4" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="144.78" x2="25.4" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="GND149" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="33.02" y1="139.7" x2="33.02" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="144.78" x2="33.02" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="GND150" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="40.64" y1="139.7" x2="40.64" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="144.78" x2="40.64" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="GND151" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J1" gate="J$1" pin="1"/>
+<wire x1="22.86" y1="68.58" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="GND152" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J2" gate="J$1" pin="1"/>
+<wire x1="48.26" y1="68.58" x2="50.8" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="GND153" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="DO_LAST" class="0">
@@ -33385,35 +34830,47 @@ Source: AVX .. aphvc.pdf</description>
 <label x="142.24" y="17.78" size="1.778" layer="95"/>
 <pinref part="LED144" gate="LED" pin="DO"/>
 </segment>
+<segment>
+<pinref part="J2" gate="J$1" pin="2"/>
+<wire x1="48.26" y1="71.12" x2="58.42" y2="71.12" width="0.1524" layer="91"/>
+<label x="50.8" y="71.12" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="GPIO21" class="0">
 <segment>
 <pinref part="SJ1" gate="G$1" pin="4"/>
-<wire x1="35.56" y1="99.06" x2="45.72" y2="99.06" width="0.1524" layer="91"/>
-<label x="38.1" y="99.06" size="1.778" layer="95"/>
+<wire x1="35.56" y1="114.3" x2="45.72" y2="114.3" width="0.1524" layer="91"/>
+<label x="38.1" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DATA" class="0">
 <segment>
 <pinref part="SJ1" gate="G$1" pin="2"/>
-<wire x1="25.4" y1="99.06" x2="15.24" y2="99.06" width="0.1524" layer="91"/>
-<label x="15.24" y="99.06" size="1.778" layer="95"/>
+<wire x1="25.4" y1="114.3" x2="15.24" y2="114.3" width="0.1524" layer="91"/>
+<label x="15.24" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO18" class="0">
 <segment>
 <pinref part="SJ1" gate="G$1" pin="1"/>
-<wire x1="30.48" y1="104.14" x2="30.48" y2="114.3" width="0.1524" layer="91"/>
-<label x="30.48" y="106.68" size="1.778" layer="95" rot="R90"/>
-<wire x1="30.48" y1="104.14" x2="30.48" y2="99.06" width="0.1524" layer="91"/>
-<junction x="30.48" y="104.14"/>
+<wire x1="30.48" y1="119.38" x2="30.48" y2="129.54" width="0.1524" layer="91"/>
+<label x="30.48" y="121.92" size="1.778" layer="95" rot="R90"/>
+<wire x1="30.48" y1="119.38" x2="30.48" y2="114.3" width="0.1524" layer="91"/>
+<junction x="30.48" y="119.38"/>
 </segment>
 </net>
 <net name="GPIO10" class="0">
 <segment>
 <pinref part="SJ1" gate="G$1" pin="3"/>
-<wire x1="30.48" y1="93.98" x2="30.48" y2="83.82" width="0.1524" layer="91"/>
-<label x="30.48" y="83.82" size="1.778" layer="95" rot="R90"/>
+<wire x1="30.48" y1="109.22" x2="30.48" y2="99.06" width="0.1524" layer="91"/>
+<label x="30.48" y="99.06" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="DI_FIRST" class="0">
+<segment>
+<pinref part="J1" gate="J$1" pin="2"/>
+<wire x1="22.86" y1="71.12" x2="33.02" y2="71.12" width="0.1524" layer="91"/>
+<label x="25.4" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
