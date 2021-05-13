@@ -28495,8 +28495,8 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="1.1" y1="-1" x2="1.1" y2="1" width="0.0762" layer="21"/>
 <wire x1="1.1" y1="1" x2="-1.1" y2="1" width="0.0762" layer="21"/>
 <rectangle x1="0" y1="-1" x2="0.5" y2="1" layer="51"/>
-<text x="-1.27" y="1.27" size="0.6096" layer="51">&gt;NAME</text>
-<text x="-1.27" y="-1.905" size="0.6096" layer="51">&gt;VALUE</text>
+<text x="-1.27" y="1.27" size="0.6096" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-1.905" size="0.6096" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -34838,9 +34838,9 @@ CONN_03
 </net>
 <net name="GPIO21" class="0">
 <segment>
-<pinref part="SJ1" gate="G$1" pin="4"/>
-<wire x1="35.56" y1="114.3" x2="45.72" y2="114.3" width="0.1524" layer="91"/>
-<label x="38.1" y="114.3" size="1.778" layer="95"/>
+<pinref part="SJ1" gate="G$1" pin="1"/>
+<wire x1="30.48" y1="119.38" x2="30.48" y2="129.54" width="0.1524" layer="91"/>
+<label x="30.48" y="121.92" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="DATA" class="0">
@@ -34848,15 +34848,6 @@ CONN_03
 <pinref part="SJ1" gate="G$1" pin="2"/>
 <wire x1="25.4" y1="114.3" x2="15.24" y2="114.3" width="0.1524" layer="91"/>
 <label x="15.24" y="114.3" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIO18" class="0">
-<segment>
-<pinref part="SJ1" gate="G$1" pin="1"/>
-<wire x1="30.48" y1="119.38" x2="30.48" y2="129.54" width="0.1524" layer="91"/>
-<label x="30.48" y="121.92" size="1.778" layer="95" rot="R90"/>
-<wire x1="30.48" y1="119.38" x2="30.48" y2="114.3" width="0.1524" layer="91"/>
-<junction x="30.48" y="119.38"/>
 </segment>
 </net>
 <net name="GPIO10" class="0">
@@ -34871,6 +34862,15 @@ CONN_03
 <pinref part="J1" gate="J$1" pin="2"/>
 <wire x1="22.86" y1="71.12" x2="33.02" y2="71.12" width="0.1524" layer="91"/>
 <label x="25.4" y="71.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GPIO18" class="0">
+<segment>
+<pinref part="SJ1" gate="G$1" pin="4"/>
+<wire x1="35.56" y1="114.3" x2="45.72" y2="114.3" width="0.1524" layer="91"/>
+<label x="38.1" y="114.3" size="1.778" layer="95"/>
+<wire x1="35.56" y1="114.3" x2="30.48" y2="114.3" width="0.1524" layer="91"/>
+<junction x="35.56" y="114.3"/>
 </segment>
 </net>
 </nets>
