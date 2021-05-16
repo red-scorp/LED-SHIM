@@ -336,9 +336,6 @@
 <hole x="12.446" y="12.827" drill="0.35"/>
 <hole x="10.922" y="12.827" drill="0.35"/>
 <hole x="10.414" y="12.827" drill="0.35"/>
-<hole x="11.43" y="13.97" drill="1"/>
-<hole x="13.716" y="13.97" drill="1"/>
-<hole x="41.91" y="13.97" drill="1"/>
 </plain>
 <libraries>
 <library name="_my_locked_connectors">
