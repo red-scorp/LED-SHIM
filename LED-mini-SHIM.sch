@@ -8744,6 +8744,7 @@ Source: AVX .. aphvc.pdf</description>
 <rectangle x1="0" y1="-1" x2="0.5" y2="1" layer="51"/>
 <text x="-1.27" y="1.27" size="0.6096" layer="25">&gt;NAME</text>
 <text x="-1.27" y="-1.905" size="0.6096" layer="27">&gt;VALUE</text>
+<circle x="1.016" y="-1.27" radius="0.0762" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
