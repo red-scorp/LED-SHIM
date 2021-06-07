@@ -198,9 +198,9 @@
 <text x="41.529" y="17.78" size="1.27" layer="22" font="vector" ratio="12" rot="MR270">BOTTOM SIDE</text>
 <wire x1="0" y1="2.9972" x2="0" y2="3" width="0" layer="20" curve="-0.053476"/>
 <wire x1="0" y1="62" x2="0" y2="62.0014" width="0" layer="20" curve="-0.026738"/>
-<text x="47.191" y="42.83" size="1.27" layer="22" font="vector" ratio="24" rot="MR0">LED-zero-SHIM v1.0</text>
-<text x="45.011" y="49.307" size="1.016" layer="22" font="vector" ratio="12" rot="MR0">http://redscorp.net</text>
-<text x="45.011" y="48.037" size="1.016" layer="22" font="vector" ratio="12" rot="MR0">(c) Andriy Golovnya</text>
+<text x="36.142" y="37.496" size="1.27" layer="22" font="vector" ratio="24" rot="MR0">LED-plus-SHIM v1.0</text>
+<text x="33.962" y="43.973" size="1.016" layer="22" font="vector" ratio="12" rot="MR0">http://redscorp.net</text>
+<text x="33.962" y="42.703" size="1.016" layer="22" font="vector" ratio="12" rot="MR0">(c) Andriy Golovnya</text>
 <wire x1="0" y1="2.9972" x2="0" y2="62.0014" width="0" layer="20"/>
 <text x="48.26" y="64.008" size="0.8128" layer="22" font="vector" rot="MR0">GPIO21</text>
 <text x="48.387" y="56.388" size="0.8128" layer="22" font="vector" rot="MR90">GPIO18</text>
@@ -10032,7 +10032,7 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="LOGO1" library="_my_logos" package="MFDEC_L_30MM" value="MFDECLOGO_L_30MM" x="-4.191" y="-7.112" smashed="yes" rot="MR90"/>
-<element name="LOGO3" library="_my_logos" package="RSNURL_QR_10MM" value="RSNURL_QR_10MM" x="43.741" y="51.212" smashed="yes" rot="MR0"/>
+<element name="LOGO3" library="_my_logos" package="RSNURL_QR_10MM" value="RSNURL_QR_10MM" x="32.692" y="45.878" smashed="yes" rot="MR0"/>
 <element name="LED2" library="WS281X" package="WS2812X-2020" value="WS2812C-2020" x="47.752" y="53.34" smashed="yes" rot="R270">
 <attribute name="NAME" x="49.022" y="54.61" size="0.6096" layer="27" font="vector" rot="R270"/>
 </element>

@@ -30811,8 +30811,8 @@ This is just like the LOCK variant in that the holes are staggared by 5 mil, but
 <sheet>
 <plain>
 <text x="256.54" y="7.62" size="2.54" layer="94">1.0</text>
-<text x="198.12" y="7.62" size="2.54" layer="94">PI-LEDZS-0010</text>
-<text x="165.1" y="25.4" size="2.54" layer="94">Pi Zero sized LED-SHIM for Pi's 40-pin extension slot
+<text x="198.12" y="7.62" size="2.54" layer="94">PI-LEDPS-0010</text>
+<text x="165.1" y="25.4" size="2.54" layer="94">Pi Plus sized LED-SHIM for Pi's 40-pin extension slot
 (c) Andriy Golovnya</text>
 <text x="25.4" y="121.92" size="2.54" layer="94">Right connector
 (inside mount)</text>
@@ -33152,8 +33152,8 @@ This is just like the LOCK variant in that the holes are staggared by 5 mil, but
 <sheet>
 <plain>
 <text x="256.54" y="7.62" size="2.54" layer="94">1.0</text>
-<text x="198.12" y="7.62" size="2.54" layer="94">PI-LEDZS-0010</text>
-<text x="165.1" y="25.4" size="2.54" layer="94">Pi Zero sized LED-SHIM for Pi's 40-pin extension slot
+<text x="198.12" y="7.62" size="2.54" layer="94">PI-LEDPS-0010</text>
+<text x="165.1" y="25.4" size="2.54" layer="94">Pi Plus sized LED-SHIM for Pi's 40-pin extension slot
 (c) Andriy Golovnya</text>
 <text x="10.16" y="86.36" size="1.778" layer="97">Following configurations are supported:
 - GPIO18 for PWM mode (connected by default)
@@ -35327,8 +35327,8 @@ This is just like the LOCK variant in that the holes are staggared by 5 mil, but
 <sheet>
 <plain>
 <text x="256.54" y="7.62" size="2.54" layer="94">1.0</text>
-<text x="198.12" y="7.62" size="2.54" layer="94">PI-LEDZS-0010</text>
-<text x="165.1" y="25.4" size="2.54" layer="94">Pi Zero sized LED-SHIM for Pi's 40-pin extension slot
+<text x="198.12" y="7.62" size="2.54" layer="94">PI-LEDPS-0010</text>
+<text x="165.1" y="25.4" size="2.54" layer="94">Pi Plus sized LED-SHIM for Pi's 40-pin extension slot
 (c) Andriy Golovnya</text>
 </plain>
 <instances>
@@ -37410,8 +37410,8 @@ This is just like the LOCK variant in that the holes are staggared by 5 mil, but
 <sheet>
 <plain>
 <text x="256.54" y="7.62" size="2.54" layer="94">1.0</text>
-<text x="198.12" y="7.62" size="2.54" layer="94">PI-LEDZS-0010</text>
-<text x="165.1" y="25.4" size="2.54" layer="94">Pi Zero sized LED-SHIM for Pi's 40-pin extension slot
+<text x="198.12" y="7.62" size="2.54" layer="94">PI-LEDPS-0010</text>
+<text x="165.1" y="25.4" size="2.54" layer="94">Pi Plus sized LED-SHIM for Pi's 40-pin extension slot
 (c) Andriy Golovnya</text>
 </plain>
 <instances>
