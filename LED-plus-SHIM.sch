@@ -29894,7 +29894,7 @@ This is just like the LOCK variant in that the holes are staggared by 5 mil, but
 </classes>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="DINA4_L" device=""/>
-<part name="LOGO1" library="_my_logos" deviceset="MFDECLOGO" device="_L_30MM"/>
+<part name="LOGO1" library="_my_logos" deviceset="MFDECLOGO" device="_L_40MM" value="MFDECLOGO_L_40MM"/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="LED2" library="WS281X" deviceset="WS2812" device="C-2020"/>
@@ -30806,6 +30806,9 @@ This is just like the LOCK variant in that the holes are staggared by 5 mil, but
 <part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF"/>
 <part name="SUPPLY304" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND301" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF"/>
+<part name="SUPPLY305" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
+<part name="GND302" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -36058,45 +36061,55 @@ This is just like the LOCK variant in that the holes are staggared by 5 mil, but
 <instance part="GND225" gate="1" x="124.46" y="10.16" smashed="yes">
 <attribute name="VALUE" x="124.46" y="9.906" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="C5" gate="G$1" x="20.32" y="154.94" smashed="yes">
-<attribute name="NAME" x="21.844" y="155.321" size="1.778" layer="95"/>
-<attribute name="VALUE" x="21.844" y="150.241" size="1.778" layer="96"/>
+<instance part="C5" gate="G$1" x="15.24" y="154.94" smashed="yes">
+<attribute name="NAME" x="16.764" y="155.321" size="1.778" layer="95"/>
+<attribute name="VALUE" x="16.764" y="150.241" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY301" gate="G$1" x="20.32" y="160.02" smashed="yes">
-<attribute name="VALUE" x="20.32" y="162.814" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY301" gate="G$1" x="15.24" y="160.02" smashed="yes">
+<attribute name="VALUE" x="15.24" y="162.814" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND298" gate="1" x="20.32" y="144.78" smashed="yes">
-<attribute name="VALUE" x="20.32" y="144.526" size="1.778" layer="96" align="top-center"/>
+<instance part="GND298" gate="1" x="15.24" y="144.78" smashed="yes">
+<attribute name="VALUE" x="15.24" y="144.526" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="C6" gate="G$1" x="27.94" y="154.94" smashed="yes">
-<attribute name="NAME" x="29.464" y="155.321" size="1.778" layer="95"/>
-<attribute name="VALUE" x="29.464" y="150.241" size="1.778" layer="96"/>
+<instance part="C6" gate="G$1" x="22.86" y="154.94" smashed="yes">
+<attribute name="NAME" x="24.384" y="155.321" size="1.778" layer="95"/>
+<attribute name="VALUE" x="24.384" y="150.241" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY302" gate="G$1" x="27.94" y="160.02" smashed="yes">
-<attribute name="VALUE" x="27.94" y="162.814" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY302" gate="G$1" x="22.86" y="160.02" smashed="yes">
+<attribute name="VALUE" x="22.86" y="162.814" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND299" gate="1" x="27.94" y="144.78" smashed="yes">
-<attribute name="VALUE" x="27.94" y="144.526" size="1.778" layer="96" align="top-center"/>
+<instance part="GND299" gate="1" x="22.86" y="144.78" smashed="yes">
+<attribute name="VALUE" x="22.86" y="144.526" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="C7" gate="G$1" x="35.56" y="154.94" smashed="yes">
-<attribute name="NAME" x="37.084" y="155.321" size="1.778" layer="95"/>
-<attribute name="VALUE" x="37.084" y="150.241" size="1.778" layer="96"/>
+<instance part="C7" gate="G$1" x="30.48" y="154.94" smashed="yes">
+<attribute name="NAME" x="32.004" y="155.321" size="1.778" layer="95"/>
+<attribute name="VALUE" x="32.004" y="150.241" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY303" gate="G$1" x="35.56" y="160.02" smashed="yes">
-<attribute name="VALUE" x="35.56" y="162.814" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY303" gate="G$1" x="30.48" y="160.02" smashed="yes">
+<attribute name="VALUE" x="30.48" y="162.814" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND300" gate="1" x="35.56" y="144.78" smashed="yes">
-<attribute name="VALUE" x="35.56" y="144.526" size="1.778" layer="96" align="top-center"/>
+<instance part="GND300" gate="1" x="30.48" y="144.78" smashed="yes">
+<attribute name="VALUE" x="30.48" y="144.526" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="C8" gate="G$1" x="43.18" y="154.94" smashed="yes">
-<attribute name="NAME" x="44.704" y="155.321" size="1.778" layer="95"/>
-<attribute name="VALUE" x="44.704" y="150.241" size="1.778" layer="96"/>
+<instance part="C8" gate="G$1" x="38.1" y="154.94" smashed="yes">
+<attribute name="NAME" x="39.624" y="155.321" size="1.778" layer="95"/>
+<attribute name="VALUE" x="39.624" y="150.241" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY304" gate="G$1" x="43.18" y="160.02" smashed="yes">
-<attribute name="VALUE" x="43.18" y="162.814" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY304" gate="G$1" x="38.1" y="160.02" smashed="yes">
+<attribute name="VALUE" x="38.1" y="162.814" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND301" gate="1" x="43.18" y="144.78" smashed="yes">
-<attribute name="VALUE" x="43.18" y="144.526" size="1.778" layer="96" align="top-center"/>
+<instance part="GND301" gate="1" x="38.1" y="144.78" smashed="yes">
+<attribute name="VALUE" x="38.1" y="144.526" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="C9" gate="G$1" x="45.72" y="154.94" smashed="yes">
+<attribute name="NAME" x="47.244" y="155.321" size="1.778" layer="95"/>
+<attribute name="VALUE" x="47.244" y="150.241" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY305" gate="G$1" x="45.72" y="160.02" smashed="yes">
+<attribute name="VALUE" x="45.72" y="162.814" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="GND302" gate="1" x="45.72" y="144.78" smashed="yes">
+<attribute name="VALUE" x="45.72" y="144.526" size="1.778" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -36990,23 +37003,28 @@ This is just like the LOCK variant in that the holes are staggared by 5 mil, but
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="157.48" x2="20.32" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="157.48" x2="15.24" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="SUPPLY301" gate="G$1" pin="5V"/>
 </segment>
 <segment>
 <pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="27.94" y1="157.48" x2="27.94" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="157.48" x2="22.86" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="SUPPLY302" gate="G$1" pin="5V"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="157.48" x2="35.56" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="157.48" x2="30.48" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="SUPPLY303" gate="G$1" pin="5V"/>
 </segment>
 <segment>
 <pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="43.18" y1="157.48" x2="43.18" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="157.48" x2="38.1" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="SUPPLY304" gate="G$1" pin="5V"/>
+</segment>
+<segment>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="157.48" x2="45.72" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="SUPPLY305" gate="G$1" pin="5V"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -37372,23 +37390,28 @@ This is just like the LOCK variant in that the holes are staggared by 5 mil, but
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="20.32" y1="149.86" x2="20.32" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="149.86" x2="15.24" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="GND298" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="149.86" x2="27.94" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="149.86" x2="22.86" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="GND299" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="35.56" y1="149.86" x2="35.56" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="149.86" x2="30.48" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="GND300" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="43.18" y1="149.86" x2="43.18" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="149.86" x2="38.1" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="GND301" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C9" gate="G$1" pin="2"/>
+<wire x1="45.72" y1="149.86" x2="45.72" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="GND302" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="DO_MID2" class="0">
@@ -39412,7 +39435,6 @@ This is just like the LOCK variant in that the holes are staggared by 5 mil, but
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,86.36,162.56,LED1,VDD,5V,,,"/>
 <approved hash="104,1,104.14,162.56,LED2,VDD,5V,,,"/>
 <approved hash="104,1,121.92,162.56,LED3,VDD,5V,,,"/>
 <approved hash="104,1,139.7,162.56,LED4,VDD,5V,,,"/>
@@ -39483,8 +39505,6 @@ This is just like the LOCK variant in that the holes are staggared by 5 mil, but
 <approved hash="104,1,86.36,20.32,LED69,VDD,5V,,,"/>
 <approved hash="104,1,104.14,20.32,LED70,VDD,5V,,,"/>
 <approved hash="104,1,121.92,20.32,LED71,VDD,5V,,,"/>
-<approved hash="104,1,139.7,20.32,LED72,VDD,5V,,,"/>
-<approved hash="104,2,86.36,162.56,LED73,VDD,5V,,,"/>
 <approved hash="104,2,104.14,162.56,LED74,VDD,5V,,,"/>
 <approved hash="104,2,121.92,162.56,LED75,VDD,5V,,,"/>
 <approved hash="104,2,139.7,162.56,LED76,VDD,5V,,,"/>
@@ -39555,41 +39575,190 @@ This is just like the LOCK variant in that the holes are staggared by 5 mil, but
 <approved hash="104,2,86.36,20.32,LED141,VDD,5V,,,"/>
 <approved hash="104,2,104.14,20.32,LED142,VDD,5V,,,"/>
 <approved hash="104,2,121.92,20.32,LED143,VDD,5V,,,"/>
-<approved hash="104,2,139.7,20.32,LED144,VDD,5V,,,"/>
 <approved hash="104,1,27.94,154.94,IC1,VCCA,3.3V,,,"/>
 <approved hash="104,1,48.26,154.94,IC1,VCCB,5V,,,"/>
-<approved hash="106,1,25.4,81.28,GPIO0,,,,,"/>
-<approved hash="106,1,48.26,81.28,GPIO1,,,,,"/>
-<approved hash="106,1,25.4,111.76,GPIO2,,,,,"/>
-<approved hash="106,1,25.4,109.22,GPIO3,,,,,"/>
-<approved hash="106,1,25.4,106.68,GPIO4,,,,,"/>
-<approved hash="106,1,25.4,78.74,GPIO5,,,,,"/>
-<approved hash="106,1,25.4,76.2,GPIO6,,,,,"/>
-<approved hash="106,1,48.26,83.82,GPIO7,,,,,"/>
-<approved hash="106,1,48.26,86.36,GPIO8,,,,,"/>
-<approved hash="106,1,25.4,88.9,GPIO9,,,,,"/>
-<approved hash="106,1,25.4,86.36,GPIO11,,,,,"/>
-<approved hash="106,1,48.26,76.2,GPIO12,,,,,"/>
-<approved hash="106,1,25.4,73.66,GPIO13,,,,,"/>
-<approved hash="106,1,48.26,106.68,GPIO14,,,,,"/>
-<approved hash="106,1,48.26,104.14,GPIO15,,,,,"/>
-<approved hash="106,1,48.26,71.12,GPIO16,,,,,"/>
-<approved hash="106,1,25.4,101.6,GPIO17,,,,,"/>
-<approved hash="106,1,25.4,71.12,GPIO19,,,,,"/>
-<approved hash="106,1,48.26,68.58,GPIO20,,,,,"/>
-<approved hash="106,1,25.4,96.52,GPIO22,,,,,"/>
-<approved hash="106,1,48.26,96.52,GPIO23,,,,,"/>
-<approved hash="106,1,48.26,93.98,GPIO24,,,,,"/>
-<approved hash="106,1,48.26,88.9,GPIO25,,,,,"/>
-<approved hash="106,1,25.4,68.58,GPIO26,,,,,"/>
-<approved hash="106,1,25.4,99.06,GPIO27,,,,,"/>
+<approved hash="104,3,86.36,162.56,LED145,VDD,5V,,,"/>
+<approved hash="104,3,104.14,162.56,LED146,VDD,5V,,,"/>
+<approved hash="104,3,121.92,162.56,LED147,VDD,5V,,,"/>
+<approved hash="104,3,139.7,162.56,LED148,VDD,5V,,,"/>
+<approved hash="104,3,157.48,162.56,LED149,VDD,5V,,,"/>
+<approved hash="104,3,175.26,162.56,LED150,VDD,5V,,,"/>
+<approved hash="104,3,193.04,162.56,LED151,VDD,5V,,,"/>
+<approved hash="104,3,210.82,162.56,LED152,VDD,5V,,,"/>
+<approved hash="104,3,228.6,162.56,LED153,VDD,5V,,,"/>
+<approved hash="104,3,246.38,162.56,LED154,VDD,5V,,,"/>
+<approved hash="104,3,86.36,142.24,LED155,VDD,5V,,,"/>
+<approved hash="104,3,104.14,142.24,LED156,VDD,5V,,,"/>
+<approved hash="104,3,121.92,142.24,LED157,VDD,5V,,,"/>
+<approved hash="104,3,139.7,142.24,LED158,VDD,5V,,,"/>
+<approved hash="104,3,157.48,142.24,LED159,VDD,5V,,,"/>
+<approved hash="104,3,175.26,142.24,LED160,VDD,5V,,,"/>
+<approved hash="104,3,193.04,142.24,LED161,VDD,5V,,,"/>
+<approved hash="104,3,210.82,142.24,LED162,VDD,5V,,,"/>
+<approved hash="104,3,228.6,142.24,LED163,VDD,5V,,,"/>
+<approved hash="104,3,246.38,142.24,LED164,VDD,5V,,,"/>
+<approved hash="104,3,86.36,121.92,LED165,VDD,5V,,,"/>
+<approved hash="104,3,104.14,121.92,LED166,VDD,5V,,,"/>
+<approved hash="104,3,121.92,121.92,LED167,VDD,5V,,,"/>
+<approved hash="104,3,139.7,121.92,LED168,VDD,5V,,,"/>
+<approved hash="104,3,157.48,121.92,LED169,VDD,5V,,,"/>
+<approved hash="104,3,175.26,121.92,LED170,VDD,5V,,,"/>
+<approved hash="104,3,193.04,121.92,LED171,VDD,5V,,,"/>
+<approved hash="104,3,210.82,121.92,LED172,VDD,5V,,,"/>
+<approved hash="104,3,228.6,121.92,LED173,VDD,5V,,,"/>
+<approved hash="104,3,246.38,121.92,LED174,VDD,5V,,,"/>
+<approved hash="104,3,86.36,101.6,LED175,VDD,5V,,,"/>
+<approved hash="104,3,104.14,101.6,LED176,VDD,5V,,,"/>
+<approved hash="104,3,121.92,101.6,LED177,VDD,5V,,,"/>
+<approved hash="104,3,139.7,101.6,LED178,VDD,5V,,,"/>
+<approved hash="104,3,157.48,101.6,LED179,VDD,5V,,,"/>
+<approved hash="104,3,175.26,101.6,LED180,VDD,5V,,,"/>
+<approved hash="104,3,193.04,101.6,LED181,VDD,5V,,,"/>
+<approved hash="104,3,210.82,101.6,LED182,VDD,5V,,,"/>
+<approved hash="104,3,228.6,101.6,LED183,VDD,5V,,,"/>
+<approved hash="104,3,246.38,101.6,LED184,VDD,5V,,,"/>
+<approved hash="104,3,86.36,81.28,LED185,VDD,5V,,,"/>
+<approved hash="104,3,104.14,81.28,LED186,VDD,5V,,,"/>
+<approved hash="104,3,121.92,81.28,LED187,VDD,5V,,,"/>
+<approved hash="104,3,139.7,81.28,LED188,VDD,5V,,,"/>
+<approved hash="104,3,157.48,81.28,LED189,VDD,5V,,,"/>
+<approved hash="104,3,175.26,81.28,LED190,VDD,5V,,,"/>
+<approved hash="104,3,193.04,81.28,LED191,VDD,5V,,,"/>
+<approved hash="104,3,210.82,81.28,LED192,VDD,5V,,,"/>
+<approved hash="104,3,228.6,81.28,LED193,VDD,5V,,,"/>
+<approved hash="104,3,246.38,81.28,LED194,VDD,5V,,,"/>
+<approved hash="104,3,86.36,60.96,LED195,VDD,5V,,,"/>
+<approved hash="104,3,104.14,60.96,LED196,VDD,5V,,,"/>
+<approved hash="104,3,121.92,60.96,LED197,VDD,5V,,,"/>
+<approved hash="104,3,139.7,60.96,LED198,VDD,5V,,,"/>
+<approved hash="104,3,157.48,60.96,LED199,VDD,5V,,,"/>
+<approved hash="104,3,175.26,60.96,LED200,VDD,5V,,,"/>
+<approved hash="104,3,193.04,60.96,LED201,VDD,5V,,,"/>
+<approved hash="104,3,210.82,60.96,LED202,VDD,5V,,,"/>
+<approved hash="104,3,228.6,60.96,LED203,VDD,5V,,,"/>
+<approved hash="104,3,246.38,60.96,LED204,VDD,5V,,,"/>
+<approved hash="104,3,50.8,40.64,LED205,VDD,5V,,,"/>
+<approved hash="104,3,68.58,40.64,LED206,VDD,5V,,,"/>
+<approved hash="104,3,86.36,40.64,LED207,VDD,5V,,,"/>
+<approved hash="104,3,104.14,40.64,LED208,VDD,5V,,,"/>
+<approved hash="104,3,121.92,40.64,LED209,VDD,5V,,,"/>
+<approved hash="104,3,139.7,40.64,LED210,VDD,5V,,,"/>
+<approved hash="104,3,50.8,20.32,LED211,VDD,5V,,,"/>
+<approved hash="104,3,68.58,20.32,LED212,VDD,5V,,,"/>
+<approved hash="104,3,86.36,20.32,LED213,VDD,5V,,,"/>
+<approved hash="104,3,104.14,20.32,LED214,VDD,5V,,,"/>
+<approved hash="104,3,121.92,20.32,LED215,VDD,5V,,,"/>
+<approved hash="104,3,139.7,20.32,LED216,VDD,5V,,,"/>
+<approved hash="104,4,86.36,162.56,LED217,VDD,5V,,,"/>
+<approved hash="104,4,104.14,162.56,LED218,VDD,5V,,,"/>
+<approved hash="104,4,121.92,162.56,LED219,VDD,5V,,,"/>
+<approved hash="104,4,139.7,162.56,LED220,VDD,5V,,,"/>
+<approved hash="104,4,157.48,162.56,LED221,VDD,5V,,,"/>
+<approved hash="104,4,175.26,162.56,LED222,VDD,5V,,,"/>
+<approved hash="104,4,193.04,162.56,LED223,VDD,5V,,,"/>
+<approved hash="104,4,210.82,162.56,LED224,VDD,5V,,,"/>
+<approved hash="104,4,228.6,162.56,LED225,VDD,5V,,,"/>
+<approved hash="104,4,246.38,162.56,LED226,VDD,5V,,,"/>
+<approved hash="104,4,86.36,142.24,LED227,VDD,5V,,,"/>
+<approved hash="104,4,104.14,142.24,LED228,VDD,5V,,,"/>
+<approved hash="104,4,121.92,142.24,LED229,VDD,5V,,,"/>
+<approved hash="104,4,139.7,142.24,LED230,VDD,5V,,,"/>
+<approved hash="104,4,157.48,142.24,LED231,VDD,5V,,,"/>
+<approved hash="104,4,175.26,142.24,LED232,VDD,5V,,,"/>
+<approved hash="104,4,193.04,142.24,LED233,VDD,5V,,,"/>
+<approved hash="104,4,210.82,142.24,LED234,VDD,5V,,,"/>
+<approved hash="104,4,228.6,142.24,LED235,VDD,5V,,,"/>
+<approved hash="104,4,246.38,142.24,LED236,VDD,5V,,,"/>
+<approved hash="104,4,86.36,121.92,LED237,VDD,5V,,,"/>
+<approved hash="104,4,104.14,121.92,LED238,VDD,5V,,,"/>
+<approved hash="104,4,121.92,121.92,LED239,VDD,5V,,,"/>
+<approved hash="104,4,139.7,121.92,LED240,VDD,5V,,,"/>
+<approved hash="104,4,157.48,121.92,LED241,VDD,5V,,,"/>
+<approved hash="104,4,175.26,121.92,LED242,VDD,5V,,,"/>
+<approved hash="104,4,193.04,121.92,LED243,VDD,5V,,,"/>
+<approved hash="104,4,210.82,121.92,LED244,VDD,5V,,,"/>
+<approved hash="104,4,228.6,121.92,LED245,VDD,5V,,,"/>
+<approved hash="104,4,246.38,121.92,LED246,VDD,5V,,,"/>
+<approved hash="104,4,86.36,101.6,LED247,VDD,5V,,,"/>
+<approved hash="104,4,104.14,101.6,LED248,VDD,5V,,,"/>
+<approved hash="104,4,121.92,101.6,LED249,VDD,5V,,,"/>
+<approved hash="104,4,139.7,101.6,LED250,VDD,5V,,,"/>
+<approved hash="104,4,157.48,101.6,LED251,VDD,5V,,,"/>
+<approved hash="104,4,175.26,101.6,LED252,VDD,5V,,,"/>
+<approved hash="104,4,193.04,101.6,LED253,VDD,5V,,,"/>
+<approved hash="104,4,210.82,101.6,LED254,VDD,5V,,,"/>
+<approved hash="104,4,228.6,101.6,LED255,VDD,5V,,,"/>
+<approved hash="104,4,246.38,101.6,LED256,VDD,5V,,,"/>
+<approved hash="104,4,86.36,81.28,LED257,VDD,5V,,,"/>
+<approved hash="104,4,104.14,81.28,LED258,VDD,5V,,,"/>
+<approved hash="104,4,121.92,81.28,LED259,VDD,5V,,,"/>
+<approved hash="104,4,139.7,81.28,LED260,VDD,5V,,,"/>
+<approved hash="104,4,157.48,81.28,LED261,VDD,5V,,,"/>
+<approved hash="104,4,175.26,81.28,LED262,VDD,5V,,,"/>
+<approved hash="104,4,193.04,81.28,LED263,VDD,5V,,,"/>
+<approved hash="104,4,210.82,81.28,LED264,VDD,5V,,,"/>
+<approved hash="104,4,228.6,81.28,LED265,VDD,5V,,,"/>
+<approved hash="104,4,246.38,81.28,LED266,VDD,5V,,,"/>
+<approved hash="104,4,86.36,60.96,LED267,VDD,5V,,,"/>
+<approved hash="104,4,104.14,60.96,LED268,VDD,5V,,,"/>
+<approved hash="104,4,121.92,60.96,LED269,VDD,5V,,,"/>
+<approved hash="104,4,139.7,60.96,LED270,VDD,5V,,,"/>
+<approved hash="104,4,157.48,60.96,LED271,VDD,5V,,,"/>
+<approved hash="104,4,175.26,60.96,LED272,VDD,5V,,,"/>
+<approved hash="104,4,193.04,60.96,LED273,VDD,5V,,,"/>
+<approved hash="104,4,210.82,60.96,LED274,VDD,5V,,,"/>
+<approved hash="104,4,228.6,60.96,LED275,VDD,5V,,,"/>
+<approved hash="104,4,246.38,60.96,LED276,VDD,5V,,,"/>
+<approved hash="104,4,50.8,40.64,LED277,VDD,5V,,,"/>
+<approved hash="104,4,68.58,40.64,LED278,VDD,5V,,,"/>
+<approved hash="104,4,86.36,40.64,LED279,VDD,5V,,,"/>
+<approved hash="104,4,104.14,40.64,LED280,VDD,5V,,,"/>
+<approved hash="104,4,121.92,40.64,LED281,VDD,5V,,,"/>
+<approved hash="104,4,139.7,40.64,LED282,VDD,5V,,,"/>
+<approved hash="104,4,50.8,20.32,LED283,VDD,5V,,,"/>
+<approved hash="104,4,68.58,20.32,LED284,VDD,5V,,,"/>
+<approved hash="104,4,86.36,20.32,LED285,VDD,5V,,,"/>
+<approved hash="104,4,104.14,20.32,LED286,VDD,5V,,,"/>
+<approved hash="104,4,121.92,20.32,LED287,VDD,5V,,,"/>
+<approved hash="104,4,139.7,20.32,LED288,VDD,5V,,,"/>
+<approved hash="104,2,139.7,20.32,LED144,VDD,5V,,,"/>
+<approved hash="104,1,139.7,20.32,LED72,VDD,5V,,,"/>
+<approved hash="104,1,86.36,162.56,LED1,VDD,5V,,,"/>
+<approved hash="104,2,86.36,162.56,LED73,VDD,5V,,,"/>
+<approved hash="106,1,25.6311,82.4379,GPIO0,,,,,"/>
+<approved hash="106,1,48.4911,82.4379,GPIO1,,,,,"/>
+<approved hash="106,1,25.6311,112.918,GPIO2,,,,,"/>
+<approved hash="106,1,25.6311,110.378,GPIO3,,,,,"/>
+<approved hash="106,1,25.6311,107.838,GPIO4,,,,,"/>
+<approved hash="106,1,25.6311,79.8979,GPIO5,,,,,"/>
+<approved hash="106,1,25.6311,77.3579,GPIO6,,,,,"/>
+<approved hash="106,1,48.4911,84.9779,GPIO7,,,,,"/>
+<approved hash="106,1,48.4911,87.5179,GPIO8,,,,,"/>
+<approved hash="106,1,25.6311,90.0579,GPIO9,,,,,"/>
+<approved hash="106,1,25.6311,87.5179,GPIO11,,,,,"/>
+<approved hash="106,1,48.4911,77.3579,GPIO12,,,,,"/>
+<approved hash="106,1,25.6311,74.8179,GPIO13,,,,,"/>
+<approved hash="106,1,48.4911,107.838,GPIO14,,,,,"/>
+<approved hash="106,1,48.4911,105.298,GPIO15,,,,,"/>
+<approved hash="106,1,48.4911,72.2779,GPIO16,,,,,"/>
+<approved hash="106,1,25.6311,102.758,GPIO17,,,,,"/>
+<approved hash="106,1,25.6311,72.2779,GPIO19,,,,,"/>
+<approved hash="106,1,48.4911,69.7379,GPIO20,,,,,"/>
+<approved hash="106,1,25.6311,97.6779,GPIO22,,,,,"/>
+<approved hash="106,1,48.4911,97.6779,GPIO23,,,,,"/>
+<approved hash="106,1,48.4911,95.1379,GPIO24,,,,,"/>
+<approved hash="106,1,48.4911,90.0579,GPIO25,,,,,"/>
+<approved hash="106,1,25.6311,69.7379,GPIO26,,,,,"/>
+<approved hash="106,1,25.6311,100.218,GPIO27,,,,,"/>
 <approved hash="113,1,131.976,90.066,FRAME1,,,,,"/>
-<approved hash="113,1,28.4531,88.7679,J3,,,,,"/>
-<approved hash="113,1,45.2069,88.7679,J4,,,,,"/>
 <approved hash="113,2,131.976,90.066,FRAME2,,,,,"/>
 <approved hash="113,2,30.48,114.3,SJ1,,,,,"/>
-<approved hash="113,2,19.6427,72.5221,J1,,,,,"/>
-<approved hash="113,2,45.0427,72.5221,J2,,,,,"/>
+<approved hash="113,1,28.6537,89.8953,J5,,,,,"/>
+<approved hash="113,1,45.4685,89.8953,J6,,,,,"/>
+<approved hash="113,3,131.976,90.066,FRAME3,,,,,"/>
+<approved hash="113,4,131.976,90.066,FRAME4,,,,,"/>
+<approved hash="113,2,19.6427,72.5526,J1,,,,,"/>
+<approved hash="113,2,45.0427,72.5526,J2,,,,,"/>
 </errors>
 </schematic>
 </drawing>
