@@ -24,7 +24,7 @@ Preview:
 Features:
 
 - locked Pi headers
-- control pin selection
+- data input pin selection
 - 18 RGB LEDs organized in a single line
 - industry standard WS2812 addressable LEDs
 - small board for Pi
@@ -54,7 +54,7 @@ Preview:
 Features:
 
 - locked Pi headers
-- control pin selection
+- data input pin selection
 - 144 RGB LEDs organized in a matrix of 18x8
 - industry standard WS2812 addressable LEDs
 - separate DI and DO headers for extendability
@@ -85,7 +85,7 @@ Preview:
 Features:
 
 - locked Pi headers
-- control pin selection
+- data input pin selection
 - 288 RGB LEDs organized in a matrix of 18x16
 - industry standard WS2812 addressable LEDs
 - separate DI and DO headers for extendability
