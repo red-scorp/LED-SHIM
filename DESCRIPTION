@@ -8,6 +8,16 @@ Features:
 <li>small board for Pi</li>
 <li>can be used as SHIM (no headers) or HAT (with headers)</li>
 </ul>
+Raspberry Pi mini 40-pin <b>LED-mini35-SHIM</b> mini-HAT.<br/>
+Features:
+<ul>
+<li>locked Pi headers</li>
+<li>data input pin selection</li>
+<li>11 RGB LEDs organized in a single line</li>
+<li>industry standard WS2812 addressable LEDs</li>
+<li>small board for Pi</li>
+<li>can be used as SHIM (no headers) or HAT (with headers)</li>
+</ul>
 Raspberry Pi zero 40-pin <b>LED-zero20-SHIM</b> mini-HAT.<br/>
 Features:
 <ul>
