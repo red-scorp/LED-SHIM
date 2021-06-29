@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mil" altunit="mil"/>
@@ -256,7 +256,7 @@
 <circle x="3.5" y="61.5" radius="3.2" width="0" layer="30"/>
 <circle x="26.5" y="61.5" radius="3.2" width="0" layer="29"/>
 <circle x="26.5" y="61.5" radius="3.2" width="0" layer="30"/>
-<text x="21.537" y="42.83" size="1.27" layer="22" font="vector" ratio="24" rot="MR0">LED-zero-SHIM v1.0</text>
+<text x="22.352" y="42.799" size="1.27" layer="22" font="vector" ratio="24" rot="MR0">LED-zero20-SHIM v1.0</text>
 <text x="19.357" y="49.307" size="1.016" layer="22" font="vector" ratio="12" rot="MR0">http://redscorp.net</text>
 <text x="19.357" y="48.037" size="1.016" layer="22" font="vector" ratio="12" rot="MR0">(c) Andriy Golovnya</text>
 <wire x1="0" y1="2.9972" x2="0" y2="62.0014" width="0" layer="20"/>

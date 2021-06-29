@@ -28575,7 +28575,7 @@ Source: AVX .. aphvc.pdf</description>
 <sheet>
 <plain>
 <text x="256.54" y="7.62" size="2.54" layer="94">1.0</text>
-<text x="198.12" y="7.62" size="2.54" layer="94">PI-LEDMS-0010</text>
+<text x="198.12" y="7.62" size="2.54" layer="94">PI-LEDM20S-0010</text>
 <text x="165.1" y="25.4" size="2.54" layer="94">Mini LED-SHIM for Pi's 40-pin extension slot
 (c) Andriy Golovnya</text>
 <text x="119.38" y="106.68" size="2.54" layer="94">Left connector

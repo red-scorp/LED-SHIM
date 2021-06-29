@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mil" altunit="mil"/>
@@ -246,7 +246,7 @@
 <hole x="12.446" y="12.827" drill="0.35"/>
 <hole x="10.922" y="12.827" drill="0.35"/>
 <hole x="10.414" y="12.827" drill="0.35"/>
-<text x="16.129" y="6.731" size="1.27" layer="21" font="vector" ratio="24">LED-mini-SHIM v.1.0</text>
+<text x="16.129" y="6.731" size="1.27" layer="21" font="vector" ratio="24">LED-mini20-SHIM v.1.0</text>
 <rectangle x1="0" y1="0" x2="2.54" y2="2.54" layer="21" rot="R90"/>
 <text x="2.794" y="4.445" size="0.6096" layer="21" font="vector" ratio="12" rot="R90">2</text>
 <text x="5.334" y="1.905" size="0.6096" layer="21" font="vector" ratio="12" rot="R90">3</text>
@@ -291,7 +291,7 @@
 <text x="22.606" y="5.461" size="0.8128" layer="22" font="vector" rot="MR0">GPIO10</text>
 <text x="21.717" y="9.017" size="0.8128" layer="22" font="vector" rot="MR0">GPIO21</text>
 <text x="17.145" y="9.017" size="0.8128" layer="22" font="vector" rot="MR0">GPIO18</text>
-<text x="16.129" y="21.971" size="1.27" layer="21" font="vector" ratio="24">LED-mini-SHIM v.1.0</text>
+<text x="16.129" y="21.971" size="1.27" layer="21" font="vector" ratio="24">LED-mini20-SHIM v.1.0</text>
 <rectangle x1="0" y1="15.24" x2="2.54" y2="17.78" layer="21" rot="R90"/>
 <text x="2.794" y="19.685" size="0.6096" layer="21" font="vector" ratio="12" rot="R90">2</text>
 <text x="5.334" y="17.145" size="0.6096" layer="21" font="vector" ratio="12" rot="R90">3</text>
