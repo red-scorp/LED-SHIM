@@ -11,15 +11,15 @@ Some useful links:
 - [pinout.xyz](https://pinout.xyz/) - a brilliant resource on topic of Pi's pinout and HATs.
 - [raspberrypi/hats](https://github.com/raspberrypi/hats) - Pi's HAT specification.
 
-## LED-mini-SHIM
+## LED-mini20-SHIM
 
-Raspberry Pi mini 40-pin **LED-mini-SHIM** mini-HAT.
+Raspberry Pi mini 40-pin **LED-mini20-SHIM** mini-HAT.
 
 Preview:
 
-![LED-mini-SHIM preview](LED-mini-SHIM.png)
+![LED-mini20-SHIM preview](LED-mini20-SHIM.png)
 
-[Schematics in PDF format](LED-mini-SHIM.pdf)
+[Schematics in PDF format](LED-mini20-SHIM.pdf)
 
 Features:
 
@@ -41,15 +41,15 @@ Pins Configuration:
 CAM files are available.
 BoM and PnP files for JLCPCB are available.
 
-## LED-zero-SHIM
+## LED-zero20-SHIM
 
-Raspberry Pi zero 40-pin **LED-zero-SHIM** mini-HAT.
+Raspberry Pi zero 40-pin **LED-zero20-SHIM** mini-HAT.
 
 Preview:
 
-![LED-zero-SHIM preview](LED-zero-SHIM.png)
+![LED-zero-SHIM preview](LED-zero20-SHIM.png)
 
-[Schematics in PDF format](LED-zero-SHIM.pdf)
+[Schematics in PDF format](LED-zero20-SHIM.pdf)
 
 Features:
 
@@ -72,15 +72,15 @@ Pins Configuration:
 CAM files are available.
 BoM and PnP files for JLCPCB are available.
 
-## LED-plus-SHIM
+## LED-plus20-SHIM
 
-Raspberry Pi plus 40-pin **LED-plus-SHIM** mini-HAT.
+Raspberry Pi plus 40-pin **LED-plus20-SHIM** mini-HAT.
 
 Preview:
 
-![LED-plus-SHIM preview](LED-plus-SHIM.png)
+![LED-plus20-SHIM preview](LED-plus20-SHIM.png)
 
-[Schematics in PDF format](LED-plus-SHIM.pdf)
+[Schematics in PDF format](LED-plus20-SHIM.pdf)
 
 Features:
 

@@ -1,4 +1,4 @@
-Raspberry Pi mini 40-pin <b>LED-mini-SHIM</b> mini-HAT.<br/>
+Raspberry Pi mini 40-pin <b>LED-mini20-SHIM</b> mini-HAT.<br/>
 Features:
 <ul>
 <li>locked Pi headers</li>
@@ -8,7 +8,7 @@ Features:
 <li>small board for Pi</li>
 <li>can be used as SHIM (no headers) or HAT (with headers)</li>
 </ul>
-Raspberry Pi zero 40-pin <b>LED-zero-SHIM</b> mini-HAT.<br/>
+Raspberry Pi zero 40-pin <b>LED-zero20-SHIM</b> mini-HAT.<br/>
 Features:
 <ul>
 <li>locked Pi headers</li>
@@ -19,7 +19,7 @@ Features:
 <li>Pi zero board style</li>
 <li>can be used as SHIM (no headers) or HAT (with headers)</li>
 </ul>
-Raspberry Pi plus 40-pin <b>LED-plus-SHIM</b> mini-HAT.<br/>
+Raspberry Pi plus 40-pin <b>LED-plus20-SHIM</b> mini-HAT.<br/>
 Features:
 <ul>
 <li>locked Pi headers</li>
