@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mil" altunit="mil"/>
@@ -13203,6 +13203,94 @@ design rules under a new name.</description>
 <vertex x="25" y="58"/>
 <vertex x="28" y="58"/>
 <vertex x="30" y="60"/>
+</polygon>
+</signal>
+<signal name="GND3" airwireshidden="yes">
+<polygon width="0" layer="2" pour="cutout">
+<vertex x="0" y="65"/>
+<vertex x="5" y="65"/>
+<vertex x="7" y="63"/>
+<vertex x="7" y="60"/>
+<vertex x="5" y="58"/>
+<vertex x="2" y="58"/>
+<vertex x="0" y="60"/>
+</polygon>
+</signal>
+<signal name="GND4" airwireshidden="yes">
+<polygon width="0" layer="15" pour="cutout">
+<vertex x="0" y="65"/>
+<vertex x="5" y="65"/>
+<vertex x="7" y="63"/>
+<vertex x="7" y="60"/>
+<vertex x="5" y="58"/>
+<vertex x="2" y="58"/>
+<vertex x="0" y="60"/>
+</polygon>
+</signal>
+<signal name="GND5" airwireshidden="yes">
+<polygon width="0" layer="2" pour="cutout">
+<vertex x="-0.0014" y="0"/>
+<vertex x="-0.0014" y="5"/>
+<vertex x="1.9986" y="7"/>
+<vertex x="4.9986" y="7"/>
+<vertex x="6.9986" y="5"/>
+<vertex x="6.9986" y="2"/>
+<vertex x="4.9986" y="0"/>
+</polygon>
+</signal>
+<signal name="GND6" airwireshidden="yes">
+<polygon width="0" layer="15" pour="cutout">
+<vertex x="-0.0014" y="0"/>
+<vertex x="-0.0014" y="5"/>
+<vertex x="1.9986" y="7"/>
+<vertex x="4.9986" y="7"/>
+<vertex x="6.9986" y="5"/>
+<vertex x="6.9986" y="2"/>
+<vertex x="4.9986" y="0"/>
+</polygon>
+</signal>
+<signal name="GND7" airwireshidden="yes">
+<polygon width="0" layer="2" pour="cutout">
+<vertex x="29.9974" y="-0.0014"/>
+<vertex x="24.9974" y="-0.0014"/>
+<vertex x="22.9974" y="1.9986"/>
+<vertex x="22.9974" y="4.9986"/>
+<vertex x="24.9974" y="6.9986"/>
+<vertex x="27.9974" y="6.9986"/>
+<vertex x="29.9974" y="4.9986"/>
+</polygon>
+</signal>
+<signal name="GND8" airwireshidden="yes">
+<polygon width="0" layer="15" pour="cutout">
+<vertex x="29.9974" y="-0.0014"/>
+<vertex x="24.9974" y="-0.0014"/>
+<vertex x="22.9974" y="1.9986"/>
+<vertex x="22.9974" y="4.9986"/>
+<vertex x="24.9974" y="6.9986"/>
+<vertex x="27.9974" y="6.9986"/>
+<vertex x="29.9974" y="4.9986"/>
+</polygon>
+</signal>
+<signal name="GND9" airwireshidden="yes">
+<polygon width="0" layer="2" pour="cutout">
+<vertex x="29.9988" y="64.9986"/>
+<vertex x="29.9988" y="59.9986"/>
+<vertex x="27.9988" y="57.9986"/>
+<vertex x="24.9988" y="57.9986"/>
+<vertex x="22.9988" y="59.9986"/>
+<vertex x="22.9988" y="62.9986"/>
+<vertex x="24.9988" y="64.9986"/>
+</polygon>
+</signal>
+<signal name="GND10" airwireshidden="yes">
+<polygon width="0" layer="15" pour="cutout">
+<vertex x="29.9988" y="64.9986"/>
+<vertex x="29.9988" y="59.9986"/>
+<vertex x="27.9988" y="57.9986"/>
+<vertex x="24.9988" y="57.9986"/>
+<vertex x="22.9988" y="59.9986"/>
+<vertex x="22.9988" y="62.9986"/>
+<vertex x="24.9988" y="64.9986"/>
 </polygon>
 </signal>
 </signals>

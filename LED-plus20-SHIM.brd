@@ -16080,6 +16080,94 @@ design rules under a new name.</description>
 <wire x1="14.774" y1="57.049" x2="15.3924" y2="56.4306" width="0.1524" layer="1"/>
 <wire x1="15.3924" y1="56.4306" x2="15.3924" y2="8.7966" width="0.1524" layer="1"/>
 </signal>
+<signal name="GND3" airwireshidden="yes">
+<polygon width="0" layer="2" pour="cutout">
+<vertex x="0" y="65"/>
+<vertex x="5" y="65"/>
+<vertex x="7" y="63"/>
+<vertex x="7" y="60"/>
+<vertex x="5" y="58"/>
+<vertex x="2" y="58"/>
+<vertex x="0" y="60"/>
+</polygon>
+</signal>
+<signal name="GND4" airwireshidden="yes">
+<polygon width="0" layer="15" pour="cutout">
+<vertex x="0" y="65"/>
+<vertex x="5" y="65"/>
+<vertex x="7" y="63"/>
+<vertex x="7" y="60"/>
+<vertex x="5" y="58"/>
+<vertex x="2" y="58"/>
+<vertex x="0" y="60"/>
+</polygon>
+</signal>
+<signal name="GND1" airwireshidden="yes">
+<polygon width="0" layer="2" pour="cutout">
+<vertex x="0.024" y="0"/>
+<vertex x="0.024" y="5"/>
+<vertex x="2.024" y="7"/>
+<vertex x="5.024" y="7"/>
+<vertex x="7.024" y="5"/>
+<vertex x="7.024" y="2"/>
+<vertex x="5.024" y="0"/>
+</polygon>
+</signal>
+<signal name="GND5" airwireshidden="yes">
+<polygon width="0" layer="15" pour="cutout">
+<vertex x="0.024" y="0"/>
+<vertex x="0.024" y="5"/>
+<vertex x="2.024" y="7"/>
+<vertex x="5.024" y="7"/>
+<vertex x="7.024" y="5"/>
+<vertex x="7.024" y="2"/>
+<vertex x="5.024" y="0"/>
+</polygon>
+</signal>
+<signal name="GND6" airwireshidden="yes">
+<polygon width="0" layer="2" pour="cutout">
+<vertex x="56.007" y="-0.0014"/>
+<vertex x="51.007" y="-0.0014"/>
+<vertex x="49.007" y="1.9986"/>
+<vertex x="49.007" y="4.9986"/>
+<vertex x="51.007" y="6.9986"/>
+<vertex x="54.007" y="6.9986"/>
+<vertex x="56.007" y="4.9986"/>
+</polygon>
+</signal>
+<signal name="GND7" airwireshidden="yes">
+<polygon width="0" layer="15" pour="cutout">
+<vertex x="56.007" y="-0.0014"/>
+<vertex x="51.007" y="-0.0014"/>
+<vertex x="49.007" y="1.9986"/>
+<vertex x="49.007" y="4.9986"/>
+<vertex x="51.007" y="6.9986"/>
+<vertex x="54.007" y="6.9986"/>
+<vertex x="56.007" y="4.9986"/>
+</polygon>
+</signal>
+<signal name="GND8" airwireshidden="yes">
+<polygon width="0" layer="2" pour="cutout">
+<vertex x="56.0084" y="64.9986"/>
+<vertex x="56.0084" y="59.9986"/>
+<vertex x="54.0084" y="57.9986"/>
+<vertex x="51.0084" y="57.9986"/>
+<vertex x="49.0084" y="59.9986"/>
+<vertex x="49.0084" y="62.9986"/>
+<vertex x="51.0084" y="64.9986"/>
+</polygon>
+</signal>
+<signal name="GND9" airwireshidden="yes">
+<polygon width="0" layer="15" pour="cutout">
+<vertex x="56.0084" y="64.9986"/>
+<vertex x="56.0084" y="59.9986"/>
+<vertex x="54.0084" y="57.9986"/>
+<vertex x="51.0084" y="57.9986"/>
+<vertex x="49.0084" y="59.9986"/>
+<vertex x="49.0084" y="62.9986"/>
+<vertex x="51.0084" y="64.9986"/>
+</polygon>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
