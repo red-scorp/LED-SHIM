@@ -28639,6 +28639,9 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND149" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="SJ1" library="_my_jumpers" deviceset="SJ3" device=""/>
 <part name="LOGO1" library="_my_logos" deviceset="MFDECLOGO" device="_L_10MM" value="MFDECLOGO_L_10MM"/>
+<part name="LED12" library="WS281X" deviceset="WS2812" device="B-MINI" value="WS2812B-MINI"/>
+<part name="SUPPLY15" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
+<part name="GND14" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -28839,6 +28842,16 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="VALUE" x="40.64" y="61.595" size="1.778" layer="96"/>
 </instance>
 <instance part="LOGO1" gate="G$1" x="134.62" y="2.54" smashed="yes"/>
+<instance part="LED12" gate="LED" x="96.52" y="132.08" smashed="yes">
+<attribute name="NAME" x="91.44" y="138.43" size="1.778" layer="95"/>
+<attribute name="VALUE" x="91.44" y="124.46" size="1.778" layer="95"/>
+</instance>
+<instance part="SUPPLY15" gate="G$1" x="104.14" y="137.16" smashed="yes">
+<attribute name="VALUE" x="104.14" y="139.954" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="GND14" gate="1" x="88.9" y="124.46" smashed="yes">
+<attribute name="VALUE" x="88.9" y="124.206" size="1.778" layer="96" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -28971,6 +28984,11 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="40.64" y1="96.52" x2="40.64" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="GND149" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="LED12" gate="LED" pin="GND"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+<wire x1="88.9" y1="129.54" x2="88.9" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO2" class="0">
@@ -29266,6 +29284,11 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="40.64" y1="104.14" x2="40.64" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="SUPPLY152" gate="G$1" pin="5V"/>
 </segment>
+<segment>
+<pinref part="LED12" gate="LED" pin="VDD"/>
+<pinref part="SUPPLY15" gate="G$1" pin="5V"/>
+<wire x1="104.14" y1="134.62" x2="104.14" y2="137.16" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -29353,13 +29376,6 @@ Source: AVX .. aphvc.pdf</description>
 <label x="50.8" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DO_LAST" class="0">
-<segment>
-<wire x1="86.36" y1="132.08" x2="96.52" y2="132.08" width="0.1524" layer="91"/>
-<label x="88.9" y="132.08" size="1.778" layer="95"/>
-<pinref part="LED11" gate="LED" pin="DO"/>
-</segment>
-</net>
 <net name="DATA" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="A"/>
@@ -29377,6 +29393,20 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="IC1" gate="G$1" pin="OE"/>
 <wire x1="25.4" y1="137.16" x2="27.94" y2="137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="LED12" gate="LED" pin="DI"/>
+<pinref part="LED11" gate="LED" pin="DO"/>
+<wire x1="88.9" y1="132.08" x2="86.36" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DO_LAST" class="0">
+<segment>
+<pinref part="LED12" gate="LED" pin="DO"/>
+<wire x1="104.14" y1="132.08" x2="114.3" y2="132.08" width="0.1524" layer="91"/>
+<label x="106.68" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
