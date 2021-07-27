@@ -55,7 +55,7 @@ Features:
 
 - locked Pi headers
 - data input pin selection
-- 11 RGB LEDs organized in a single line
+- 12 RGB LEDs organized in a single line
 - industry standard WS2812 addressable LEDs
 - small board for Pi
 - can be used as SHIM (no headers) or HAT (with headers)
