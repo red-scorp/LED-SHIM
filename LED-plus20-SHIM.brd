@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mil" altunit="mil"/>
@@ -12547,6 +12547,22 @@ design rules under a new name.</description>
 <via x="27.8892" y="0.5334" extent="1-16" drill="0.35"/>
 <via x="18.9484" y="63.8556" extent="1-16" drill="0.35"/>
 <via x="37.0586" y="63.7794" extent="1-16" drill="0.35"/>
+<polygon width="0" layer="1" pour="cutout">
+<vertex x="3.5" y="58" curve="-180"/>
+<vertex x="3.5" y="65" curve="-180"/>
+</polygon>
+<polygon width="0" layer="2" pour="cutout">
+<vertex x="3.5" y="58" curve="-180"/>
+<vertex x="3.5" y="65" curve="-180"/>
+</polygon>
+<polygon width="0" layer="15" pour="cutout">
+<vertex x="3.5" y="58" curve="-180"/>
+<vertex x="3.5" y="65" curve="-180"/>
+</polygon>
+<polygon width="0" layer="16" pour="cutout">
+<vertex x="3.5" y="58" curve="-180"/>
+<vertex x="3.5" y="65" curve="-180"/>
+</polygon>
 </signal>
 <signal name="3.3V">
 <contactref element="R1" pad="1"/>
@@ -14903,80 +14919,6 @@ design rules under a new name.</description>
 <wire x1="46.482" y1="61.341" x2="46.355" y2="61.214" width="0.3048" layer="1"/>
 <wire x1="46.355" y1="61.214" x2="46.355" y2="60.381" width="0.3048" layer="1"/>
 </signal>
-<signal name="GND2">
-<polygon width="0" layer="1" pour="cutout">
-<vertex x="0" y="5"/>
-<vertex x="2" y="7"/>
-<vertex x="5" y="7"/>
-<vertex x="7" y="5"/>
-<vertex x="7" y="2"/>
-<vertex x="5" y="0"/>
-<vertex x="0" y="0"/>
-</polygon>
-<polygon width="0" layer="16" pour="cutout">
-<vertex x="0" y="0"/>
-<vertex x="0" y="5"/>
-<vertex x="2" y="7"/>
-<vertex x="5" y="7"/>
-<vertex x="7" y="5"/>
-<vertex x="7" y="2"/>
-<vertex x="5" y="0"/>
-</polygon>
-<polygon width="0" layer="1" pour="cutout">
-<vertex x="56" y="0"/>
-<vertex x="51" y="0"/>
-<vertex x="49" y="2"/>
-<vertex x="49" y="5"/>
-<vertex x="51" y="7"/>
-<vertex x="54" y="7"/>
-<vertex x="56" y="5"/>
-</polygon>
-<polygon width="0" layer="16" pour="cutout">
-<vertex x="56" y="0"/>
-<vertex x="51" y="0"/>
-<vertex x="49" y="2"/>
-<vertex x="49" y="5"/>
-<vertex x="51" y="7"/>
-<vertex x="54" y="7"/>
-<vertex x="56" y="5"/>
-</polygon>
-<polygon width="0" layer="1" pour="cutout">
-<vertex x="0" y="65"/>
-<vertex x="5" y="65"/>
-<vertex x="7" y="63"/>
-<vertex x="7" y="60"/>
-<vertex x="5" y="58"/>
-<vertex x="2" y="58"/>
-<vertex x="0" y="60"/>
-</polygon>
-<polygon width="0" layer="16" pour="cutout">
-<vertex x="0" y="65"/>
-<vertex x="5" y="65"/>
-<vertex x="7" y="63"/>
-<vertex x="7" y="60"/>
-<vertex x="5" y="58"/>
-<vertex x="2" y="58"/>
-<vertex x="0" y="60"/>
-</polygon>
-<polygon width="0" layer="1" pour="cutout">
-<vertex x="56" y="65"/>
-<vertex x="51" y="65"/>
-<vertex x="49" y="63"/>
-<vertex x="49" y="60"/>
-<vertex x="51" y="58"/>
-<vertex x="54" y="58"/>
-<vertex x="56" y="60"/>
-</polygon>
-<polygon width="0" layer="16" pour="cutout">
-<vertex x="56" y="65"/>
-<vertex x="51" y="65"/>
-<vertex x="49" y="63"/>
-<vertex x="49" y="60"/>
-<vertex x="51" y="58"/>
-<vertex x="54" y="58"/>
-<vertex x="56" y="60"/>
-</polygon>
-</signal>
 <signal name="GPIO2">
 <contactref element="J5" pad="2"/>
 </signal>
@@ -16081,91 +16023,57 @@ design rules under a new name.</description>
 <wire x1="15.3924" y1="56.4306" x2="15.3924" y2="8.7966" width="0.1524" layer="1"/>
 </signal>
 <signal name="GND3" airwireshidden="yes">
-<polygon width="0" layer="2" pour="cutout">
-<vertex x="0" y="65"/>
-<vertex x="5" y="65"/>
-<vertex x="7" y="63"/>
-<vertex x="7" y="60"/>
-<vertex x="5" y="58"/>
-<vertex x="2" y="58"/>
-<vertex x="0" y="60"/>
+<polygon width="0" layer="1" pour="cutout">
+<vertex x="52.5" y="58" curve="-180"/>
+<vertex x="52.5" y="65" curve="-180"/>
 </polygon>
-</signal>
-<signal name="GND4" airwireshidden="yes">
+<polygon width="0" layer="2" pour="cutout">
+<vertex x="52.5" y="58" curve="-180"/>
+<vertex x="52.5" y="65" curve="-180"/>
+</polygon>
 <polygon width="0" layer="15" pour="cutout">
-<vertex x="0" y="65"/>
-<vertex x="5" y="65"/>
-<vertex x="7" y="63"/>
-<vertex x="7" y="60"/>
-<vertex x="5" y="58"/>
-<vertex x="2" y="58"/>
-<vertex x="0" y="60"/>
+<vertex x="52.5" y="58" curve="-180"/>
+<vertex x="52.5" y="65" curve="-180"/>
+</polygon>
+<polygon width="0" layer="16" pour="cutout">
+<vertex x="52.5" y="58" curve="-180"/>
+<vertex x="52.5" y="65" curve="-180"/>
 </polygon>
 </signal>
 <signal name="GND1" airwireshidden="yes">
+<polygon width="0" layer="1" pour="cutout">
+<vertex x="3.5" y="0" curve="-180"/>
+<vertex x="3.5" y="7" curve="-180"/>
+</polygon>
 <polygon width="0" layer="2" pour="cutout">
-<vertex x="0.024" y="0"/>
-<vertex x="0.024" y="5"/>
-<vertex x="2.024" y="7"/>
-<vertex x="5.024" y="7"/>
-<vertex x="7.024" y="5"/>
-<vertex x="7.024" y="2"/>
-<vertex x="5.024" y="0"/>
+<vertex x="3.5" y="0" curve="-180"/>
+<vertex x="3.5" y="7" curve="-180"/>
 </polygon>
-</signal>
-<signal name="GND5" airwireshidden="yes">
 <polygon width="0" layer="15" pour="cutout">
-<vertex x="0.024" y="0"/>
-<vertex x="0.024" y="5"/>
-<vertex x="2.024" y="7"/>
-<vertex x="5.024" y="7"/>
-<vertex x="7.024" y="5"/>
-<vertex x="7.024" y="2"/>
-<vertex x="5.024" y="0"/>
+<vertex x="3.5" y="0" curve="-180"/>
+<vertex x="3.5" y="7" curve="-180"/>
+</polygon>
+<polygon width="0" layer="16" pour="cutout">
+<vertex x="3.5" y="0" curve="-180"/>
+<vertex x="3.5" y="7" curve="-180"/>
 </polygon>
 </signal>
-<signal name="GND6" airwireshidden="yes">
+<signal name="GND2" airwireshidden="yes">
+<polygon width="0" layer="1" pour="cutout">
+<vertex x="52.5" y="0" curve="-180"/>
+<vertex x="52.5" y="7" curve="-180"/>
+</polygon>
 <polygon width="0" layer="2" pour="cutout">
-<vertex x="56.007" y="-0.0014"/>
-<vertex x="51.007" y="-0.0014"/>
-<vertex x="49.007" y="1.9986"/>
-<vertex x="49.007" y="4.9986"/>
-<vertex x="51.007" y="6.9986"/>
-<vertex x="54.007" y="6.9986"/>
-<vertex x="56.007" y="4.9986"/>
+<vertex x="52.5" y="0" curve="-180"/>
+<vertex x="52.5" y="7" curve="-180"/>
 </polygon>
-</signal>
-<signal name="GND7" airwireshidden="yes">
 <polygon width="0" layer="15" pour="cutout">
-<vertex x="56.007" y="-0.0014"/>
-<vertex x="51.007" y="-0.0014"/>
-<vertex x="49.007" y="1.9986"/>
-<vertex x="49.007" y="4.9986"/>
-<vertex x="51.007" y="6.9986"/>
-<vertex x="54.007" y="6.9986"/>
-<vertex x="56.007" y="4.9986"/>
+<vertex x="52.5" y="0" curve="-180"/>
+<vertex x="52.5" y="7" curve="-180"/>
 </polygon>
-</signal>
-<signal name="GND8" airwireshidden="yes">
-<polygon width="0" layer="2" pour="cutout">
-<vertex x="56.0084" y="64.9986"/>
-<vertex x="56.0084" y="59.9986"/>
-<vertex x="54.0084" y="57.9986"/>
-<vertex x="51.0084" y="57.9986"/>
-<vertex x="49.0084" y="59.9986"/>
-<vertex x="49.0084" y="62.9986"/>
-<vertex x="51.0084" y="64.9986"/>
-</polygon>
-</signal>
-<signal name="GND9" airwireshidden="yes">
-<polygon width="0" layer="15" pour="cutout">
-<vertex x="56.0084" y="64.9986"/>
-<vertex x="56.0084" y="59.9986"/>
-<vertex x="54.0084" y="57.9986"/>
-<vertex x="51.0084" y="57.9986"/>
-<vertex x="49.0084" y="59.9986"/>
-<vertex x="49.0084" y="62.9986"/>
-<vertex x="51.0084" y="64.9986"/>
+<polygon width="0" layer="16" pour="cutout">
+<vertex x="52.5" y="0" curve="-180"/>
+<vertex x="52.5" y="7" curve="-180"/>
 </polygon>
 </signal>
 </signals>
