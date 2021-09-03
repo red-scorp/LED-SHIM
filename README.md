@@ -69,6 +69,7 @@ Pins Configuration:
 \*) the pin is connected by default.
 
 CAM files are available.
+BoM and PnP files for JLCPCB are available.
 
 ## LED-zero20-SHIM
 
