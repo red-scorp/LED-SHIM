@@ -102,6 +102,36 @@ Pins Configuration:
 CAM files are available.
 BoM and PnP files for JLCPCB are available.
 
+## LED-zero35-SHIM
+
+Raspberry Pi zero 40-pin **LED-zero35-SHIM** mini-HAT.
+
+Preview:
+
+![LED-zero35-SHIM preview](LED-zero35-SHIM.png)
+
+[Schematics in PDF format](LED-zero35-SHIM.pdf)
+
+Features:
+
+- locked Pi headers
+- data input pin selection
+- 60 RGB LEDs organized in a matrix of 12x5
+- industry standard WS2812 addressable LEDs
+- separate DI and DO headers for extendability
+- Pi zero board style
+- can be used as SHIM (no headers) or HAT (with headers)
+
+Pins Configuration:
+
+|Data Pin |Option 1 |Option 2 |Option 3 |
+|---------|---------|---------|---------|
+|DI       |GPIO18\* |GPIO10   |GPIO21   |
+
+\*) the pin is connected by default.
+
+CAM files are available.
+
 ## LED-plus20-SHIM
 
 Raspberry Pi plus 40-pin **LED-plus20-SHIM** mini-HAT.
