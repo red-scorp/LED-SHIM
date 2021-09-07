@@ -51,3 +51,14 @@ Features:
 <li>Pi plus board style</li>
 <li>can be used as SHIM (no headers) or HAT (with headers)</li>
 </ul>
+Raspberry Pi plus 40-pin <b>LED-plus35-SHIM</b> mi00ni-HAT.<br/>
+Features:
+<ul>
+<li>locked Pi headers</li>
+<li>data input pin selection</li>
+<li>120 RGB LEDs organized in a matrix of 12x10</li>
+<li>industry standard WS2812 addressable LEDs</li>
+<li>separate DI and DO headers for extendability</li>
+<li>Pi plus board style</li>
+<li>can be used as SHIM (no headers) or HAT (with headers)</li>
+</ul>
