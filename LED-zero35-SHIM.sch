@@ -28512,6 +28512,15 @@ Source: AVX .. aphvc.pdf</description>
 <text x="-1.27" y="1.905" size="0.6096" layer="25">&gt;NAME</text>
 <text x="-1.27" y="-2.54" size="0.6096" layer="27">&gt;VALUE</text>
 <circle x="0" y="0" radius="1.425" width="0.127" layer="51"/>
+<wire x1="1" y1="-1.7" x2="1.7" y2="-1" width="0.127" layer="21"/>
+<wire x1="1.1" y1="-1.7" x2="1.7" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="1.2" y1="-1.7" x2="1.7" y2="-1.2" width="0.127" layer="21"/>
+<wire x1="1.3" y1="-1.7" x2="1.7" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="1.4" y1="-1.7" x2="1.7" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.7" x2="1.7" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-1.7" x2="1.7" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="0.9" y1="-1.7" x2="1.7" y2="-0.9" width="0.127" layer="21"/>
+<wire x1="0.8" y1="-1.7" x2="1.7" y2="-0.8" width="0.127" layer="21"/>
 </package>
 <package name="WS2812X">
 <wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>
