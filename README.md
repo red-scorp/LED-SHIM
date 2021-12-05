@@ -17,9 +17,9 @@ Raspberry Pi mini 40-pin **LED-mini20-SHIM** mini-HAT.
 
 Preview:
 
-![LED-mini20-SHIM preview](LED-mini20-SHIM.png)
+![LED-mini20-SHIM preview](img/LED-mini20-SHIM.png)
 
-[Schematics in PDF format](LED-mini20-SHIM.pdf)
+[Schematics in PDF format](doc/LED-mini20-SHIM.pdf)
 
 Features:
 
@@ -47,9 +47,9 @@ Raspberry Pi mini 40-pin **LED-mini35-SHIM** mini-HAT.
 
 Preview:
 
-![LED-mini35-SHIM preview](LED-mini35-SHIM.png)
+![LED-mini35-SHIM preview](img/LED-mini35-SHIM.png)
 
-[Schematics in PDF format](LED-mini35-SHIM.pdf)
+[Schematics in PDF format](doc/LED-mini35-SHIM.pdf)
 
 Features:
 
@@ -77,9 +77,9 @@ Raspberry Pi zero 40-pin **LED-zero20-SHIM** mini-HAT.
 
 Preview:
 
-![LED-zero20-SHIM preview](LED-zero20-SHIM.png)
+![LED-zero20-SHIM preview](img/LED-zero20-SHIM.png)
 
-[Schematics in PDF format](LED-zero20-SHIM.pdf)
+[Schematics in PDF format](doc/LED-zero20-SHIM.pdf)
 
 Features:
 
@@ -108,7 +108,7 @@ Raspberry Pi zero 40-pin **LED-zero35-SHIM** mini-HAT.
 
 Preview:
 
-![LED-zero35-SHIM preview](LED-zero35-SHIM.png)
+![LED-zero35-SHIM preview](img/LED-zero35-SHIM.png)
 
 [Schematics in PDF format](LED-zero35-SHIM.pdf)
 
@@ -139,9 +139,9 @@ Raspberry Pi plus 40-pin **LED-plus20-SHIM** mini-HAT.
 
 Preview:
 
-![LED-plus20-SHIM preview](LED-plus20-SHIM.png)
+![LED-plus20-SHIM preview](img/LED-plus20-SHIM.png)
 
-[Schematics in PDF format](LED-plus20-SHIM.pdf)
+[Schematics in PDF format](doc/LED-plus20-SHIM.pdf)
 
 Features:
 
@@ -170,9 +170,9 @@ Raspberry Pi plus 40-pin **LED-plus35-SHIM** mini-HAT.
 
 Preview:
 
-![LED-plus35-SHIM preview](LED-plus35-SHIM.png)
+![LED-plus35-SHIM preview](img/LED-plus35-SHIM.png)
 
-[Schematics in PDF format](LED-plus35-SHIM.pdf)
+[Schematics in PDF format](doc/LED-plus35-SHIM.pdf)
 
 Features:
 
