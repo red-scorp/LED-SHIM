@@ -6,11 +6,6 @@ Sometimes it's nice to add some shine to your Pi.
 This can be achieved with a line or matrix of RGB addressable LEDs.
 Welcome to a new shiny world!
 
-Some useful links:
-
-- [pinout.xyz](https://pinout.xyz/) - a brilliant resource on topic of Pi's pinout and HATs.
-- [raspberrypi/hats](https://github.com/raspberrypi/hats) - Pi's HAT specification.
-
 ## LED-mini20-SHIM
 
 Raspberry Pi mini 40-pin **LED-mini20-SHIM** mini-HAT.
@@ -194,6 +189,11 @@ Pins Configuration:
 
 CAM files are available.
 BoM and PnP files for JLCPCB are available.
+
+## Links
+
+- [pinout.xyz](https://pinout.xyz/) - a brilliant resource on topic of Pi's pinout and HATs.
+- [raspberrypi/hats](https://github.com/raspberrypi/hats) - Pi's HAT specification.
 
 ## How to help
 
